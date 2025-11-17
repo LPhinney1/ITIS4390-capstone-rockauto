@@ -18,7 +18,7 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 
 ## Additional Info
 
-To automatically format text and check for errors:
+To automatically check for errors (ESLint) and format code (Prettier):
 
 ```bash
 npm run lint
