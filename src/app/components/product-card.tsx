@@ -1,4 +1,4 @@
-import AddToCartButton from "../ui_new/button";
+import AddToCartButton from "../ui/button";
 
 
 type Product = {

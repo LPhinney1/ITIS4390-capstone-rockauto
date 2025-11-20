@@ -1,6 +1,6 @@
-import NavLinks from '../ui_new/nav-links';
+import NavLinks from '../ui/nav-links';
 import Link from 'next/link';
-import SearchBar from '../ui_new/search-bar';
+import SearchBar from './search-bar';
 
 
 export default function NavBar() {

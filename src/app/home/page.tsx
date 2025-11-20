@@ -1,4 +1,4 @@
-import SideNav from "../ui_new/sidenav";
+import SideNav from "../ui/sidenav";
 import { categories, promos } from "./placeholder-data";
 import ProductCard from "../components/product-card";
 
