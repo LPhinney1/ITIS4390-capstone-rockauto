@@ -1,5 +1,5 @@
-import '@/app/ui/global.css';
-import { inter } from '@/app/ui/fonts';
+import '@/app/ui_new/global.css';
+import { inter } from '@/app/ui_new/fonts';
 import NavBar from './components/navbar';
 
 
