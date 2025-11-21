@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "name": "Front Brake Pads",
+    "category": "Brakes",
+    "vehicle": "Toyota Camry 2005",
+    "price": 34.99,
+    "brand": "Bosch",
+    "rating": 4.6,
+    "inStock": true,
+    "image": ""
+  },
+  {
+    "id": 2,
+    "name": "Rear Brake Rotors",
+    "category": "Brakes",
+    "vehicle": "Honda Accord 2010",
+    "price": 58.50,
+    "brand": "PowerStop",
+    "rating": 4.8,
+    "inStock": true,
+    "image": ""
+  },
+  {
+    "id": 3,
+    "name": "Engine Air Filter",
+    "category": "Filters",
+    "vehicle": "Ford F-150 2018",
+    "price": 14.29,
+    "brand": "Fram",
+    "rating": 4.4,
+    "inStock": false,
+    "image": ""
+  },
+  {
+    "id": 4,
+    "name": "Cabin Air Filter",
+    "category": "Filters",
+    "vehicle": "Toyota RAV4 2016",
+    "price": 11.99,
+    "brand": "K&N",
+    "rating": 4.3,
+    "inStock": true,
+    "image": ""
+  },
+  {
+    "id": 5,
+    "name": "Starter Motor",
+    "category": "Electrical",
+    "vehicle": "Nissan Altima 2013",
+    "price": 129.99,
+    "brand": "Denso",
+    "rating": 4.7,
+    "inStock": true,
+    "image": ""
+  },
+  {
+    "id": 6,
+    "name": "Alternator",
+    "category": "Electrical",
+    "vehicle": "Chevrolet Malibu 2012",
+    "price": 178.00,
+    "brand": "ACDelco",
+    "rating": 4.5,
+    "inStock": true,
+    "image": ""
+  },
+  {
+    "id": 7,
+    "name": "Oil Filter",
+    "category": "Filters",
+    "vehicle": "Honda Civic 2015",
+    "price": 7.49,
+    "brand": "Mobil 1",
+    "rating": 4.8,
+    "inStock": true,
+    "image": ""
+  },
+  {
+    "id": 8,
+    "name": "Spark Plug",
+    "category": "Engine",
+    "vehicle": "Toyota Corolla 2014",
+    "price": 6.89,
+    "brand": "NGK",
+    "rating": 4.9,
+    "inStock": true,
+    "image": ""
+  },
+  {
+    "id": 9,
+    "name": "Front Strut Assembly",
+    "category": "Suspension",
+    "vehicle": "Subaru Outback 2017",
+    "price": 112.00,
+    "brand": "KYB",
+    "rating": 4.6,
+    "inStock": false,
+    "image": ""
+  },
+  {
+    "id": 10,
+    "name": "Fuel Pump",
+    "category": "Engine",
+    "vehicle": "Jeep Wrangler 2012",
+    "price": 159.99,
+    "brand": "Delphi",
+    "rating": 4.4,
+    "inStock": true,
+    "image": ""
+  }
+]
