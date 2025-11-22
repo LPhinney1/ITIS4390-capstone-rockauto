@@ -1,4 +1,4 @@
-import NavLinks from '@/app/ui_new/nav-links';
+import NavLinks from '../ui_new/nav-links';
 import Link from 'next/link';
 import SearchBar from '../ui_new/search-bar';
 
@@ -10,15 +10,15 @@ export default function NavBar() {
                 <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
                     <img src="/logo.png" className="h-6" alt="RockAuto" />
                 </Link>
-                <div className="items-centerjustify-between bg-red-300 hidden w-full md:flex md:w-auto md:order-2" id="navbar-sticky">
+                <div className="items-center justify-between bg-red-300 hidden w-full md:flex md:w-auto md:order-2" id="navbar-sticky">
                     <SearchBar />
                 </div>
 
                 {/* go to nav-links.tsx */}
                 <div className="flex md:order-3 space-x-3 md:space-x-0 rtl:space-x-reverse">
-                            <div className="flex items-center gap-2 flex-none">
-                                <NavLinks />
-                            </div>
+                    <div className="flex items-center gap-2 flex-none">
+                        <NavLinks />
+                    </div>
                 </div>
 
             </div>
