@@ -1,14 +1,15 @@
 import SideNav from "../ui_new/sidenav";
 import { categories, promos } from "./placeholder-data";
-import ProductCard from "../components/product-card";
+import { ProductCardHome } from "../components/product-card";
 
 export default function Page() {
   return (
     <main className="flex-1 px-10 py-6">
+      <h1>Home Page</h1>
       <SideNav />
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
         {categories.map((c, i) => (
-          <ProductCard key={i} product={c} />
+          <ProductCardHome key={i} product={c} />
         ))}
       </div>
 
