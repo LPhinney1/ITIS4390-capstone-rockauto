@@ -1,34 +1,33 @@
 const categories = [
-  { name: "Brake Pads", price: "$45.99", image: "/placeholder.png" },
-  { name: "Engine Filter", price: "$24.99", image: "/placeholder.png" },
-  { name: "Suspension Kit", price: "$189.99", image: "/placeholder.png" },
-  { name: "Car Battery", price: "$129.99", image: "/placeholder.png" },
-  { name: "Oil Filter", price: "$12.99", image: "/placeholder.png" },
-  { name: "LED Headlight", price: "$89.99", image: "/placeholder.png" },
-  { name: "Tire Set", price: "$399.99", image: "/placeholder.png", outOfStock: true },
-  { name: "Brake Rotors", price: "$79.99", image: "/placeholder.png" },
-  { name: "Air Filter", price: "$19.99", image: "/placeholder.png" },
-  { name: "Spark Plugs", price: "$34.99", image: "/placeholder.png" },
-  { name: "Alternator", price: "$159.99", image: "/placeholder.png" },
-  { name: "Wiper Blades", price: "$29.99", image: "/placeholder.png" },
-  { name: "Coolant", price: "$15.99", image: "/placeholder.png" },
-  { name: "Brake Fluid", price: "$9.99", image: "/placeholder.png" },
+    { name: 'Brake Pads', price: '$45.99', image: '/placeholder.png' },
+    { name: 'Engine Filter', price: '$24.99', image: '/placeholder.png' },
+    { name: 'Suspension Kit', price: '$189.99', image: '/placeholder.png' },
+    { name: 'Car Battery', price: '$129.99', image: '/placeholder.png' },
+    { name: 'Oil Filter', price: '$12.99', image: '/placeholder.png' },
+    { name: 'LED Headlight', price: '$89.99', image: '/placeholder.png' },
+    {
+        name: 'Tire Set',
+        price: '$399.99',
+        image: '/placeholder.png',
+        outOfStock: true,
+    },
+    { name: 'Brake Rotors', price: '$79.99', image: '/placeholder.png' },
+    { name: 'Air Filter', price: '$19.99', image: '/placeholder.png' },
+    { name: 'Spark Plugs', price: '$34.99', image: '/placeholder.png' },
+    { name: 'Alternator', price: '$159.99', image: '/placeholder.png' },
+    { name: 'Wiper Blades', price: '$29.99', image: '/placeholder.png' },
+    { name: 'Coolant', price: '$15.99', image: '/placeholder.png' },
+    { name: 'Brake Fluid', price: '$9.99', image: '/placeholder.png' },
 ];
 
 const promos = [
-  { title: "Free Shipping on Orders Over $50", tag: "FREE SHIPPING" },
-  { title: "Winter Sale – Up to 40% Off", tag: "40% OFF" },
-  { title: "Buy 3 Get 1 Free – Oil Filters", tag: "BUY 3 GET 1" },
-  { title: "Member Exclusive – Extra 10% Off", tag: "10% OFF" },
+    { title: 'Free Shipping on Orders Over $50', tag: 'FREE SHIPPING' },
+    { title: 'Winter Sale – Up to 40% Off', tag: '40% OFF' },
+    { title: 'Buy 3 Get 1 Free – Oil Filters', tag: 'BUY 3 GET 1' },
+    { title: 'Member Exclusive – Extra 10% Off', tag: '10% OFF' },
 ];
 
 export { categories, promos };
-
-
-
-
-
-
 
 // This file contains placeholder data that you'll be replacing with real data in the Data Fetching chapter:
 // // https://nextjs.org/learn/dashboard-app/fetching-data

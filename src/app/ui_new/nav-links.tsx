@@ -1,36 +1,33 @@
 import { ShoppingCart, User, GitCompare, Car } from 'lucide-react';
 
 const links = [
-  { href: '/dashboard/garage', icon: Car },
-  { href: '/dashboard/compare', icon: GitCompare },
-  { href: '/dashboard/cart', icon: ShoppingCart },
-  { href: '/dashboard/profile', icon: User },
+    { href: '/dashboard/garage', icon: Car },
+    { href: '/dashboard/compare', icon: GitCompare },
+    { href: '/dashboard/cart', icon: ShoppingCart },
+    { href: '/dashboard/profile', icon: User },
 ];
-
 
 import Link from 'next/link';
 
 export default function NavLinks() {
-  return (
-    <>
-      {links.map((link) => {
-        const LinkIcon = link.icon;
-        return (
-          <Link
-            key={link.href}
-            href={link.href}
-            aria-label={link.href}
-            className="relative bg-[#5b5fc7] rounded-lg w-9 h-9 flex items-center justify-center hover:bg-[#4a4db5] transition-colors"
-          >
-            <LinkIcon className="w-5 h-5 text-white" />
-          </Link>
-        );
-      })}
-    </>
-  );
+    return (
+        <>
+            {links.map((link) => {
+                const LinkIcon = link.icon;
+                return (
+                    <Link
+                        key={link.href}
+                        href={link.href}
+                        aria-label={link.href}
+                        className="relative flex h-9 w-9 items-center justify-center rounded-lg bg-[#5b5fc7] transition-colors hover:bg-[#4a4db5]"
+                    >
+                        <LinkIcon className="h-5 w-5 text-white" />
+                    </Link>
+                );
+            })}
+        </>
+    );
 }
-
-
 
 // <button
 //   // onClick={onGarageClick}

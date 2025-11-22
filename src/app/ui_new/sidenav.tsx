@@ -1,26 +1,34 @@
-import { Filter, Zap, Droplet, Lightbulb, Wrench, Gauge, Wind } from 'lucide-react';
+import {
+    Filter,
+    Zap,
+    Droplet,
+    Lightbulb,
+    Wrench,
+    Gauge,
+    Wind,
+} from 'lucide-react';
 
 const categories = [
-  { id: 1, name: 'Engine Parts', icon: Wrench },
-  { id: 2, name: 'Electrical', icon: Zap },
-  { id: 3, name: 'Brakes', icon: Gauge },
-  { id: 4, name: 'Fluids & Oils', icon: Droplet },
-  { id: 5, name: 'Lighting', icon: Lightbulb },
-  { id: 6, name: 'Climate Control', icon: Wind },
+    { id: 1, name: 'Engine Parts', icon: Wrench },
+    { id: 2, name: 'Electrical', icon: Zap },
+    { id: 3, name: 'Brakes', icon: Gauge },
+    { id: 4, name: 'Fluids & Oils', icon: Droplet },
+    { id: 5, name: 'Lighting', icon: Lightbulb },
+    { id: 6, name: 'Climate Control', icon: Wind },
 ];
 
 interface CategorySidebarProps {
-  onCategorySelect: (categoryName: string) => void;
-  selectedCategory: string | null;
+    onCategorySelect: (categoryName: string) => void;
+    selectedCategory: string | null;
 }
 
 // Simple left sidebar wrapper used across the app
 export default function SideNav() {
-  return (
-    <div className="bg-red-400 flex-2 max-w-3 h-full flex-col">
-      <p>SideNav</p>
-    </div>
-  );
+    return (
+        <div className="flex-2 h-full max-w-3 flex-col bg-red-400">
+            <p>SideNav</p>
+        </div>
+    );
 }
 
 // The original, more complete CategorySidebar UI is available below if needed.
