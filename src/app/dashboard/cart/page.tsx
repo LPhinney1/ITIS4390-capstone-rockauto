@@ -101,6 +101,7 @@ export default function Page() {
 
 
         {/* No Vehicle Selected Message */}
+            <VehicleCard />
 
 
         {/* Main Content Grid */}
@@ -232,7 +233,6 @@ export default function Page() {
 
           {/* Order Summary - Right Column (1/3) */}
           <div className="lg:col-span-1">
-            <VehicleCard />
             <div className="sticky top-8 space-y-6">
               {/* Order Summary Card */}
               <div className="bg-white rounded-xl border border-gray-200 p-6 shadow-sm">
