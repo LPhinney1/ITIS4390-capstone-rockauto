@@ -10,7 +10,17 @@ First, run the development server:
 npm i && npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to view webpage.
+
+Next, the database:
+
+```bash
+docker compose up -d # create postgresql database
+node database/migration.ts # create tables if not already created
+node database/seed.ts # convert JSON data into postgresql database
+```
+
+NOTE: commands must be run from project root directory in order to read `.env`
 
 ## Additional Info
 
