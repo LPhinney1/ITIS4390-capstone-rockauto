@@ -6,11 +6,11 @@ import SearchBar from '../ui_new/search-bar';
 export default function NavBar() {
     return (
         <nav className="bg-[#3d3e4f] sticky w-full z-20 top-0 start-0 border-b border-default">
-            <div className="max-w-screen-2xl flex flex-wrap items-center justify-between mx-2 p-3">
-                <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
+            <div className=" flex items-center justify-between mx-2 p-3">
+                <Link href="/" className="rtl:space-x-reverse shrink-0">
                     <img src="/logo.png" className="h-6" alt="RockAuto" />
                 </Link>
-                <div className="items-center justify-between bg-red-300 hidden w-full md:flex md:w-auto md:order-2" id="navbar-sticky">
+                <div className="w-3/5 md:flex md:order-2 mx-10" id="navbar-sticky">
                     <SearchBar />
                 </div>
 

@@ -39,7 +39,7 @@ export default function AddToCartButton({ onClick, disabled, productName }: AddT
       aria-pressed={added}
       aria-label={disabled ? 'Out of stock' : added ? 'Added' : 'Add to cart'}
       className={clsx(
-        'w-7 h-7 rounded-full flex items-center justify-center text-white transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 ',
+        'w-7 h-7 rounded-full flex justify-center text-white transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 ',
         disabled
           ? 'bg-gray-400 cursor-not-allowed'
           : added
@@ -51,39 +51,3 @@ export default function AddToCartButton({ onClick, disabled, productName }: AddT
     </button>
   );
 }
-
-
-// // Interactive Add to Cart button
-// export function AddToCartButton({
-//   onClick,
-//   disabled,
-// }: {
-//   onClick?: () => void;
-//   disabled?: boolean;
-// }) {
-//   const [added, setAdded] = useState(false);
-
-//   function handleClick() {
-//     if (disabled) return;
-//     onClick?.();
-//     setAdded(true);
-//     // revert visual state after a short delay
-//     setTimeout(() => setAdded(false), 1200);
-//   }
-
-//   return (
-//     <button
-//       type="button"
-//       onClick={handleClick}
-//       disabled={disabled}
-//       aria-pressed={added}
-//       aria-label={disabled ? 'Out of stock' : added ? 'Added' : 'Add to cart'}
-//       className={clsx(
-//         'w-7 h-7 rounded-full flex items-center justify-center text-white transition-colors',
-//         disabled ? 'bg-gray-400 cursor-not-allowed' : (added ? 'bg-green-500' : 'bg-blue-600 hover:bg-blue-500 active:bg-blue-700')
-//       )}
-//     >
-//       {added ? '✓' : '+'}
-//     </button>
-//   );
-// }

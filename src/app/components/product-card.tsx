@@ -16,25 +16,24 @@ interface ProductCardProps {
 export default function ProductCardUser({ product, onAdd }: ProductCardProps) {
   return (
     <div
-      className={`rounded-xl shadow border bg-blue-200 ${
-        product.outOfStock ? 'opacity-60' : 'hover:shadow-lg transition'
-      }`}
+      className={`rounded-xl shadow border bg-blue-200 ${product.outOfStock ? 'opacity-60' : 'hover:shadow-lg transition'
+        }`}
     >
       <div className="h-28 w-full rounded-t-xl overflow-hidden">
         <img src={product.image} className="w-full h-full object-cover" alt={product.name} />
       </div>
-      <div className="p-3">
+      <div className="p-2">
         <p className="font-medium">{product.name}</p>
         <p className="text-sm text-blue-600">{product.price}</p>
 
         <div className="w-full flex justify-end mt-2">
           {product.outOfStock ? (
-            <div className="px-3 py-1 w-min bg-gray-600 text-white text-xs rounded-md">Out of Stock</div>
+            <div className="px-3 py-1 bg-gray-600 text-white text-xs rounded-md">Out of Stock</div>
           ) : (
             <AddToCartButton />
           )}
         </div>
-      </div>Home
+      </div>
     </div>
   );
 }
@@ -47,9 +46,8 @@ export function ProductCardHome({ product, onAdd }: ProductCardProps) {
 
   return (
     <div
-      className={`bg-white rounded-lg w-[150px] h-[120px] overflow-hidden shadow-sm hover:shadow-lg border border-gray-200 transition-all ${
-        product.outOfStock ? 'opacity-70 cursor-default' : 'cursor-pointer'
-      } group`}
+      className={`bg-white rounded-lg w-[150px] h-[120px] overflow-hidden shadow-sm hover:shadow-lg border border-gray-200 transition-all ${product.outOfStock ? 'opacity-70 cursor-default' : 'cursor-pointer'
+        } group`}
     >
       <div className="relative w-full h-full p-2 flex flex-col">
         {/* Product Image */}

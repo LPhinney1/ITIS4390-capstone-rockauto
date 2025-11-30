@@ -1,5 +1,4 @@
 import '@/app/ui_new/global.css';
-import { inter } from '@/app/ui_new/fonts';
 import NavBar from './components/navbar';
 import type { Metadata } from 'next';
 
@@ -15,7 +14,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} antialiased`}>
+      <body className={`antialiased`}>
         <NavBar />
         {children}
       </body>
