@@ -6,10 +6,7 @@ export default function AdvancedSearchPage() {
         <SideNav />
         <h1 className="text-3xl font-bold mb-6">Advanced Search</h1>
         
-        
-        <p className="text-gray-600">
-            Search filters will go here
-        </p>
+        {/* Search filters input will go here */}
       </main>
     );
   }
