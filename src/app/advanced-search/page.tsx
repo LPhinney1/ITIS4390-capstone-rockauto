@@ -39,6 +39,7 @@ export default function AdvancedSearchPage() {
 
   return (
     <div className="min-h-screen bg-[#FFFFFF] py-10 px-4 flex">
+      {/* Currently not working */}
       <SideNav />
 
       {/* Main content */}
