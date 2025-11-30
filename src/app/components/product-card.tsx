@@ -1,6 +1,5 @@
 import AddToCartButton from "../ui_new/button";
 
-
 type Product = {
   name: string;
   image: string;
@@ -16,8 +15,7 @@ interface ProductCardProps {
 export default function ProductCardUser({ product, onAdd }: ProductCardProps) {
   return (
     <div
-      className={`rounded-xl shadow border bg-blue-200 ${product.outOfStock ? 'opacity-60' : 'hover:shadow-lg transition'
-        }`}
+      className={`rounded-xl shadow border bg-blue-200 ${product.outOfStock ? 'opacity-60' : 'hover:shadow-lg transition' }`}
     >
       <div className="h-28 w-full rounded-t-xl overflow-hidden">
         <img src={product.image} className="w-full h-full object-cover" alt={product.name} />
@@ -30,7 +28,7 @@ export default function ProductCardUser({ product, onAdd }: ProductCardProps) {
           {product.outOfStock ? (
             <div className="px-3 py-1 bg-gray-600 text-white text-xs rounded-md">Out of Stock</div>
           ) : (
-            <AddToCartButton />
+            <AddToCartButton productName={product.name} buttonStyle={'small round'} />
           )}
         </div>
       </div>
@@ -68,7 +66,7 @@ export function ProductCardHome({ product, onAdd }: ProductCardProps) {
 
           {/* Add to Cart Button (client component) */}
           <div className="shrink-0">
-            <AddToCartButton disabled={!!product.outOfStock} productName={product.name} />
+            <AddToCartButton disabled={!!product.outOfStock} productName={product.name} buttonStyle='small round' />
           </div>
         </div>
 

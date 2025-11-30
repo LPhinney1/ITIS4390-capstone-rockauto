@@ -1,4 +1,3 @@
-import SideNav from "../../ui_new/sidenav";
 import { categories, promos } from "../../placeholder-data";
 import ProductCardUser from "@/app/components/product-card";
 
@@ -6,7 +5,6 @@ export default function Page() {
     return (
         <main className="flex-1 px-10 py-6">
             <h1>Profile Page</h1>
-            {/* <SideNav /> */}
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
                 {categories.map((c, i) => (
                     <ProductCardUser key={i} product={c} />
