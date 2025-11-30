@@ -1,5 +1,6 @@
 'use client';
 
+import Link from "next/link";
 import { Search, SlidersHorizontal } from 'lucide-react';
 
 function handleSearch(event: React.FormEvent) {
@@ -8,15 +9,16 @@ function handleSearch(event: React.FormEvent) {
     //HERE: Implement search logic
 }
 
-function onAdvancedSearchClick() {
-    console.log('Advanced search clicked');
+//Not needed with the Next,js Link component
+//function onAdvancedSearchClick() {
+    //console.log('Advanced search clicked');
     //HERE: Add a modal
-}
+//}
 
 export default function SearchBar() {
     return (
         <div className="flex flex-grow justify-center">
-            <form onSubmit={handleSearch} className="flex w-full gap-4">
+            <form onSubmit={handleSearch} noValidate className="flex w-full gap-4">
                 <div className="relative flex-1">
                     <input
                         type="text"
@@ -34,15 +36,26 @@ export default function SearchBar() {
                     </button>
                 </div>
             </form>
-            <button
-                type="button"
-                onClick={onAdvancedSearchClick}
+            <Link
+                href="/advanced-search"
                 className="flex items-center gap-1.5 whitespace-nowrap rounded border border-gray-300 bg-white px-3 py-2 transition-colors hover:bg-gray-100"
                 title="Advanced Search"
             >
                 <SlidersHorizontal className="h-4 w-4 text-gray-600" />
                 <span className="text-sm text-gray-700">Advanced</span>
-            </button>
+            </Link>
         </div>
     );
 }
+
+//Changed Button to a Next.js Link
+//Old Button Below:
+//            <button
+//                type="button"
+//                onClick={onAdvancedSearchClick}
+//                className="flex items-center gap-1.5 whitespace-nowrap rounded border border-gray-300 bg-white px-3 py-2 transition-colors hover:bg-gray-100"
+//                title="Advanced Search"
+//            >
+//                <SlidersHorizontal className="h-4 w-4 text-gray-600" />
+//                <span className="text-sm text-gray-700">Advanced</span>
+//            </button>
