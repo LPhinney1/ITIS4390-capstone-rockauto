@@ -39,9 +39,11 @@ export default function AdvancedSearchPage() {
 
     return (
         <div className="min-h-screen bg-[#FFFFFF] py-10 px-4 flex">
-            {/* Currently not working */}
-            <SideNav />
-
+            {/* CURRENTLY NOT WORKING
+                Note: Dont think we need the side-nav for this page. This could be removed?
+            
+                <SideNav />
+            */}
             {/* Main content */}
             <div className="flex-1 flex justify-center">
                 <div className="w-full max-w-2xl bg-[#FFFFFF] rounded-xl shadow-md overflow-hidden border border-[#D1D5DC]">
