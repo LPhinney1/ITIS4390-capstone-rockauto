@@ -1,12 +1,9 @@
-
 //this is what keeps track of what the customer has in their cart
 
-import { Product } from "@/app/components/product-card";
-import { MyCars } from "@/app/dashboard/garage/page";
-import { Vehicle } from "@/app/components/vehicle-card";
+import { Product } from '@/app/components/product-card';
+import { MyCars } from '@/app/dashboard/garage/page';
+import { Vehicle } from '@/app/components/vehicle-card';
 import { categories } from '@/app/placeholder-data';
-
-
 
 export interface CartItem {
     Product: Product;
@@ -42,7 +39,6 @@ export function clearCart() {
     cartList.length = 0;
 }
 
-
 export default function CartItems() {
     return (
         <div>
@@ -51,5 +47,4 @@ export default function CartItems() {
             <p>First Car in Garage: {MyCars[0]?.name}</p>
         </div>
     );
-
 }
