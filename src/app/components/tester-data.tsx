@@ -1,4 +1,4 @@
-"use client";
+'use client';
 import { addCategoriesToCart } from '@/app/dashboard/cart/cartItems';
 import { useState } from 'react';
 
@@ -17,9 +17,11 @@ export default function TesterData() {
     }
 
     return (
-        <button onClick={handleAdd} className="px-4 py-2 bg-[#6366f1] text-white rounded-lg hover:bg-[#4f46e5] transition-colors">
+        <button
+            onClick={handleAdd}
+            className="rounded-lg bg-[#6366f1] px-4 py-2 text-white transition-colors hover:bg-[#4f46e5]"
+        >
             {added ? 'Test Items Added' : 'Add Tester Data'}
         </button>
     );
-
 }

@@ -5,9 +5,9 @@ const client = new Client({
 });
 
 client.connect().catch((err) => {
-  console.error("Error connecting to Postgres:", err);
+    console.error('Error connecting to Postgres:', err);
 });
 
 export async function db() {
-  return client;
+    return client;
 }

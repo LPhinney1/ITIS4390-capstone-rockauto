@@ -1,63 +1,35 @@
 'use client';
 
-import Link from "next/link";
-import { Search, SlidersHorizontal } from 'lucide-react';
-
-function handleSearch(event: React.FormEvent) {
-    event.preventDefault();
-    console.log('Search submitted');
-    //HERE: Implement search logic
-}
-
-//Not needed with the Next,js Link component
-//function onAdvancedSearchClick() {
-    //console.log('Advanced search clicked');
-    //HERE: Add a modal
-//}
+import { useState } from 'react';
+import { useRouter } from 'next/navigation';
 
 export default function SearchBar() {
+    const [query, setQuery] = useState('');
+    const router = useRouter();
+
+    function handleSubmit(event: React.FormEvent) {
+        event.preventDefault();
+        if (!query) return;
+
+        // Navigate to home with query param
+        router.push(`/?search=${encodeURIComponent(query)}`);
+    }
+
     return (
-        <div className="flex-grow flex justify-center gap-2">
-            <form
-                onSubmit={handleSearch}
-                className="w-full flex gap-4">
-                <div className="relative flex-1">
-                    <input
-                        type="text"
-                        // value={searchQuery}
-                        // onChange={(e) => setSearchQuery(e.target.value)}
-                        placeholder="Search for parts by name, model, or part number..."
-                        className="w-full rounded border border-gray-300 bg-white px-3 py-2 pr-10 focus:outline-none focus:ring-2 focus:ring-[#5b5fc7]"
-                    />
-                    <button
-                        type="submit"
-                        className="absolute right-1 top-1/2 -translate-y-1/2 rounded p-1.5 transition-colors hover:bg-gray-100"
-                        aria-label="Search"
-                    >
-                        <Search className="h-4 w-4 text-gray-600" />
-                    </button>
-                </div>
-            </form>
-            <Link
-                href="/advanced-search"
-                className="flex items-center gap-1.5 whitespace-nowrap rounded border border-gray-300 bg-white px-3 py-2 transition-colors hover:bg-gray-100"
-                title="Advanced Search"
+        <form onSubmit={handleSubmit} className="flex flex-1 gap-2">
+            <input
+                type="text"
+                value={query}
+                onChange={(e) => setQuery(e.target.value)}
+                placeholder="Search for parts by name or model.."
+                className="w-full rounded border border-gray-300 bg-white px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#5b5fc7]"
+            />
+            <button
+                type="submit"
+                className="rounded bg-[#5b5fc7] px-3 py-2 text-white hover:bg-[#4e50b0]"
             >
-                <SlidersHorizontal className="h-4 w-4 text-gray-600" />
-                <span className="text-sm text-gray-700">Advanced</span>
-            </Link>
-        </div>
+                Search
+            </button>
+        </form>
     );
 }
-
-//Changed Button to a Next.js Link
-//Old Button Below:
-//            <button
-//                type="button"
-//                onClick={onAdvancedSearchClick}
-//                className="flex items-center gap-1.5 whitespace-nowrap rounded border border-gray-300 bg-white px-3 py-2 transition-colors hover:bg-gray-100"
-//                title="Advanced Search"
-//            >
-//                <SlidersHorizontal className="h-4 w-4 text-gray-600" />
-//                <span className="text-sm text-gray-700">Advanced</span>
-//            </button>

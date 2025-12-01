@@ -8,14 +8,14 @@ input[type='number'] {
 }
 
 input[type='number']::-webkit-inner-spin-button {
-  -webkit-appearance: none;
+    -webkit-appearance: none;
 }
 html {
-  font-size: calc(100% - 1pt);
+    font-size: calc(100% - 1pt);
 }
 
 input[type='number']::-webkit-inner-spin-button {
-  margin: 0;
+    margin: 0;
 }
 
 input[type='number']::-webkit-outer-spin-button {

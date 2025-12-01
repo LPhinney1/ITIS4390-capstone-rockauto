@@ -24,3 +24,10 @@
 | GET part by ID           | [http://localhost:3000/api/parts/1](http://localhost:3000/api/parts/1)                           |
 | Search parts             | [http://localhost:3000/api/parts/search?q=brake](http://localhost:3000/api/parts/search?q=brake) |
 | GET parts by category ID | [http://localhost:3000/api/parts/categories/1](http://localhost:3000/api/parts/categories/1)     |
+
+## Search
+
+| Route                | Example URL                                                                                |
+| -------------------- | ------------------------------------------------------------------------------------------ |
+| Search by make/model | [http://localhost:3000/?search=Honda%20Civic](http://localhost:3000/?search=Honda%20Civic) |
+| Search by part name  | [http://localhost:3000/?search=Brake%20Pads](http://localhost:3000/?search=Brake%20Pads)   |
