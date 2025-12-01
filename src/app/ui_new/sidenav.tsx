@@ -1,46 +1,42 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Filter, Zap, Droplet, Lightbulb, Wrench, Gauge, Wind } from "lucide-react";
 
-const categories = [
-  { id: 1, name: "Engine Parts", icon: Wrench },
-  { id: 2, name: "Electrical", icon: Zap },
-  { id: 3, name: "Brakes", icon: Gauge },
-  { id: 4, name: "Fluids & Oils", icon: Droplet },
-  { id: 5, name: "Lighting", icon: Lightbulb },
-  { id: 6, name: "Climate Control", icon: Wind },
-];
-
 interface CategorySidebarProps {
-  onCategorySelect?: (categoryName: string | null) => void;
-  selectedCategory?: string | null;
+  categories: { id: number; name: string }[];
+  selectedCategory: number | null;
+  onCategorySelect: (id: number | null) => void;
 }
 
-export default function CategorySidebar({ onCategorySelect, selectedCategory: selectedProp }: CategorySidebarProps) {
-  const [selectedCategory, setSelectedCategory] = useState<string | null>(selectedProp ?? null);
+const iconById: Record<number, React.ElementType> = {
+  1: Wrench,
+  2: Droplet,
+  3: Wind,
+  4: Zap,
+  5: Gauge,
+};
 
-  // keep internal state in sync if parent controls the selected category
-  useEffect(() => {
-    if (selectedProp !== undefined) setSelectedCategory(selectedProp ?? null);
-  }, [selectedProp]);
+function getIcon(id: number) {
+  return iconById[id] ?? Filter;
+}
 
-  function handleCategorySelect(categoryName: string) {
-    const next = selectedCategory === categoryName ? null : categoryName;
-    setSelectedCategory(next);
-    onCategorySelect?.(next);
-  }
+export default function CategorySidebar({
+  categories,
+  selectedCategory,
+  onCategorySelect,
+}: CategorySidebarProps) {
 
   return (
     <aside className="w-[60px] bg-white border-r border-gray-200 py-4 pr-5">
       <div className="flex flex-col gap-y-4">
         {categories.map((category) => {
-          const Icon = category.icon;
-          const isSelected = (selectedCategory ?? null) === category.name;
+          const Icon = getIcon(category.id);
+          const isSelected = selectedCategory === category.id;
 
           return (
             <button
               key={category.id}
-              onClick={() => handleCategorySelect(category.name)}
+              onClick={() => onCategorySelect(isSelected ? null : category.id)}
               className={`bg-white rounded-lg w-12 h-12 border-2 shadow-sm flex items-center justify-center transition-all ${
                 isSelected
                   ? "border-[#6366f1] bg-[#6366f1] text-white"

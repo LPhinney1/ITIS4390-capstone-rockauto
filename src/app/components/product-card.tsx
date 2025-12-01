@@ -44,7 +44,7 @@ export function ProductCardHome({ product, onAdd }: ProductCardProps) {
 
   return (
     <div
-      className={`bg-white rounded-lg w-[150px] h-[120px] overflow-hidden shadow-sm hover:shadow-lg border border-gray-200 transition-all ${product.outOfStock ? 'opacity-70 cursor-default' : 'cursor-pointer'
+      className={`bg-white rounded-lg w-[300px] h-[240px] overflow-hidden shadow-sm hover:shadow-lg border border-gray-200 transition-all ${product.outOfStock ? 'opacity-70 cursor-default' : 'cursor-pointer'
         } group`}
     >
       <div className="relative w-full h-full p-2 flex flex-col">
