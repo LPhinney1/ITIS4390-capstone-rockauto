@@ -16,7 +16,7 @@ function onAdvancedSearchClick() {
 
 export default function SearchBar() {
     return (
-        <div className="flex-grow flex justify-center">
+        <div className="flex-grow flex justify-center gap-2">
             <form
                 onSubmit={handleSearch}
                 className="w-full flex gap-4">
