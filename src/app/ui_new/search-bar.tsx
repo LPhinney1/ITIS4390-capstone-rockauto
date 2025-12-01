@@ -17,8 +17,10 @@ function handleSearch(event: React.FormEvent) {
 
 export default function SearchBar() {
     return (
-        <div className="flex flex-grow justify-center">
-            <form onSubmit={handleSearch} noValidate className="flex w-full gap-4">
+        <div className="flex-grow flex justify-center gap-2">
+            <form
+                onSubmit={handleSearch}
+                className="w-full flex gap-4">
                 <div className="relative flex-1">
                     <input
                         type="text"

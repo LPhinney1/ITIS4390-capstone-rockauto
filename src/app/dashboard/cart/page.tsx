@@ -1,23 +1,17 @@
 import VehicleCard from '@/app/components/vehicle-card';
-import { X, Lock, Car, ShoppingBag, ArrowLeft, Truck, Shield, Tag, AlertCircle } from 'lucide-react';
-import { categories } from '@/app/placeholder-data';
-import { ContinueShoppingButton } from '@/app/ui_new/button';
-
-
-// export interface CartItem {
-//   product: Product;
-//   quantity: number;
-// }
+import { X, Lock, Car, ShoppingBag, ArrowLeft, Truck, Shield, Tag, AlertCircle, Link as LinkIcon } from 'lucide-react';
+import { ProductCardCart } from '@/app/components/product-card';
+import { cartList } from '../../dashboard/cart/cartItems';
+import TesterData from '@/app/components/tester-data';
 
 export default function Page() {
   const promoApplied = false;
-  const cartItems = categories; //replace with list of cart items
+  const cartItems = cartList; //replace with list of cart items
   const subtotal = 250.00;
   const quantity = 1;
 
 
   // Calculations
-  // const cartItems: CartItem[] = []; // Placeholder for cart items
   // const subtotal = cartItems.reduce((sum, item) => sum + (item.price * item.quantity), 0);
   const freeShippingThreshold = 50;
   const shipping = subtotal >= freeShippingThreshold ? 0 : 9.99;
@@ -26,15 +20,12 @@ export default function Page() {
   const total = subtotal - promoDiscount + shipping + estimatedTax;
 
 
-
-
   // Empty cart state
-  if (cartItems.length === 0) {
+  if (cartItems.length == 0 || cartItems == null) {
     return (
-      <div className="flex-1 bg-white">
+      <div className="flex-1">
+        <TesterData />
         <div className="max-w-[1400px] mx-auto px-8 py-12">
-          {/* HERE: Use Back Button */}
-          <ContinueShoppingButton />
           {/* Empty State */}
           <div className="flex flex-col items-center justify-center py-20">
             <div className="w-24 h-24 bg-gray-100 rounded-full flex items-center justify-center mb-6">
@@ -79,17 +70,9 @@ export default function Page() {
   }
 
   return (
-    <div className="mx-32 flex-1 bg-[#f5f5f7]">
-      <div className="max-w-[1400px] mx-auto px-8 py-8">
-        {/* Back Button */}
-        <button
-          // onClick={onContinueShopping}
-          className="flex items-center gap-2 text-gray-600 hover:text-gray-900 transition-colors mb-6"
-        >
-          <ArrowLeft className="w-5 h-5" />
-          <span>Continue Shopping</span>
-        </button>
-
+    <div className="flex-1">
+      <div className="max-w-[1400px] items-center">
+        
         {/* Header */}
         <div className="mb-6">
           <h1 className="text-[40px] text-gray-900 mb-2">Shopping Cart</h1>
@@ -97,113 +80,18 @@ export default function Page() {
             {cartItems.length} {cartItems.length === 1 ? 'item' : 'items'} in your cart
           </p>
         </div>
-
-
-
-        {/* No Vehicle Selected Message */}
-            <VehicleCard />
-
-
         {/* Main Content Grid */}
+            <VehicleCard />
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Cart Items - Left Column (2/3) */}
           <div className="lg:col-span-2 space-y-4">
             {cartItems.map((item) => (
-              <div
-                key={item.id}
-                className="bg-white rounded-xl border border-gray-200 p-6 hover:shadow-lg transition-all group"
-              >
-                <div className="flex gap-6">
-                  {/* Product Image */}
-                  <div className="w-32 h-32 bg-gray-100 rounded-lg overflow-hidden shrink-0 border border-gray-200">
-                    <img
-                      src={item.image}
-                      alt={item.name}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform"
-                    />
-                  </div>
-
-                  {/* Product Details */}
-                  <div className="flex-1 flex flex-col">
-                    {/* Header Row */}
-                    <div className="flex justify-between items-start mb-3">
-                      <div className="flex-1">
-                        <h3 className="text-[22px] text-gray-900 mb-1 group-hover:text-[#6366f1] transition-colors">
-                          {item.name}
-                        </h3>
-                        <p className="text-sm text-gray-600 mb-1">
-                          Part #: {String(item.id).padStart(6, '0')}
-                        </p>
-                        <p className="text-sm text-gray-500">
-                          Category: {item.category}
-                        </p>
-                      </div>
-
-                      {/* Remove Button */}
-                      <button
-                        // onClick={() => onRemoveItem(item.id)}
-                        className="p-2 text-gray-400 hover:text-red-600 hover:bg-red-50 rounded-lg transition-all"
-                        aria-label="Remove item"
-                      >
-                        <X className="w-5 h-5" />
-                      </button>
-                    </div>
-
-                    {/* Stock Status */}
-                    <div className="mb-4">
-                      {item.outOfStock ? (
-                        <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs bg-red-100 text-red-800 border border-red-200">
-                          <AlertCircle className="w-3 h-3" />
-                          Out of Stock
-                        </span>
-                      ) : (
-                        <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs bg-green-100 text-green-800 border border-green-200">
-                          <div className="w-1.5 h-1.5 bg-green-600 rounded-full"></div>
-                          In Stock
-                        </span>
-                      )}
-                    </div>
-
-                    {/* Bottom Row - Quantity and Price */}
-                    <div className="flex justify-between items-center mt-auto">
-                      {/* Quantity Selector */}
-                      <div className="flex items-center gap-3">
-                        <span className="text-sm text-gray-600">Quantity:</span>
-                        <div className="flex items-center border border-gray-300 rounded-lg overflow-hidden">
-                          <button
-                            // onClick={() => onUpdateQuantity(item.id, Math.max(1, item.quantity - 1))}
-                            className="w-10 h-10 flex items-center justify-center hover:bg-gray-100 transition-colors text-gray-600"
-                            disabled={quantity <= 1}
-                          >
-                            -
-                          </button>
-                          <div className="w-12 h-10 flex items-center justify-center border-x border-gray-300">
-                            <span className="text-gray-900">{quantity}</span>
-                          </div>
-                          <button
-                            // onClick={() => onUpdateQuantity(item.id, item.quantity + 1)}
-                            className="w-10 h-10 flex items-center justify-center hover:bg-gray-100 transition-colors text-gray-600"
-                          >
-                            +
-                          </button>
-                        </div>
-                      </div>
-
-                      {/* Price */}
-                      <div className="text-right">
-                        <p className="text-[24px] text-[#6366f1]">
-                          ${(item.price * quantity).toFixed(2)}
-                        </p>
-                        {quantity > 1 && (
-                          <p className="text-xs text-gray-500">
-                            ${item.price.toFixed(2)} each
-                          </p>
-                        )}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <ProductCardCart
+                key={item.Product.id}
+                product={item.Product}
+                quantity={quantity}
+                // Handlers can be wired to app state or client components later
+              />
             ))}
 
 
@@ -355,6 +243,8 @@ export default function Page() {
             </div>
           </div>
         </div>
+
+        
       </div>
     </div>
   );

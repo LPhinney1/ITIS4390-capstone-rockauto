@@ -1,7 +1,6 @@
 "use client";
 import clsx from 'clsx';
 import React, { useState } from 'react';
-import { ArrowLeft } from 'lucide-react';
 
 interface AddToCartButtonProps {
   onClick?: () => void;
@@ -19,8 +18,7 @@ export function ContinueShoppingButton() {
       onClick={() => (window.location.href = '/home')}
       className="flex items-center gap-2 text-gray-600 hover:text-gray-900 transition-colors mb-6"
     >
-       <ArrowLeft className="w-5 h-5" />
-    <span>Continue Shopping</span>
+    <span>← Back to Shopping</span>
     </button>
   );
 }
