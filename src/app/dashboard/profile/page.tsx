@@ -1,5 +1,6 @@
 import { categories, promos } from "../../placeholder-data";
 import ProductCardUser from "@/app/components/product-card";
+import { MyCars } from "@/app/dashboard/garage/page";
 
 export default function Page() {
     return (
@@ -11,23 +12,16 @@ export default function Page() {
                 ))}
             </div>
 
-            {/* PROMOTIONS */}
-            <div className="mt-10 flex flex-col gap-4">
-                {promos.map((p, i) => (
-                    <div
-                        key={i}
-                        className="flex justify-between bg-white p-5 rounded-xl shadow border"
-                    >
-                        <div>
-                            <p className="font-semibold">{p.title}</p>
-                            <p className="text-sm text-gray-500">Special offer available now</p>
-                        </div>
-                        <div className="bg-blue-500 text-white px-4 py-2 rounded-md text-sm h-fit">
-                            {p.tag}
-                        </div>
-                    </div>
-                ))}
-            </div>
+            <div className="mt-12 p-6 bg-[#eef2ff] rounded-lg border border-[#c7d2fe]">
+          <h3 className="text-[20px] text-[#4338ca] mb-2">
+            Personalized for Your Vehicles
+          </h3>
+          <p className="text-[#4338ca]">
+            {MyCars.length > 0
+              ? `These parts are recommended based on your ${MyCars.length} vehicle${MyCars.length !== 1 ? 's' : ''} in the garage. Browse by category for more options.`
+              : 'Add vehicles to your garage to see personalized recommendations tailored to your specific makes and models.'}
+          </p>
+        </div>
         </main>
     );
 }

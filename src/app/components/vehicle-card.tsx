@@ -1,5 +1,5 @@
 import { AlertCircle, Car, ChevronDown } from "lucide-react";
-
+import { CartItem } from "../dashboard/cart/cartItems";
 export interface Vehicle {
     id: number;
     year: string;
@@ -8,7 +8,10 @@ export interface Vehicle {
     engine: string;
     nickname?: string;
     isDefault?: boolean;
+    name?: string; // default will be `${year} ${make} ${year}`
+    cartList?: CartItem[]; // list of product IDs associated with this vehicle
 }
+
 
 
 // HERE: fix switch vehicle functionality
@@ -22,6 +25,7 @@ export default function VehicleCard() {
         engine: "2.0L I4",
         nickname: "My Civic",
         isDefault: true,
+        name: "2020 Honda Civic",
     };
 
     const vehicles: Vehicle[] = [
