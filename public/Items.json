@@ -1,0 +1,39 @@
+{   
+    "items" : [
+        {
+    "id": 1,
+    "title": "Premium Brake Kits",
+    "description": "Up to 30% off",
+    "image": "https://images.unsplash.com/photo-1750019487267-47568f388dfa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+    "bgColor": "#e8f4f8"
+        },
+        {
+    "id": 2,
+    "title": "Engine Components",
+    "description": "Performance Upgrades",
+    "image": "https://images.unsplash.com/photo-1758381358962-efc41be53986?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+    "bgColor": "#f8e8e8"
+        },
+        {
+    "id": 3,
+    "title": "Suspension Systems",
+    "description": "Smooth Ride Guaranteed",
+    "image": "https://images.unsplash.com/photo-1669136048337-5daa3adef7b2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+    "bgColor": "#e8f8e8"
+        },
+        {
+    "id": 4,
+    "title": "Premium Batteries",
+    "description": "Long-lasting Power",
+    "image": "https://images.unsplash.com/photo-1597766325363-f5576d851d6a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+    "bgColor": "#f8f8e8"
+        },
+        {
+    "id": 5,
+    "title": "Oil Filters & More",
+    "description": "Quality Maintenance",
+    "image": "https://images.unsplash.com/photo-1657644049321-4c3aa2e8aba7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+    "bgColor": "#f0e8f8"
+        }
+    ]
+}

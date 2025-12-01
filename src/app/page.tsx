@@ -1,3 +1,41 @@
+import { categories, promos } from "./placeholder-data";
+import { ProductCardHome } from "./components/product-card";
+import CategorySidebar from "./ui_new/sidenav";
+
+
 export default function Page() {
-    return <p>Default - use http://localhost:3000/home</p>;
+  return (
+    <main className="mx-5 flex flex-1">
+      <CategorySidebar />
+
+      <div className="m-5 w-full">
+        {/* CAROUSEL
+        <FeaturedCarousel /> */}
+
+        {/* GRID */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+          {categories.map((c, i) => (
+            <ProductCardHome key={i} product={c} />
+          ))}
+        </div>
+        {/* PROMOTIONS */}
+        <div className="mt-10 flex flex-col gap-4">
+          {promos.map((p, i) => (
+            <div
+              key={i}
+              className="flex justify-between bg-white p-5 rounded-xl shadow border"
+            >
+              <div>
+                <p className="font-semibold">{p.title}</p>
+                <p className="text-sm text-gray-500">Special offer available now</p>
+              </div>
+              <div className="bg-blue-500 text-white px-4 py-2 rounded-md text-sm h-fit">
+                {p.tag}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </main>
+  );
 }
