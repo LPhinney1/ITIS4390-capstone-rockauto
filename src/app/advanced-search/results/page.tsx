@@ -99,7 +99,7 @@ export default async function SearchResultsPage({
 
                                 {/* View Part button sticks to bottom */}
                                 <a
-                                    href={`http://localhost:3000/api/parts/${item.id}`}
+                                    href={`http://localhost:3000/product/${item.id}`}
                                     className="mt-auto inline-block rounded-md bg-[#6366F1] px-4 py-2 text-sm text-white hover:bg-[#5257d8]"
                                 >
                                     View Part
