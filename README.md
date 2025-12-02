@@ -20,7 +20,6 @@ npm i && npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to view webpage.
 
-
 ## Additional Info
 
 To automatically check for errors (ESLint):
