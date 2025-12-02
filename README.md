@@ -4,23 +4,21 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
-First, run the development server:
+First, spin up the database and fill it with data:
+
+```bash
+docker compose up -d # create postgresql database
+npm run migrate # create tables if not already created
+npm run seed # convert JSON data into postgresql database
+```
+
+Next, run the development server:
 
 ```bash
 npm i && npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to view webpage.
-
-Next, the database:
-
-```bash
-docker compose up -d # create postgresql database
-node database/migration.ts # create tables if not already created
-node database/seed.ts # convert JSON data into postgresql database
-```
-
-NOTE: commands must be run from project root directory in order to read `.env`
 
 ## Additional Info
 

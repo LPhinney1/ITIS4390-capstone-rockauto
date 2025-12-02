@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { useSearchParams } from 'next/navigation'; // For reading ?search=...
+import { useSearchParams } from 'next/navigation';
 import { promos } from './placeholder-data';
 import { ProductCardHome } from './components/product-card';
 import CategorySidebar from './ui_new/sidenav';
@@ -81,7 +81,7 @@ export default function Page() {
                     {loading && <p className="text-gray-500">Loading parts…</p>}
 
                     {!loading && (
-                        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+                        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
                             {parts.map((part) => (
                                 <ProductCardHome
                                     key={part.id}
