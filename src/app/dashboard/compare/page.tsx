@@ -35,7 +35,7 @@ export default async function ComparePage({
                             &quot;Compare&quot; button on any product.
                         </p>
                         <a
-                            href="/dashboard/profile"
+                            href="/"
                             className="rounded-lg bg-[#6366f1] px-8 py-4 text-white transition-colors hover:bg-[#4f46e5]"
                         >
                             Browse Products

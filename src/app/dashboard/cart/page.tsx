@@ -48,12 +48,13 @@ export default function Page() {
                             yet. Start shopping to find the perfect parts for
                             your vehicle.
                         </p>
-                        <button
+                        <a
                             // onClick={onContinueShopping}
+                            href="/"
                             className="rounded-lg bg-[#6366f1] px-8 py-4 text-white transition-colors hover:bg-[#4f46e5]"
                         >
                             Browse Products
-                        </button>
+                        </a>
 
                         {/* Trust Badges */}
                         <div className="mt-16 grid max-w-2xl grid-cols-3 gap-8">
