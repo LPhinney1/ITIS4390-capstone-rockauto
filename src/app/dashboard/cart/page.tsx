@@ -11,15 +11,68 @@ import {
     AlertCircle,
     Link as LinkIcon,
 } from 'lucide-react';
-import { ProductCardCart } from '@/app/components/product-card';
-import { cartList } from '../../dashboard/cart/cartItems';
+import { ProductCardCart, Product } from '@/app/components/product-card';
+import { cartList, addToCart, CartItem } from '../../dashboard/cart/cartItems';
 import TesterData from '@/app/components/tester-data';
 
-export default function Page() {
+interface CartPageProps {
+    searchParams?: {
+        productId?: string;
+    };
+}
+
+interface Part {
+    id: number;
+    vehicle_id: number;
+    category_id: number;
+    product_name: string;
+    product_description: string | null;
+    price: number | string | null;
+    product_image_url: string | null;
+}
+
+async function fetchPart(id: string): Promise<Part> {
+    const res = await fetch(`http://localhost:3000/api/parts/${id}`, {
+        cache: 'no-store',
+    });
+    if (!res.ok) {
+        throw new Error('Failed to fetch part data');
+    }
+    return res.json();
+}
+
+export default async function Page({ searchParams }: CartPageProps) {
     const promoApplied = false;
+
+    if (searchParams?.productId) {
+        try {
+            const part = await fetchPart(searchParams.productId);
+    
+            const adaptedProduct = {
+                ...(part as any),
+                id: part.id,
+                name: part.product_name,
+                product_name: part.product_name,
+                imageUrl: part.product_image_url ?? '/placeholder.png',
+                image: part.product_image_url ?? '/placeholder.png',
+                product_image_url: part.product_image_url ?? '/placeholder.png',
+            };
+    
+            addToCart(adaptedProduct as Product, 1);
+        } catch (error) {
+            console.error('Failed to add product to cart:', error);
+        }
+    }
+    
+
     const cartItems = cartList; //replace with list of cart items
-    const subtotal = 250.0;
-    const quantity = 1;
+
+    const subtotal = cartItems.reduce((sum, item) => {
+        const price = (item.Product as any).price;
+        const numericPrice =
+            typeof price === 'string' ? parseFloat(price) : price ?? 0;
+        return sum + numericPrice * item.quantity;
+    }, 0);
 
     // Calculations
     // const subtotal = cartItems.reduce((sum, item) => sum + (item.price * item.quantity), 0);
@@ -111,7 +164,7 @@ export default function Page() {
                             <ProductCardCart
                                 key={item.Product.id}
                                 product={item.Product}
-                                quantity={quantity}
+                                quantity={item.quantity}
                                 // Handlers can be wired to app state or client components later
                             />
                         ))}
@@ -216,7 +269,7 @@ export default function Page() {
                                             )
                                         </span>
                                         {/* <span>${subtotal.toFixed(2)}</span> */}{' '}
-                                        <span>$250.00</span>
+                                        <span>${subtotal.toFixed(2)}</span>
                                     </div>
 
                                     {/* {promoApplied && (
