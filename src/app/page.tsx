@@ -6,6 +6,7 @@ import { useSearchParams } from 'next/navigation';
 import { promos } from './placeholder-data';
 import { ProductCardHome } from './components/product-card';
 import CategorySidebar from './ui_new/sidenav';
+import Link from 'next/link';
 
 type Category = { id: number; name: string };
 type Part = {
@@ -36,7 +37,7 @@ function Content({ searchQuery }: { searchQuery: string }) {
     );
     const [categories, setCategories] = useState<Category[]>([]);
     const [parts, setParts] = useState<Part[]>([]);
-    const [loading, setLoading] = useState(false);
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         async function loadCategories() {
@@ -76,6 +77,40 @@ function Content({ searchQuery }: { searchQuery: string }) {
         setLoading(false);
     }
 
+    //When clicking a product card, remember where the user was on the page (for use when user clicks back button on individual product page)
+    const handleProductClick = () => {
+        if (typeof window === 'undefined') return;
+
+        //Include query string so scroll is per-search
+        sessionStorage.setItem(
+            'homePath',
+            window.location.pathname + window.location.search,
+        );
+        sessionStorage.setItem('homeScrollY', String(window.scrollY));
+    };
+
+    //Restore scroll if it is saved after user clicks back button on individual product page
+    useEffect(() => {
+        if (typeof window === 'undefined') return;
+        if (loading) return;
+
+        const savedPath = sessionStorage.getItem('homePath');
+        const savedY = sessionStorage.getItem('homeScrollY');
+
+        if (
+            savedPath &&
+            savedPath === window.location.pathname + window.location.search &&
+            savedY
+        ) {
+            const y = parseFloat(savedY);
+            window.scrollTo(0, y);
+
+            //Clear so future visits start fresh
+            sessionStorage.removeItem('homePath');
+            sessionStorage.removeItem('homeScrollY');
+        }
+    }, [loading]);
+
     return (
         <>
             <main className="mx-5 flex flex-1">
@@ -91,14 +126,20 @@ function Content({ searchQuery }: { searchQuery: string }) {
                     {!loading && (
                         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
                             {parts.map((part) => (
+                                <Link
+                                key={part.id}
+                                href={`/product/${part.id}`}
+                                className="block"
+                                onClick={handleProductClick}
+                            >
                                 <ProductCardHome
-                                    key={part.id}
                                     product={{
                                         name: part.product_name,
                                         price: part.price,
                                         image: '/placeholder.png',
                                     }}
                                 />
+                            </Link>
                             ))}
                         </div>
                     )}
