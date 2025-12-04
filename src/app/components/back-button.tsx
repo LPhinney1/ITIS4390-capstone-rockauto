@@ -26,7 +26,7 @@ export default function BackButton() {
                 className="h-12 w-12"
                 fill="none"
                 stroke="currentColor"
-                strokeWidth={2}
+                strokeWidth={3}
                 strokeLinecap="round"
                 strokeLinejoin="round"
             >

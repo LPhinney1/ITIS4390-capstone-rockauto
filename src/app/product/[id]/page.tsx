@@ -59,17 +59,12 @@ export default async function ProductPage({ params }: PageProps) {
                     {/* Product Card */}
                     <div className="rounded-3xl bg-white p-4 shadow-md">
                         <div className="overflow-hidden rounded-2xl bg-gray-100">
-                            {part.product_image_url ? (
-                                <img
-                                    src={part.product_image_url}
-                                    alt={part.product_name}
-                                    className="h-72 w-full object-cover"
-                                />
-                            ) : (
-                                <div className="flex h-72 items-center justify-center text-sm text-gray-400">
-                                    No image available
-                                </div>
-                            )}
+                            {/* ALWAYS show placeholder */}
+                            <img
+                                src="/placeholder.png"
+                                alt={part.product_name}
+                                className="h-72 w-full object-cover"
+                            />
                         </div>
 
                         <div className="mt-4 space-y-1">
@@ -82,7 +77,7 @@ export default async function ProductPage({ params }: PageProps) {
                         </div>
                     </div>
 
-                    {/* Product Description + 'Compare' and 'Add to Cart' Buttons */}
+                    {/* Product Description + Buttons */}
                     <div className="flex flex-col justify-between">
                         <div>
                             <h2 className="text-xl font-semibold text-gray-900">
@@ -98,11 +93,11 @@ export default async function ProductPage({ params }: PageProps) {
                             <button className="h-12 rounded-full bg-gray-900 px-10 text-sm font-semibold tracking-wide text-white shadow hover:bg-black">
                                 COMPARE
                             </button>
+
                             <button className="flex h-12 items-center gap-2 rounded-full bg-indigo-500 px-10 text-sm font-semibold tracking-wide text-white shadow hover:bg-indigo-600">
                                 <ShoppingCart className="h-5 w-5" strokeWidth={2} />
                                 <span>ADD TO CART</span>
                             </button>
-
                         </div>
                     </div>
                 </div>
@@ -121,17 +116,12 @@ export default async function ProductPage({ params }: PageProps) {
                                 >
                                     <Link href={`/product/${similar.id}`}>
                                         <div className="h-24 w-full overflow-hidden rounded-2xl bg-gray-100">
-                                            {similar.product_image_url ? (
-                                                <img
-                                                    src={similar.product_image_url}
-                                                    alt={similar.product_name}
-                                                    className="h-full w-full object-cover"
-                                                />
-                                            ) : (
-                                                <div className="flex h-full items-center justify-center text-[11px] text-gray-400">
-                                                    Image
-                                                </div>
-                                            )}
+                                            {/* ALWAYS show placeholder */}
+                                            <img
+                                                src="/placeholder.png"
+                                                alt={similar.product_name}
+                                                className="h-full w-full object-cover"
+                                            />
                                         </div>
 
                                         <div className="mt-3 space-y-1">
