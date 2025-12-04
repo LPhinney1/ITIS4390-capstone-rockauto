@@ -59,7 +59,6 @@ export default async function ProductPage({ params }: PageProps) {
                     {/* Product Card */}
                     <div className="rounded-3xl bg-white p-4 shadow-md">
                         <div className="overflow-hidden rounded-2xl bg-gray-100">
-                            {/* ALWAYS show placeholder */}
                             <img
                                 src="/placeholder.png"
                                 alt={part.product_name}
@@ -94,10 +93,13 @@ export default async function ProductPage({ params }: PageProps) {
                                 COMPARE
                             </button>
 
-                            <button className="flex h-12 items-center gap-2 rounded-full bg-indigo-500 px-10 text-sm font-semibold tracking-wide text-white shadow hover:bg-indigo-600">
+                            <Link
+                                href={`/dashboard/cart?productId=${part.id}`}
+                                className="flex h-12 items-center gap-2 rounded-full bg-indigo-500 px-10 text-sm font-semibold tracking-wide text-white shadow hover:bg-indigo-600"
+                            >
                                 <ShoppingCart className="h-5 w-5" strokeWidth={2} />
                                 <span>ADD TO CART</span>
-                            </button>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -116,7 +118,6 @@ export default async function ProductPage({ params }: PageProps) {
                                 >
                                     <Link href={`/product/${similar.id}`}>
                                         <div className="h-24 w-full overflow-hidden rounded-2xl bg-gray-100">
-                                            {/* ALWAYS show placeholder */}
                                             <img
                                                 src="/placeholder.png"
                                                 alt={similar.product_name}
