@@ -113,7 +113,7 @@ function Content({ searchQuery }: { searchQuery: string }) {
 
     return (
         <>
-            <main className="mx-5 flex flex-1">
+            <main className="flex flex-1">
                 <CategorySidebar
                     selectedCategory={selectedCategory}
                     onCategorySelect={setSelectedCategory}
