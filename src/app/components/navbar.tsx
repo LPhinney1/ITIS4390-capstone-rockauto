@@ -21,7 +21,7 @@ export default function NavBar({ onSearch }: NavBarProps) {
                     className="mx-10 flex w-3/5 gap-2 md:order-2 md:flex"
                     id="navbar-sticky"
                 >
-                    <SearchBar onSearch={onSearch || (() => {})} />
+                    <SearchBar />
 
                     <Link
                         href="/advanced-search"

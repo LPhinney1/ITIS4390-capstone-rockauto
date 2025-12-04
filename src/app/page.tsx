@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { promos } from './placeholder-data';
 import { ProductCardHome } from './components/product-card';
@@ -15,9 +16,21 @@ type Part = {
 };
 
 export default function Page() {
+    return (
+        <Suspense fallback={null}>
+            <ContentWrapper />
+        </Suspense>
+    );
+}
+
+function ContentWrapper() {
     const searchParams = useSearchParams();
     const searchQuery = searchParams.get('search') || '';
 
+    return <Content searchQuery={searchQuery} />;
+}
+
+function Content({ searchQuery }: { searchQuery: string }) {
     const [selectedCategory, setSelectedCategory] = useState<number | null>(
         null,
     );
@@ -25,7 +38,6 @@ export default function Page() {
     const [parts, setParts] = useState<Part[]>([]);
     const [loading, setLoading] = useState(false);
 
-    // Load categories
     useEffect(() => {
         async function loadCategories() {
             const res = await fetch('/api/categories');
@@ -35,12 +47,10 @@ export default function Page() {
         loadCategories();
     }, []);
 
-    // Load parts when category or search query changes
     useEffect(() => {
         loadParts(searchQuery);
     }, [selectedCategory, searchQuery]);
 
-    // Fetch parts from API (by category or search query)
     async function loadParts(query?: string) {
         setLoading(true);
 
@@ -69,14 +79,12 @@ export default function Page() {
     return (
         <>
             <main className="mx-5 flex flex-1">
-                {/* Left Sidebar */}
                 <CategorySidebar
                     selectedCategory={selectedCategory}
                     onCategorySelect={setSelectedCategory}
                     categories={categories}
                 />
 
-                {/* Main Content */}
                 <div className="m-5 w-full">
                     {loading && <p className="text-gray-500">Loading parts…</p>}
 
@@ -94,8 +102,6 @@ export default function Page() {
                             ))}
                         </div>
                     )}
-
-                    {/* Promotions */}
                     <div className="mt-10 flex flex-col gap-4">
                         {promos.map((p, i) => (
                             <div
