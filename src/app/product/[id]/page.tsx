@@ -92,11 +92,13 @@ export default async function ProductPage({ params }: PageProps) {
                             <button className="h-12 rounded-full bg-gray-900 px-10 text-sm font-semibold tracking-wide text-white shadow hover:bg-black">
                                 COMPARE
                             </button>
-
-                            <button className="flex h-12 items-center gap-2 rounded-full bg-indigo-500 px-10 text-sm font-semibold tracking-wide text-white shadow hover:bg-indigo-600">
+                            <Link
+                                href={`/dashboard/cart?productId=${part.id}`}
+                                className="flex h-12 items-center gap-2 rounded-full bg-indigo-500 px-10 text-sm font-semibold tracking-wide text-white shadow hover:bg-indigo-600"
+                            >
                                 <ShoppingCart className="h-5 w-5" strokeWidth={2} />
                                 <span>ADD TO CART</span>
-                            </button>
+                            </Link>
                         </div>
                     </div>
                 </div>
