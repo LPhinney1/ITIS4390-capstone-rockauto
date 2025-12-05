@@ -105,11 +105,13 @@ export function ProductCardHome({ product, onAdd }: ProductCardProps) {
 export function ProductCardCart({
     product,
     quantity = 1,
+    onRemove,
+    onQuantityChange,
 }: {
     product: Product;
     quantity?: number;
-    // onRemove?: (id?: number | string) => void;
-    // onUpdateQuantity?: (id?: number | string, nextQty?: number) => void;
+    onRemove?: () => void;
+    onQuantityChange?: (qty: number) => void;
 }) {
     return (
         <div className="hovered:shadow-lg group rounded-xl border border-gray-200 bg-white p-6 transition-all">
@@ -146,7 +148,7 @@ export function ProductCardCart({
 
                         {/* Remove Button */}
                         <button
-                            // onClick={() => onRemove?.(product.id)}
+                            onClick={onRemove}
                             className="rounded-lg p-2 text-gray-400 transition-all hover:bg-red-50 hover:text-red-600"
                             aria-label="Remove item"
                         >
@@ -199,7 +201,11 @@ export function ProductCardCart({
                         <QuantitySelect
                             productId={product.id}
                             quantity={quantity}
-                            // onUpdateQuantity={onUpdateQuantity}
+                            onUpdateQuantity={(id, nextQty) => {
+                                if (onQuantityChange && nextQty !== undefined) {
+                                    onQuantityChange(nextQty);
+                                }
+                            }}
                         />
 
                         {/* Price */}
