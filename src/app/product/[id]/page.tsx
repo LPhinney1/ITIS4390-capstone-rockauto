@@ -60,7 +60,7 @@ export default async function ProductPage({ params }: PageProps) {
                     <div className="rounded-3xl bg-white p-4 shadow-md">
                         <div className="overflow-hidden rounded-2xl bg-gray-100">
                             <img
-                                src="/placeholder.png"
+                                src={part.product_image_url || "/placeholder.png"}
                                 alt={part.product_name}
                                 className="h-72 w-full object-cover"
                             />
@@ -92,7 +92,6 @@ export default async function ProductPage({ params }: PageProps) {
                             <button className="h-12 rounded-full bg-gray-900 px-10 text-sm font-semibold tracking-wide text-white shadow hover:bg-black">
                                 COMPARE
                             </button>
-
                             <Link
                                 href={`/dashboard/cart?productId=${part.id}`}
                                 className="flex h-12 items-center gap-2 rounded-full bg-indigo-500 px-10 text-sm font-semibold tracking-wide text-white shadow hover:bg-indigo-600"
@@ -119,7 +118,7 @@ export default async function ProductPage({ params }: PageProps) {
                                     <Link href={`/product/${similar.id}`}>
                                         <div className="h-24 w-full overflow-hidden rounded-2xl bg-gray-100">
                                             <img
-                                                src="/placeholder.png"
+                                                src={similar.product_image_url || "/placeholder.png"}
                                                 alt={similar.product_name}
                                                 className="h-full w-full object-cover"
                                             />
