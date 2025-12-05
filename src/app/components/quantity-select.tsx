@@ -13,17 +13,26 @@ export function QuantitySelect({
     onUpdateQuantity,
     className = '',
 }: QuantitySelectProps) {
+    const handleDecrement = (e: React.MouseEvent) => {
+        e.preventDefault();
+        const newQty = (quantity || 1) - 1;
+        if (newQty >= 1) {
+            onUpdateQuantity?.(productId, newQty);
+        }
+    };
+
+    const handleIncrement = (e: React.MouseEvent) => {
+        e.preventDefault();
+        onUpdateQuantity?.(productId, (quantity || 1) + 1);
+    };
+    
     return (
         <div className={`flex items-center gap-3 ${className}`}>
             <span className="text-sm text-gray-600">Quantity:</span>
             <div className="flex items-center overflow-hidden rounded-lg border border-gray-300">
                 <button
-                    onClick={() =>
-                        onUpdateQuantity?.(
-                            productId,
-                            Math.max(1, (quantity || 1) - 1),
-                        )
-                    }
+                type="button"
+                    onClick={handleDecrement}
                     className="flex h-10 w-10 items-center justify-center text-gray-600 transition-colors hover:bg-gray-100"
                     disabled={(quantity || 1) <= 1}
                     aria-label="Decrease quantity"
@@ -36,9 +45,8 @@ export function QuantitySelect({
                 </div>
 
                 <button
-                    onClick={() =>
-                        onUpdateQuantity?.(productId, (quantity || 1) + 1)
-                    }
+                    type="button"
+                    onClick={handleIncrement}
                     className="flex h-10 w-10 items-center justify-center text-gray-600 transition-colors hover:bg-gray-100"
                     aria-label="Increase quantity"
                 >
