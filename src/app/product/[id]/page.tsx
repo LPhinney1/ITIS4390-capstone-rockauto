@@ -59,9 +59,8 @@ export default async function ProductPage({ params }: PageProps) {
                     {/* Product Card */}
                     <div className="rounded-3xl bg-white p-4 shadow-md">
                         <div className="overflow-hidden rounded-2xl bg-gray-100">
-                            {/* ALWAYS show placeholder */}
                             <img
-                                src="/placeholder.png"
+                                src={part.product_image_url || "/placeholder.png"}
                                 alt={part.product_name}
                                 className="h-72 w-full object-cover"
                             />
@@ -116,9 +115,8 @@ export default async function ProductPage({ params }: PageProps) {
                                 >
                                     <Link href={`/product/${similar.id}`}>
                                         <div className="h-24 w-full overflow-hidden rounded-2xl bg-gray-100">
-                                            {/* ALWAYS show placeholder */}
                                             <img
-                                                src="/placeholder.png"
+                                                src={similar.product_image_url || "/placeholder.png"}
                                                 alt={similar.product_name}
                                                 className="h-full w-full object-cover"
                                             />
