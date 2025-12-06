@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import VehicleCard from '@/app/components/vehicle-card';
 import { Lock, Car, ShoppingBag, Truck, Shield, Tag } from 'lucide-react';
@@ -19,16 +19,14 @@ interface Part {
 }
 
 async function fetchPart(id: string): Promise<Part> {
-    const res = await fetch(`http://localhost:3000/api/parts/${id}`, {
+    const res = await fetch(`/api/parts/${id}`, {
         cache: 'no-store',
     });
-    if (!res.ok) {
-        throw new Error('Failed to fetch part data');
-    }
+    if (!res.ok) throw new Error('Failed to fetch part data');
     return res.json();
 }
 
-export default function Page() {
+function CartContent() {
     const searchParams = useSearchParams();
     const [cartItems, setCartItems] = useState<CartItem[]>([]);
     const [mounted, setMounted] = useState(false);
@@ -36,12 +34,11 @@ export default function Page() {
 
     useEffect(() => {
         const productId = searchParams.get('productId');
-        
+
         const loadCart = async () => {
-            // If there's a productId in URL and we haven't added it yet
             if (productId && !hasAddedProduct.current) {
-                hasAddedProduct.current = true; // Mark as added
-                
+                hasAddedProduct.current = true;
+
                 try {
                     const part = await fetchPart(productId);
                     const adaptedProduct = {
@@ -57,12 +54,10 @@ export default function Page() {
                 } catch (error) {
                     console.error('Failed to add product to cart:', error);
                 }
-                
-                // Remove the productId from URL
+
                 window.history.replaceState({}, '', '/dashboard/cart');
             }
 
-            // Load cart from localStorage
             const stored = localStorage.getItem('cartList');
             const items = stored ? JSON.parse(stored) : [];
             setCartItems(items);
@@ -79,7 +74,8 @@ export default function Page() {
     const promoApplied = false;
     const subtotal = cartItems.reduce((sum, item) => {
         const price = (item.Product as any).price;
-        const numericPrice = typeof price === 'string' ? parseFloat(price) : price ?? 0;
+        const numericPrice =
+            typeof price === 'string' ? parseFloat(price) : price ?? 0;
         return sum + numericPrice * item.quantity;
     }, 0);
 
@@ -225,5 +221,13 @@ export default function Page() {
                 </div>
             </div>
         </div>
+    );
+}
+
+export default function Page() {
+    return (
+        <Suspense fallback={null}>
+            <CartContent />
+        </Suspense>
     );
 }
