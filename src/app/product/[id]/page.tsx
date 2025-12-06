@@ -18,9 +18,8 @@ interface PageProps {
 }
 
 async function fetchPart(id: string): Promise<Part> {
-    const res = await fetch(`http://localhost:3000/api/parts/${id}`, {
-        cache: "no-store",
-    });
+    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
+    const res = await fetch(`${baseUrl}/api/parts/${id}`, { cache: 'no-store' });
     if (!res.ok) {
         throw new Error("Failed to fetch part data");
     }
@@ -28,7 +27,8 @@ async function fetchPart(id: string): Promise<Part> {
 }
 
 async function fetchAllParts(): Promise<Part[]> {
-    const res = await fetch(`http://localhost:3000/api/parts`, {
+    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
+    const res = await fetch(`${baseUrl}/api/parts`, {
         cache: "no-store",
     });
     if (!res.ok) {

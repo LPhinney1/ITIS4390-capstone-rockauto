@@ -92,13 +92,13 @@ export function clearCart() {
 export function removeFromCart(productId: number): void {
     const stored = localStorage.getItem('cartList');
     const cart: CartItem[] = stored ? JSON.parse(stored) : [];
-    
+
     const index = cart.findIndex(item => item.Product.id === productId);
     if (index !== -1) {
         cart.splice(index, 1);
         // Save back to localStorage
         localStorage.setItem('cartList', JSON.stringify(cart));
-        
+
         // Also update the in-memory array
         cartList.length = 0;
         cartList.push(...cart);
@@ -109,13 +109,13 @@ export function updateQuantity(productId: number, newQuantity: number): void {
     // Load from localStorage
     const stored = localStorage.getItem('cartList');
     const cart: CartItem[] = stored ? JSON.parse(stored) : [];
-    
+
     const item = cart.find(item => item.Product.id === productId);
     if (item) {
         item.quantity = newQuantity;
         // Save back to localStorage
         localStorage.setItem('cartList', JSON.stringify(cart));
-        
+
         // Also update the in-memory array
         cartList.length = 0;
         cartList.push(...cart);

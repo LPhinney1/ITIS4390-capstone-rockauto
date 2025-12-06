@@ -1,26 +1,21 @@
-'use client';
-
 import React from 'react';
-
 export const dynamic = 'force-dynamic';
+import Link from 'next/link';
 
 async function fetchResults(searchParams: any) {
     const query = new URLSearchParams(searchParams).toString();
-    const url = `http://localhost:3000/api/search?${query}`;
+    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
+    const url = `${baseUrl}/api/search?${query}`;
 
     const res = await fetch(url, { cache: 'no-store' });
     if (!res.ok) return [];
 
     return res.json();
 }
-
-export default async function SearchResultsPage({
-    searchParams,
-}: {
-    searchParams: any;
+export default async function SearchResultsPage({ searchParams }: {
+    searchParams: any
 }) {
     const results = await fetchResults(searchParams);
-
     const noFilters =
         !searchParams.year &&
         !searchParams.make &&
@@ -98,12 +93,12 @@ export default async function SearchResultsPage({
                                 </div>
 
                                 {/* View Part button sticks to bottom */}
-                                <a
-                                    href={`http://localhost:3000/product/${item.id}`}
+                                <Link
+                                    href={`/product/${item.id}`}
                                     className="mt-auto inline-block rounded-md bg-[#6366F1] px-4 py-2 text-sm text-white hover:bg-[#5257d8]"
                                 >
                                     View Part
-                                </a>
+                                </Link>
                             </div>
                         ))}
                     </div>
