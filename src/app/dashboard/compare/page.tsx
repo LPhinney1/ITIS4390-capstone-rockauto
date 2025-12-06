@@ -4,7 +4,8 @@ import { ShoppingCart } from 'lucide-react';
 export const dynamic = 'force-dynamic';
 
 async function fetchPart(id: string) {
-    const res = await fetch(`http://localhost:3000/api/parts/${id}`, {
+    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
+    const res = await fetch(`${baseUrl}/api/parts/${id}`, {
         cache: 'no-store',
     });
     if (!res.ok) return null;
