@@ -10,7 +10,8 @@ type AuthContextValue = {
   setUser: (user: Useree) => void;
 };
 
-const AuthContext = createContext<AuthContextValue | false>(false);
+// const AuthContext = createContext<AuthContextValue | false>(false);
+const AuthContext = createContext<AuthContextValue | undefined>(undefined);
 
 export function AuthProvider({ children }: { children: React.ReactNode }) {
   // Initialize to `false` to prevent a flash of authenticated content.
@@ -29,7 +30,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       const data = await res.json();
       setSignedInState(Boolean(data?.signedIn));
     } catch (e) {
-      setSignedInState(false);
+      throw e
     }
   }
 
@@ -45,7 +46,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   function setSignedIn(v: boolean) {
     setSignedInState(v);
   }
-  console.log("AuthProvider signedIn:", signedIn);
+  console.log("um signedIn:", signedIn);
   return (
     <AuthContext.Provider value={{ signedIn, setSignedIn, user, setUser }}>
       {children}

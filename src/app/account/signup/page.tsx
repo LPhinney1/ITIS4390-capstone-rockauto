@@ -63,8 +63,8 @@ export default function Page() {
 
 
     const handleSubmit = (e: React.FormEvent) => {
-        createAccount(name, email, password);
         e.preventDefault();
+        createAccount(name, email, password);
         setError(null);
         if (!name.trim() || !email.trim() || !password) {
             setError('Please fill in all fields.');

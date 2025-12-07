@@ -30,14 +30,14 @@ export default function AdvancedSearchPage() {
         if (category) params.set('category', category);
         if (maxPrice) params.set('maxPrice', maxPrice);
 
-        router.push(`/advanced-search/results?${params.toString()}`);
+        router.push(`/results?${params.toString()}`);
     }
 
     return (
         <div className="flex min-h-screen bg-[#FFFFFF] px-4 py-10">
             <div className="flex flex-1 justify-center">
                 <div className="w-full max-w-md overflow-hidden rounded-xl border border-[#D1D5DC] bg-[#FFFFFF] shadow-md">
-                    <div className="bg-[#6366F1] py-6 text-center text-white">
+                    <div className="bg-[primary] py-6 text-center text-white">
                         <h1 className="text-2xl font-semibold">
                             Advanced Search
                         </h1>
@@ -118,7 +118,7 @@ export default function AdvancedSearchPage() {
                             <button
                                 type="button"
                                 onClick={handleSearch}
-                                className="w-32 rounded-md bg-[#6366F1] py-2 text-white hover:bg-[#5257d8]"
+                                className="w-32 rounded-md bg-[primary] py-2 text-white hover:bg-[#5257d8]"
                             >
                                 Search
                             </button>

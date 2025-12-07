@@ -110,6 +110,43 @@ function Content({ searchQuery }: { searchQuery: string }) {
             sessionStorage.removeItem('homeScrollY');
         }
     }, [loading]);
+    const featuredItems = [
+        {
+            id: 1,
+            title: 'Premium Brake Kits',
+            description: 'Up to 30% off',
+            image: 'https://images.unsplash.com/photo-1750019487267-47568f388dfa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjYXIlMjBicmFrZSUyMHBhZHN8ZW58MXx8fHwxNzYwNzgzMjYxfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+            bgColor: '#e8f4f8',
+        },
+        {
+            id: 2,
+            title: 'Engine Components',
+            description: 'Performance Upgrades',
+            image: 'https://images.unsplash.com/photo-1758381358962-efc41be53986?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjYXIlMjBlbmdpbmUlMjBwYXJ0c3xlbnwxfHx8fDE3NjA5MDcxNDR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+            bgColor: '#f8e8e8',
+        },
+        {
+            id: 3,
+            title: 'Suspension Systems',
+            description: 'Smooth Ride Guaranteed',
+            image: 'https://images.unsplash.com/photo-1669136048337-5daa3adef7b2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjYXIlMjBzdXNwZW5zaW9ufGVufDF8fHx8MTc2MDkwNzE0NXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+            bgColor: '#e8f8e8',
+        },
+        {
+            id: 4,
+            title: 'Premium Batteries',
+            description: 'Long-lasting Power',
+            image: 'https://images.unsplash.com/photo-1597766325363-f5576d851d6a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjYXIlMjBiYXR0ZXJ5fGVufDF8fHx8MTc2MDgyODg5NXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+            bgColor: '#f8f8e8',
+        },
+        {
+            id: 5,
+            title: 'Oil Filters & More',
+            description: 'Quality Maintenance',
+            image: 'https://images.unsplash.com/photo-1657644049321-4c3aa2e8aba7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjYXIlMjBvaWwlMjBmaWx0ZXJ8ZW58MXx8fHwxNzYwOTA3MTQ2fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+            bgColor: '#f0e8f8',
+        },
+    ];
 
     return (
         <>
@@ -122,6 +159,33 @@ function Content({ searchQuery }: { searchQuery: string }) {
 
                 <div className="m-5 w-full">
                     {loading && <p className="text-gray-500">Loading parts…</p>}
+                    <div className="h-[3px] my-6 bg-[primary] rounded-full w-2/5" />
+
+                        <div className="my-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+                            {featuredItems.map((item) => (
+                                <div
+                                    key={item.id}
+                                    className="h-[120px] rounded-lg overflow-hidden shadow-md hover:shadow-xl border border-gray-200 transition-all cursor-pointer"
+                                >
+                                    <div className="relative w-full h-full">
+                                        <img
+                                            src={item.image}
+                                            alt={item.title}
+                                            className="w-full h-full object-cover opacity-80"
+                                        />
+                                        <div className="absolute inset-0 bg-gradient-to-t from-[#6366f1]/80 to-transparent flex flex-col justify-end p-4">
+                                        <h3 className="text-white mb-1">{item.title}</h3>
+                                        <p className="text-white/90 text-sm">{item.description}</p>
+                                    </div>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+
+                        <div className="h-[3px] my-6 mb-5 bg-[primary] rounded-full w-2/5" />
+                        <div className="h-[4px] w-24 bg-[primary] my-6 rounded-full" />
+
+                    
 
                     {!loading && (
                         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
@@ -143,6 +207,9 @@ function Content({ searchQuery }: { searchQuery: string }) {
                             ))}
                     </div>
                     )}
+
+                    <div className="h-[5px] w-24 bg-[primary] my-6 rounded-full" />
+
                     <div className="mt-10 flex flex-col gap-4">
                         {promos.map((p, i) => (
                             <div
