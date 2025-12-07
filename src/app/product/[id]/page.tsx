@@ -77,16 +77,40 @@ export default async function ProductPage({ params }: PageProps) {
                         </div>
                     </div>
 
-                    {/* Product Description + Buttons */}
                     <div className="flex flex-col justify-between">
                         <div>
                             <h2 className="text-xl font-semibold text-gray-900">
                                 Description
                             </h2>
 
-                            <p className="mt-4 text-sm leading-relaxed text-gray-700">
-                                {description}
-                            </p>
+                            <div
+                                key={part.id}
+                                className="relative flex h-full flex-col rounded-lg border border-[#D1D5DC] bg-white p-4 shadow-sm"
+                            >
+                                <h3 className="mb-2 text-lg font-medium text-[#364153]">
+                                    {part.product_name}
+                                </h3>
+
+                                <div className="mb-4 flex-1 text-sm leading-6 text-[#6B7280]">
+                                    {part.price !== undefined && (
+                                        <p>Price: ${part.price}</p>
+                                    )}
+
+                                    {/* ignore for now */}
+                                    {/* {part.year && <p>Year: {part.year}</p>}
+                                    {part.make && <p>Make: {part.make}</p>}
+                                    {part.model && <p>Model: {part.model}</p>}
+                                    {part.category_name && (
+                                        <p>Category: {part.category_name}</p>
+                                    )} */}
+                                    {part.product_description && (
+                                        <p>{part.product_description}</p>
+                                    )}
+                                </div>
+
+                                
+                                
+                            </div>
                         </div>
 
                         <div className="mt-8 flex flex-wrap gap-4">

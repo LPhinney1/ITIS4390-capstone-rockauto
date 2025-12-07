@@ -1,19 +1,17 @@
 'use client';
 import { productsList, promos } from '@/app/placeholder-data';
 import ProductCardUser from '@/app/components/product-card';
-import { MyCars } from '@/app/dashboard/garage/page';
 import { Car } from 'lucide-react';
 import { useAuth } from '../auth-provider';
 import Link from 'next/link';
-const vehicleCount = MyCars.length;
 
 export default function ProfilePage() {
     const auth = useAuth();
-    try {const user = auth.user;}
-    catch (error) {
-        console.error('Error getting user:', error);
-        return <div>Error getting user</div>;
+    if (auth.signedIn === false || auth.user === undefined){
+        return <div>Error, please sign in</div>
     }
+    const user = auth.user;
+    const vehicles = user.MyCars;
     return (
         <div className="flex-1 p-8 bg-white">
             <div className="max-w-[1600px] mx-auto">
@@ -24,7 +22,7 @@ export default function ProfilePage() {
                             {/* Welcome {userName}! */}
                         </h1>
                         <h2 className="text-[32px] text-gray-700">
-                            Hello {}!
+                            Hello {user.name}!
                             Your Vehicle Recommendations
                         </h2>
                     </div>
@@ -58,7 +56,7 @@ export default function ProfilePage() {
                             No Recommendations Yet
                         </h3>
                         <p className="text-gray-600 mb-6 max-w-md">
-                            {vehicleCount === 0
+                            {vehicles.length === 0
                                 ? 'Add a vehicle to your garage to get personalized part recommendations.'
                                 : 'We\'re working on personalized recommendations for your vehicles.'}
                         </p>
@@ -66,7 +64,7 @@ export default function ProfilePage() {
                             href='/dashboard/garage'
                             className="bg-primary hover:bg-[#4f46e5] text-white px-8 py-4 rounded-[6px] transition-colors"
                         >
-                            {vehicleCount === 0 ? 'Add Your First Vehicle' : 'Go to Garage'}
+                            {vehicles.length === 0 ? 'Add Your First Vehicle' : 'Go to Garage'}
                         </Link>
                     </div>
                 )}
@@ -81,28 +79,3 @@ export default function ProfilePage() {
         </div>
     );
 }
-
-    //     <main className="flex-1 px-10 py-6">
-
-
-
-    //     <main className="flex-1 px-10 py-6">
-    //         <h1>Profile Page</h1>
-    //         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
-    //             {productsList.map((c, i) => (
-    //                 <ProductCardUser key={i} product={c} />
-    //             ))}
-    //         </div>
-
-    //         <div className="mt-12 rounded-lg border border-[#c7d2fe] bg-[#eef2ff] p-6">
-    //             <h3 className="mb-2 text-[20px] text-[#4338ca]">
-    //                 Personalized for Your Vehicles
-    //             </h3>
-    //             <p className="text-[#4338ca]">
-    //                 {MyCars.length > 0
-    //                     ? `These parts are recommended based on your ${MyCars.length} vehicle${MyCars.length !== 1 ? 's' : ''} in the garage. Browse by category for more options.`
-    //                     : 'Add vehicles to your garage to see personalized recommendations tailored to your specific makes and models.'}
-    //             </p>
-    //         </div>
-    //     </main>
-    // );

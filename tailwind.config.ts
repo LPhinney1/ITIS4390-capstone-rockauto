@@ -11,8 +11,9 @@ const config: Config = {
             colors: {
                 primary: {
                     DEFAULT: '#5b5fc7',
-                    600: '#4f46e5',
-                    700: '#4338ca',
+                    600: '#4d51b3',
+                    700: '#3f428f',
+                    hover: '#5256b5',
                 },
             },
         },
