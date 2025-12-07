@@ -4,7 +4,7 @@ const links = [
     { href: '/dashboard/garage', icon: Car },
     { href: '/dashboard/compare', icon: GitCompare },
     { href: '/dashboard/cart', icon: ShoppingCart },
-    { href: '/dashboard/profile', icon: User },
+    { href: '/dashboard/login', icon: User },
 ];
 
 import Link from 'next/link';
