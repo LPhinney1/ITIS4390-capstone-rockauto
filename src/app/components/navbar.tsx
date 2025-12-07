@@ -22,14 +22,6 @@ export default function NavBar({ onSearch }: NavBarProps) {
                     id="navbar-sticky"
                 >
                     <SearchBar />
-
-                    <Link
-                        href="/advanced-search"
-                        className="flex items-center gap-1.5 whitespace-nowrap rounded border border-gray-300 bg-white px-3 py-2 transition-colors hover:bg-gray-100"
-                        title="Advanced Search"
-                    >
-                        <span className="text-sm text-gray-700">Advanced</span>
-                    </Link>
                 </div>
 
                 <div className="flex space-x-3 md:order-3 md:space-x-0 rtl:space-x-reverse">
