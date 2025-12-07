@@ -1,4 +1,4 @@
-const categories = [
+const productsList = [
     {
         id: 1,
         name: 'Brake Pads',
@@ -107,7 +107,7 @@ const promos = [
     { title: 'Member Exclusive – Extra 10% Off', tag: '10% OFF' },
 ];
 
-export { categories, promos };
+export { productsList, promos };
 
 // This file contains placeholder data that you'll be replacing with real data in the Data Fetching chapter:
 // // https://nextjs.org/learn/dashboard-app/fetching-data

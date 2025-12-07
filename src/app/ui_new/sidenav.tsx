@@ -33,8 +33,8 @@ export default function CategorySidebar({
     onCategorySelect,
 }: CategorySidebarProps) {
     return (
-        <aside className="w-[60px] border-r border-gray-200 bg-white py-4">
-            <div className="flex flex-col items-center gap-y-4">
+        <aside className="w-[72px] bg-white border-r border-gray-200 py-5 px-3.5 shadow-sm">
+            <div className="flex flex-col gap-y-5">
                 {categories.map((category) => {
                     const Icon = getIcon(category.id);
                     const isSelected = selectedCategory === category.id;
