@@ -1,6 +1,7 @@
 import React from 'react';
 export const dynamic = 'force-dynamic';
 import Link from 'next/link';
+import { ProductCardCart, Product, ProductCardResults } from '../components/product-card';
 
 async function fetchResults(searchParams: any) {
     const query = new URLSearchParams(searchParams).toString();
@@ -9,7 +10,7 @@ async function fetchResults(searchParams: any) {
 
     const res = await fetch(url, { cache: 'no-store' });
     if (!res.ok) return [];
-
+    
     return res.json();
 }
 export default async function SearchResultsPage({ searchParams }: {
@@ -67,40 +68,29 @@ export default async function SearchResultsPage({ searchParams }: {
                         </p>
                     </div>
                 ) : (
-                    <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                        {results.map((item: any) => (
-                            <div
-                                key={item.id}
-                                className="relative flex h-full flex-col rounded-lg border border-[#D1D5DC] bg-white p-4 shadow-sm"
-                            >
-                                <h3 className="mb-2 text-lg font-medium text-[#364153]">
-                                    {item.product_name}
-                                </h3>
+                    <div className="grid gap-6">
 
-                                <div className="mb-4 flex-1 text-sm leading-6 text-[#6B7280]">
-                                    {item.price !== undefined && (
-                                        <p>Price: ${item.price}</p>
-                                    )}
-                                    {item.year && <p>Year: {item.year}</p>}
-                                    {item.make && <p>Make: {item.make}</p>}
-                                    {item.model && <p>Model: {item.model}</p>}
-                                    {item.category_name && (
-                                        <p>Category: {item.category_name}</p>
-                                    )}
-                                    {item.product_description && (
-                                        <p>{item.product_description}</p>
-                                    )}
-                                </div>
-
-                                {/* View Part button sticks to bottom */}
+                        {results.map((item: { id: number; product_name: any; price: string; product_image_url : string; }) => (
+                                
                                 <Link
-                                    href={`/product/${item.id}`}
-                                    className="mt-auto inline-block rounded-md bg-[#6366F1] px-4 py-2 text-sm text-white hover:bg-[#5257d8]"
+                                key={item.id}
+                                href={`/product/${item.id}`}
+                                className="block"
                                 >
-                                    View Part
-                                </Link>
-                            </div>
-                        ))}
+                                <ProductCardResults
+                                    product={{
+                                        id: item.id,
+                                        name: item.product_name,
+                                        price: item.price,
+                                        image: item.product_image_url,
+                                    }}
+                                />
+                            </Link>
+                            ))}
+                            
+                        {/* //HERE */}
+                        
+                           
                     </div>
                 )}
 
