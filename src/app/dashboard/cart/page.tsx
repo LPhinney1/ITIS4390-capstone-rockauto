@@ -204,7 +204,7 @@ function CartContent() {
 
                                 <button
                                     onClick={() => router.push('/dashboard/cart/checkout')}
-                                    className="mb-4 flex w-full items-center justify-center gap-2 rounded-lg bg-[primary] py-4 text-white transition-all hover:bg-[#4f46e5] hover:shadow-lg"
+                                    className="mb-4 flex w-full items-center justify-center gap-2 rounded-lg bg-[primary] py-4 text-white transition-all bg-[#6366f1] hover:bg-[#4f46e5] hover:shadow-lg"
                                 >
                                     <Lock className="h-5 w-5" />
                                     <span>Proceed to Checkout</span>
