@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect, useRef, Suspense } from 'react';
-import { useSearchParams } from 'next/navigation';
+import { useSearchParams, useRouter } from 'next/navigation';
 import VehicleCard from '@/app/components/vehicle-card';
 import { Lock, Car, ShoppingBag, Truck, Shield, Tag } from 'lucide-react';
 import { Product } from '@/app/components/product-card';
@@ -28,6 +28,7 @@ async function fetchPart(id: string): Promise<Part> {
 
 function CartContent() {
     const searchParams = useSearchParams();
+    const router = useRouter();
     const [cartItems, setCartItems] = useState<CartItem[]>([]);
     const [mounted, setMounted] = useState(false);
     const hasAddedProduct = useRef(false);
@@ -82,10 +83,11 @@ function CartContent() {
     const shipping = subtotal >= freeShippingThreshold ? 0 : 9.99;
     const promoDiscount = promoApplied ? subtotal * 0.1 : 0;
     const estimatedTax = (subtotal - promoDiscount) * 0.08;
+    const total = subtotal - promoDiscount + shipping + estimatedTax;
 
     if (cartItems.length === 0) {
         return (
-            <div className="flex-1">
+            <div className="flex-1 -mt-8">
                 <div className="mx-auto max-w-[1400px] px-8 py-12">
                     <div className="flex flex-col items-center justify-center py-20">
                         <div className="mb-6 flex h-24 w-24 items-center justify-center rounded-full bg-gray-100">
@@ -187,7 +189,17 @@ function CartContent() {
                                     </div>
                                 </div>
 
-                                <button className="mb-4 flex w-full items-center justify-center gap-2 rounded-lg bg-[#6366f1] py-4 text-white transition-all hover:bg-[#4f46e5] hover:shadow-lg">
+                                <div className="border-t border-gray-200 pt-4 mb-6">
+                                    <div className="flex justify-between items-center">
+                                        <span className="text-[20px] font-semibold text-gray-900">Total</span>
+                                        <span className="text-[28px] font-bold text-[#6366f1]">${total.toFixed(2)}</span>
+                                    </div>
+                                </div>
+
+                                <button
+                                    onClick={() => router.push('/dashboard/cart/checkout')}
+                                    className="mb-4 flex w-full items-center justify-center gap-2 rounded-lg bg-[#6366f1] py-4 text-white transition-all hover:bg-[#4f46e5] hover:shadow-lg"
+                                >
                                     <Lock className="h-5 w-5" />
                                     <span>Proceed to Checkout</span>
                                 </button>
