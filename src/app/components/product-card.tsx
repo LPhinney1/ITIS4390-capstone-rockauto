@@ -68,7 +68,7 @@ export default function ProductCardUser({ product, onAdd }: ProductCardProps) {
 export function ProductCardHome({ product, onAdd }: ProductCardProps) {
     return (
       <div
-        className={` rounded-lg w-[150px] h-[120px] overflow-hidden shadow-sm hover:shadow-lg border border-gray-200 transition-all ${product.outOfStock ? 'opacity-70 cursor-default' : 'cursor-pointer'
+        className={` rounded-lg w-[200px] h-[150px] overflow-hidden shadow-sm hover:shadow-lg border border-gray-200 transition-all ${product.outOfStock ? 'opacity-70 cursor-default' : 'cursor-pointer'
           } group`} >
         <div className="relative w-full h-full p-2 flex flex-col">
           <div className="flex-1 flex items-center justify-center mb-1 overflow-hidden rounded">
