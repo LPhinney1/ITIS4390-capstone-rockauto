@@ -24,7 +24,7 @@ export default function RootLayout({
           </main>
         </AuthProvider>
 
-        <footer className="bg-[#3d3e4f] text-white py-5">
+        <footer className="bg-[#3d3e4f] text-white py-5 mt-12">
           <div className="mx-48 flex flex-col md:flex-row justify-between items-center">
             <p className="text-sm">© 2024 RockAuto. All rights reserved.</p>
             <div className="flex space-x-4 mt-4 md:mt-0">
