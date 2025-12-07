@@ -1,6 +1,7 @@
 import '@/app/ui_new/global.css';
 import type { Metadata } from 'next';
 import NavBar from './components/navbar';
+import AuthProvider from '@/app/account/auth-provider';
 
 export const metadata: Metadata = {
     title: 'RockAuto',
@@ -15,8 +16,22 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body className="bg-[#f5f5f7] antialiased">
-                <NavBar />
-                {children}
+                <div>
+                    <AuthProvider>
+                        <NavBar />
+                        {children}
+                    </AuthProvider>
+                </div>
+                <footer className="bg-[#3d3e4f] text-white py-5 mt-auto">
+                    <div className="mx-48 flex flex-col md:flex-row justify-between items-center">
+                        <p className="text-sm">© 2024 RockAuto. All rights reserved.</p>
+                        <div className="flex space-x-4 mt-4 md:mt-0">
+                            <span className="text-sm hover:underline">Privacy Policy</span>
+                            <span className="text-sm hover:underline">Terms of Service</span>
+                            <span className="text-sm hover:underline">Contact Us</span>
+                        </div>
+                    </div>
+                </footer>
             </body>
         </html>
     );

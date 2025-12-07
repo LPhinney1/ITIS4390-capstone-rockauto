@@ -50,55 +50,47 @@ export default function ProductCardUser({ product, onAdd }: ProductCardProps) {
 
 export function ProductCardHome({ product, onAdd }: ProductCardProps) {
     return (
-        <div
-            className={`h-[240px] w-[300px] overflow-hidden rounded-lg border border-gray-200 shadow-sm transition-all hover:shadow-lg ${
-                product.outOfStock
-                    ? 'cursor-default opacity-70'
-                    : 'cursor-pointer'
-            } group`}
-        >
-            <div className="relative flex h-full w-full flex-col p-2">
-                <div className="mb-1 flex flex-1 items-center justify-center overflow-hidden rounded">
-                    <img
-                        src={product.image}
-                        alt={product.name}
-                        className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110"
-                    />
-                </div>
-
-                {/* Product Info */}
-                <div className="flex items-center justify-between gap-1">
-                    <div className="min-w-0 flex-1">
-                        <p className="truncate text-xs text-gray-900">
-                            {product.name}
-                        </p>
-                        <p className="text-xs text-[#6366f1]">
-                            ${product.price}
-                        </p>
-                    </div>
-
-                    {/* Add to Cart Button (client component) */}
-                    <div className="shrink-0">
-                        <AddToCartButton
-                            disabled={!!product.outOfStock}
-                            productName={product.name}
-                            buttonStyle="small round"
-                        />
-                    </div>
-                </div>
-
-                {/* Out of Stock Badge */}
-                {product.outOfStock && (
-                    <div className="absolute inset-0 flex items-center justify-center bg-black/50">
-                        <span className="rounded bg-[#ef4444] px-2 py-1 text-xs text-white">
-                            Out of Stock
-                        </span>
-                    </div>
-                )}
+    //   <Link href={`/product/${product.id}`}>
+      <div
+        className={` rounded-lg w-[150px] h-[120px] overflow-hidden shadow-sm hover:shadow-lg border border-gray-200 transition-all ${product.outOfStock ? 'opacity-70 cursor-default' : 'cursor-pointer'
+          } group`} >
+        <div className="relative w-full h-full p-2 flex flex-col">
+          <div className="flex-1 flex items-center justify-center mb-1 overflow-hidden rounded">
+            <img
+              src={product.image}
+              alt={product.name}
+              className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+            />
+          </div>
+  
+          {/* Product Info */}
+          <div className="flex items-center justify-between gap-1">
+            <div className="min-w-0 flex-1">
+              <p className="truncate text-xs text-gray-900">
+                {product.name}
+              </p>
+              <p className="text-xs text-primary">
+                ${product.price}
+              </p>
             </div>
+  
+            {/* Add to Cart Button (client component) */}
+            <div className="shrink-0">
+              <AddToCartButton disabled={!!product.outOfStock} productName={product.name} buttonStyle='small round' />
+            </div>
+          </div>
+  
+          {/* Out of Stock Badge */}
+          {product.outOfStock && (
+            <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
+              <span className="bg-[#ef4444] text-white px-2 py-1 rounded text-xs">Out of Stock</span>
+            </div>
+          )}
         </div>
+      </div>
+      //{/* </Link> */}
     );
-}
+  }
 
 // Cart-specific card used on the cart page. Renders the detailed layout
 // previously duplicated in `dashboard/cart/page.tsx`. Handlers are optional.

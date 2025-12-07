@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import { Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
-import { promos } from './placeholder-data';
+import { productsList, promos } from './placeholder-data';
 import { ProductCardHome } from './components/product-card';
 import CategorySidebar from './ui_new/sidenav';
 import Link from 'next/link';
@@ -124,7 +124,7 @@ function Content({ searchQuery }: { searchQuery: string }) {
                     {loading && <p className="text-gray-500">Loading parts…</p>}
 
                     {!loading && (
-                        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
                             {parts.map((part) => (
                                 <Link
                                 key={part.id}
@@ -141,7 +141,7 @@ function Content({ searchQuery }: { searchQuery: string }) {
                                 />
                             </Link>
                             ))}
-                        </div>
+                    </div>
                     )}
                     <div className="mt-10 flex flex-col gap-4">
                         {promos.map((p, i) => (

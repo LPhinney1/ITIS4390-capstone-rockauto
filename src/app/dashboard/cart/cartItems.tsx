@@ -3,7 +3,7 @@
 import { Product } from '@/app/components/product-card';
 import { MyCars } from '@/app/dashboard/garage/page';
 import { Vehicle } from '@/app/components/vehicle-card';
-import { categories } from '@/app/placeholder-data';
+import { productsList } from '@/app/placeholder-data';
 
 export interface CartItem {
     Product: Product;
@@ -60,7 +60,7 @@ export function addToCart(product: Product, quantity: number = 1) {
     saveCartToStorage(cartList);
 }
 
-// Add all placeholder categories into the cart list (used for testing/demo)
+// Add all placeholder productsList into the cart list (used for testing/demo)
 export function addCategoriesToCart() {
     const defaultVehicle: Vehicle = {
         id: 0,
@@ -72,7 +72,7 @@ export function addCategoriesToCart() {
 
     const targetCar = MyCars[0] ?? defaultVehicle;
 
-    categories.forEach((c) => {
+    productsList.forEach((c) => {
         // push a shallow copy so callers can mutate quantity independently
         cartList.push({
             Product: c as unknown as Product,
