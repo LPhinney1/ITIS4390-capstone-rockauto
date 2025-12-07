@@ -118,7 +118,7 @@ export default function AdvancedSearchPage() {
                             <button
                                 type="button"
                                 onClick={handleSearch}
-                                className="w-32 rounded-md bg-[primary] py-2 text-white bg-[#5257d8] "
+                                className="w-32 rounded-md bg-[primary] py-2 text-white bg-[#5257d8] transition-colors hover:bg-[#4f46e5]"
                             >
                                 Search
                             </button>
