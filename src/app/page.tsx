@@ -14,6 +14,7 @@ type Part = {
     product_name: string;
     price: number;
     category_id: number;
+    category?: string;
 };
 
 export default function Page() {
@@ -38,6 +39,37 @@ function Content({ searchQuery }: { searchQuery: string }) {
     const [categories, setCategories] = useState<Category[]>([]);
     const [parts, setParts] = useState<Part[]>([]);
     const [loading, setLoading] = useState(true);
+
+    const getCategoryImage = (categoryId?: number, categoryName?: string): string => {
+        // If we have a category name string, use that
+        if (categoryName) {
+            const nameMap: { [key: string]: number } = {
+                'Brake Pads': 1,
+                'Oil Filter': 2,
+                'Air Filter': 3,
+                'Battery': 4,
+                'Radiator': 5,
+            };
+            const imageNumber = nameMap[categoryName] || 1;
+            return `/products/${imageNumber}.png`;
+        }
+        
+        // Otherwise fall back to category_id mapping
+        if (categoryId) {
+            const imageMap: { [key: number]: number } = {
+                1: 1, // Brake Pads -> 1.png
+                2: 2, // Oil Filter -> 2.png
+                3: 3, // Air Filter -> 3.png
+                4: 4, // Battery -> 4.png
+                5: 5, // Radiator -> 5.png
+            };
+            const imageNumber = imageMap[categoryId] || 1;
+            return `/products/${imageNumber}.png`;
+        }
+        
+        // Default fallback
+        return '/products/1.png';
+    };
 
     useEffect(() => {
         async function loadCategories() {
@@ -71,6 +103,7 @@ function Content({ searchQuery }: { searchQuery: string }) {
                 product_name: item.product_name,
                 price: item.price,
                 category_id: item.category_id,
+                category: item.category,
             })),
         );
 
@@ -200,7 +233,7 @@ function Content({ searchQuery }: { searchQuery: string }) {
                                     product={{
                                         name: part.product_name,
                                         price: part.price,
-                                        image: '/placeholder.png',
+                                        image: getCategoryImage(part.category_id, part.category),
                                     }}
                                 />
                             </Link>
