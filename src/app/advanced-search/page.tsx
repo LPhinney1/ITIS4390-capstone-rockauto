@@ -36,7 +36,7 @@ export default function AdvancedSearchPage() {
     return (
         <div className="flex min-h-screen bg-[#FFFFFF] px-4 py-10">
             <div className="flex flex-1 justify-center">
-                <div className="self-start w-full max-w-md overflow-hidden rounded-xl border border-[#D1D5DC] bg-[#FFFFFF] shadow-md">
+                <div className="w-full max-w-md self-start overflow-hidden rounded-xl border border-[#D1D5DC] bg-[#FFFFFF] shadow-md">
                     <div className="bg-[primary] pt-6 text-center text-white">
                         <h1 className="text-2xl font-semibold text-black">
                             Advanced Search
@@ -118,7 +118,7 @@ export default function AdvancedSearchPage() {
                             <button
                                 type="button"
                                 onClick={handleSearch}
-                                className="w-32 rounded-md bg-[primary] py-2 text-white bg-[#5257d8] transition-colors hover:bg-[#4f46e5]"
+                                className="w-32 rounded-md bg-[#5257d8] bg-[primary] py-2 text-white transition-colors hover:bg-[#4f46e5]"
                             >
                                 Search
                             </button>

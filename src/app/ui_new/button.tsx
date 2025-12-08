@@ -9,33 +9,33 @@ interface AddToCartButtonProps {
     buttonStyle?: string;
 }
 
-
-
-export default function AddToCartButton({ onClick, disabled, productName, buttonStyle }: AddToCartButtonProps) {
+export default function AddToCartButton({
+    onClick,
+    disabled,
+    productName,
+    buttonStyle,
+}: AddToCartButtonProps) {
     const [added, setAdded] = useState(false);
 
     function handleClick() {
-      if (disabled) return;
-      try {
-        onClick?.();
-
-      } catch (e) {
-        // swallow run-time errors from parent handlers
-      }
-      setAdded(true);
-      console.log('Product added:', productName);
-      // show a toast so the user gets feedback immediately
-      // showToast(
-      //   <div className="flex items-center gap-2">
-      //     <span className="font-medium">{productName ? `${productName} added to cart` : 'Added to cart'}</span>
-      //   </div>,
-      //   2200,
-      // );
-      // revert visual state after a short delay
-      // setTimeout(() => setAdded(false), 1200);
+        if (disabled) return;
+        try {
+            onClick?.();
+        } catch (e) {
+            // swallow run-time errors from parent handlers
+        }
+        setAdded(true);
+        console.log('Product added:', productName);
+        // show a toast so the user gets feedback immediately
+        // showToast(
+        //   <div className="flex items-center gap-2">
+        //     <span className="font-medium">{productName ? `${productName} added to cart` : 'Added to cart'}</span>
+        //   </div>,
+        //   2200,
+        // );
+        // revert visual state after a short delay
+        // setTimeout(() => setAdded(false), 1200);
     }
-
-
 
     // three basic button styles: default, small round, large rectangular
     const sizeClass =
@@ -49,25 +49,30 @@ export default function AddToCartButton({ onClick, disabled, productName, button
         <button
             type="button"
             onClick={() => {
-            if (disabled) return;
-            handleClick();
-            setTimeout(() => setAdded(false), 1200);
+                if (disabled) return;
+                handleClick();
+                setTimeout(() => setAdded(false), 1200);
             }}
             disabled={disabled}
             aria-pressed={added}
             aria-label={
-            disabled ? 'Out of stock' : added ? 'added' : 'add to cart'
+                disabled ? 'Out of stock' : added ? 'added' : 'add to cart'
             }
-            className={clsx( 'relative bg-[#5b5fc7] flex items-center justify-center hover:bg-[#4a4db5] transition-colors flex justify-center text-white transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 items-center',
-            sizeClass,
-            disabled
-                ? 'cursor-not-allowed bg-gray-400'
-                : added
-                  ? 'bg-[#5b5fc7]-600 text-lg'
-                  : 'focus-visible:ring-primary active:bg-[#5b5fc7]-700',
+            className={clsx(
+                'relative flex items-center justify-center bg-[#5b5fc7] text-white transition-colors hover:bg-[#4a4db5] focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2',
+                sizeClass,
+                disabled
+                    ? 'cursor-not-allowed bg-gray-400'
+                    : added
+                      ? 'bg-[#5b5fc7]-600 text-lg'
+                      : 'active:bg-[#5b5fc7]-700 focus-visible:ring-primary',
             )}
         >
-            {added ? '✓' : buttonStyle === 'large rectangular' ? 'Add to cart' : '+'}
+            {added
+                ? '✓'
+                : buttonStyle === 'large rectangular'
+                  ? 'Add to cart'
+                  : '+'}
         </button>
     );
-  }
+}

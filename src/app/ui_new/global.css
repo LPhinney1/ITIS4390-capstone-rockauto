@@ -25,6 +25,6 @@ input[type='number']::-webkit-outer-spin-button {
 
 @layer components {
     button {
-        @apply relative bg-[#5b5fc7] flex items-center justify-center hover:bg-[#4a4db5] transition-colors;
+        @apply relative flex items-center justify-center bg-[#5b5fc7] transition-colors hover:bg-[#4a4db5];
     }
 }

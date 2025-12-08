@@ -1,7 +1,11 @@
 import React from 'react';
 export const dynamic = 'force-dynamic';
 import Link from 'next/link';
-import { ProductCardCart, Product, ProductCardResults } from '../components/product-card';
+import {
+    ProductCardCart,
+    Product,
+    ProductCardResults,
+} from '../components/product-card';
 
 async function fetchResults(searchParams: any) {
     const query = new URLSearchParams(searchParams).toString();
@@ -10,11 +14,13 @@ async function fetchResults(searchParams: any) {
 
     const res = await fetch(url, { cache: 'no-store' });
     if (!res.ok) return [];
-    
+
     return res.json();
 }
-export default async function SearchResultsPage({ searchParams }: {
-    searchParams: any
+export default async function SearchResultsPage({
+    searchParams,
+}: {
+    searchParams: any;
 }) {
     const results = await fetchResults(searchParams);
     const noFilters =
@@ -69,28 +75,31 @@ export default async function SearchResultsPage({ searchParams }: {
                     </div>
                 ) : (
                     <div className="grid gap-6">
-
-                        {results.map((item: { id: number; product_name: any; price: string; product_image_url : string; }) => (
-                                
+                        {results.map(
+                            (item: {
+                                id: number;
+                                product_name: any;
+                                price: string;
+                                product_image_url: string;
+                            }) => (
                                 <Link
-                                key={item.id}
-                                href={`/product/${item.id}`}
-                                className="block"
+                                    key={item.id}
+                                    href={`/product/${item.id}`}
+                                    className="block"
                                 >
-                                <ProductCardResults
-                                    product={{
-                                        id: item.id,
-                                        name: item.product_name,
-                                        price: item.price,
-                                        image: item.product_image_url,
-                                    }}
-                                />
-                            </Link>
-                            ))}
-                            
+                                    <ProductCardResults
+                                        product={{
+                                            id: item.id,
+                                            name: item.product_name,
+                                            price: item.price,
+                                            image: item.product_image_url,
+                                        }}
+                                    />
+                                </Link>
+                            ),
+                        )}
+
                         {/* //HERE */}
-                        
-                           
                     </div>
                 )}
 

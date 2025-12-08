@@ -40,20 +40,23 @@ function Content({ searchQuery }: { searchQuery: string }) {
     const [parts, setParts] = useState<Part[]>([]);
     const [loading, setLoading] = useState(true);
 
-    const getCategoryImage = (categoryId?: number, categoryName?: string): string => {
+    const getCategoryImage = (
+        categoryId?: number,
+        categoryName?: string,
+    ): string => {
         // If we have a category name string, use that
         if (categoryName) {
             const nameMap: { [key: string]: number } = {
                 'Brake Pads': 1,
                 'Oil Filter': 2,
                 'Air Filter': 3,
-                'Battery': 4,
-                'Radiator': 5,
+                Battery: 4,
+                Radiator: 5,
             };
             const imageNumber = nameMap[categoryName] || 1;
             return `/products/${imageNumber}.png`;
         }
-        
+
         // Otherwise fall back to category_id mapping
         if (categoryId) {
             const imageMap: { [key: number]: number } = {
@@ -66,7 +69,7 @@ function Content({ searchQuery }: { searchQuery: string }) {
             const imageNumber = imageMap[categoryId] || 1;
             return `/products/${imageNumber}.png`;
         }
-        
+
         // Default fallback
         return '/products/1.png';
     };
@@ -192,56 +195,61 @@ function Content({ searchQuery }: { searchQuery: string }) {
 
                 <div className="m-5 w-full">
                     {loading && <p className="text-gray-500">Loading parts…</p>}
-                    <div className="h-[3px] my-6 bg-[primary] rounded-full w-2/5" />
+                    <div className="my-6 h-[3px] w-2/5 rounded-full bg-[primary]" />
 
-                        <div className="my-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
-                            {featuredItems.map((item) => (
-                                <div
-                                    key={item.id}
-                                    className="h-[120px] rounded-lg overflow-hidden shadow-md hover:shadow-xl border border-gray-200 transition-all cursor-pointer"
-                                >
-                                    <div className="relative w-full h-full">
-                                        <img
-                                            src={item.image}
-                                            alt={item.title}
-                                            className="w-full h-full object-cover opacity-80"
-                                        />
-                                        <div className="absolute inset-0 bg-gradient-to-t from-[#6366f1]/80 to-transparent flex flex-col justify-end p-4">
-                                        <h3 className="text-white mb-1">{item.title}</h3>
-                                        <p className="text-white/90 text-sm">{item.description}</p>
-                                    </div>
+                    <div className="my-10 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+                        {featuredItems.map((item) => (
+                            <div
+                                key={item.id}
+                                className="h-[120px] cursor-pointer overflow-hidden rounded-lg border border-gray-200 shadow-md transition-all hover:shadow-xl"
+                            >
+                                <div className="relative h-full w-full">
+                                    <img
+                                        src={item.image}
+                                        alt={item.title}
+                                        className="h-full w-full object-cover opacity-80"
+                                    />
+                                    <div className="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-[#6366f1]/80 to-transparent p-4">
+                                        <h3 className="mb-1 text-white">
+                                            {item.title}
+                                        </h3>
+                                        <p className="text-sm text-white/90">
+                                            {item.description}
+                                        </p>
                                     </div>
                                 </div>
-                            ))}
-                        </div>
+                            </div>
+                        ))}
+                    </div>
 
-                        <div className="h-[3px] my-6 mb-5 bg-[primary] rounded-full w-2/5" />
-                        <div className="h-[4px] w-24 bg-[primary] my-6 rounded-full" />
-
-                    
+                    <div className="my-6 mb-5 h-[3px] w-2/5 rounded-full bg-[primary]" />
+                    <div className="my-6 h-[4px] w-24 rounded-full bg-[primary]" />
 
                     {!loading && (
-                        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+                        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
                             {parts.map((part) => (
                                 <Link
-                                key={part.id}
-                                href={`/product/${part.id}`}
-                                className="block"
-                                onClick={handleProductClick}
-                            >
-                                <ProductCardHome
-                                    product={{
-                                        name: part.product_name,
-                                        price: part.price,
-                                        image: getCategoryImage(part.category_id, part.category),
-                                    }}
-                                />
-                            </Link>
+                                    key={part.id}
+                                    href={`/product/${part.id}`}
+                                    className="block"
+                                    onClick={handleProductClick}
+                                >
+                                    <ProductCardHome
+                                        product={{
+                                            name: part.product_name,
+                                            price: part.price,
+                                            image: getCategoryImage(
+                                                part.category_id,
+                                                part.category,
+                                            ),
+                                        }}
+                                    />
+                                </Link>
                             ))}
-                    </div>
+                        </div>
                     )}
 
-                    <div className="h-[5px] w-24 bg-[primary] my-6 rounded-full" />
+                    <div className="my-6 h-[5px] w-24 rounded-full bg-[primary]" />
 
                     <div className="mt-10 flex flex-col gap-4">
                         {promos.map((p, i) => (

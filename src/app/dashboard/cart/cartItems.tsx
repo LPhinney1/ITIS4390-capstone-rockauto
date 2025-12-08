@@ -46,16 +46,18 @@ export const cartList: CartItem[] = loadCartFromStorage();
 
 export function addToCart(product: Product, quantity: number = 1) {
     const vehicles = loadVehiclesFromStorage();
-    const defaultVehicle = vehicles.find(v => v.isDefault) || vehicles[0] || {
-        id: 0,
-        year: '',
-        make: '',
-        model: '',
-        engine: '',
-    };
+    const defaultVehicle = vehicles.find((v) => v.isDefault) ||
+        vehicles[0] || {
+            id: 0,
+            year: '',
+            make: '',
+            model: '',
+            engine: '',
+        };
 
     const existing = cartList.find(
-        (item) => item.Product.id === product.id && item.car.id === defaultVehicle.id
+        (item) =>
+            item.Product.id === product.id && item.car.id === defaultVehicle.id,
     );
 
     if (existing) {
@@ -105,7 +107,7 @@ export function removeFromCart(productId: number): void {
     const stored = localStorage.getItem('cartList');
     const cart: CartItem[] = stored ? JSON.parse(stored) : [];
 
-    const index = cart.findIndex(item => item.Product.id === productId);
+    const index = cart.findIndex((item) => item.Product.id === productId);
     if (index !== -1) {
         cart.splice(index, 1);
         // Save back to localStorage
@@ -122,7 +124,7 @@ export function updateQuantity(productId: number, newQuantity: number): void {
     const stored = localStorage.getItem('cartList');
     const cart: CartItem[] = stored ? JSON.parse(stored) : [];
 
-    const item = cart.find(item => item.Product.id === productId);
+    const item = cart.find((item) => item.Product.id === productId);
     if (item) {
         item.quantity = newQuantity;
         // Save back to localStorage
@@ -136,12 +138,14 @@ export function updateQuantity(productId: number, newQuantity: number): void {
 
 export default function CartItems() {
     const vehicles = loadVehiclesFromStorage();
-    
+
     return (
         <div>
             <p>Cart Items Component</p>
             <p>Number of Cars in Garage: {vehicles.length}</p>
-            <p>First Car in Garage: {vehicles[0]?.make} {vehicles[0]?.model}</p>
+            <p>
+                First Car in Garage: {vehicles[0]?.make} {vehicles[0]?.model}
+            </p>
         </div>
     );
 }

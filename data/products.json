@@ -1,686 +1,686 @@
 [
-  {
-    "make": "Toyota",
-    "model": "Camry",
-    "year": 2024,
-    "category": "Brake Pads",
-    "product_name": "Premium Ceramic Brake Pads for Toyota Camry",
-    "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
-    "price": 53.9
-  },
-  {
-    "make": "Toyota",
-    "model": "Corolla",
-    "year": 2024,
-    "category": "Battery",
-    "product_name": "Optima RedTop High-Performance AGM Battery - Group 34",
-    "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
-    "price": 131.04
-  },
-  {
-    "make": "Subaru",
-    "model": "Forester",
-    "year": 2024,
-    "category": "Air Filter",
-    "product_name": "PurolatorONE Advanced Engine Air Filter",
-    "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
-    "price": 24.35
-  },
-  {
-    "make": "Chevrolet",
-    "model": "Silverado 1500",
-    "year": 2021,
-    "category": "Radiator",
-    "product_name": "KoyoRad Hyper V-Series Aluminum Radiator",
-    "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
-    "price": 231.32
-  },
-  {
-    "make": "Subaru",
-    "model": "Forester",
-    "year": 2024,
-    "category": "Brake Pads",
-    "product_name": "Raybestos Element3 Enhanced Hybrid Brake Pads - Front",
-    "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
-    "price": 65.09
-  },
-  {
-    "make": "Kia",
-    "model": "Soul",
-    "year": 2023,
-    "category": "Radiator",
-    "product_name": "ACDelco Professional Engine Cooling Radiator",
-    "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
-    "price": 229.39
-  },
-  {
-    "make": "BMW",
-    "model": "3 Series",
-    "year": 2023,
-    "category": "Oil Filter",
-    "product_name": "Mahle Original OE Replacement Oil Filter",
-    "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
-    "price": 9.68
-  },
-  {
-    "make": "Kia",
-    "model": "Sportage",
-    "year": 2023,
-    "category": "Oil Filter",
-    "product_name": "MANN-FILTER High-Capacity Cartridge Oil Filter",
-    "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
-    "price": 4.48
-  },
-  {
-    "make": "Toyota",
-    "model": "Corolla",
-    "year": 2024,
-    "category": "Oil Filter",
-    "product_name": "Bosch Premium Filtech Oil Filter",
-    "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
-    "price": 5.04
-  },
-  {
-    "make": "Chevrolet",
-    "model": "Silverado 1500",
-    "year": 2021,
-    "category": "Brake Pads",
-    "product_name": "Power Stop Z23 Evolution Sport Brake Pads - Rear",
-    "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
-    "price": 57.33
-  },
-  {
-    "make": "Kia",
-    "model": "Soul",
-    "year": 2023,
-    "category": "Air Filter",
-    "product_name": "Carquest Premium Engine Air Filter",
-    "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
-    "price": 10.24
-  },
-  {
-    "make": "Audi",
-    "model": "A4",
-    "year": 2024,
-    "category": "Battery",
-    "product_name": "ACDelco Silver Series Starter Battery - Group 75",
-    "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
-    "price": 135.65
-  },
-  {
-    "make": "Kia",
-    "model": "Soul",
-    "year": 2023,
-    "category": "Battery",
-    "product_name": "Super Start Platinum AGM Battery - Group 34/78",
-    "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
-    "price": 130.74
-  },
-  {
-    "make": "Honda",
-    "model": "Accord",
-    "year": 2020,
-    "category": "Radiator",
-    "product_name": "CSF High-Efficiency All-Aluminum Radiator",
-    "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
-    "price": 212.79
-  },
-  {
-    "make": "Toyota",
-    "model": "Camry",
-    "year": 2024,
-    "category": "Radiator",
-    "product_name": "Denso OE-Style Aluminum Radiator with Plastic Tank",
-    "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
-    "price": 213.59
-  },
-  {
-    "make": "Toyota",
-    "model": "Corolla",
-    "year": 2024,
-    "category": "Air Filter",
-    "product_name": "FRAM Extra Guard Engine Air Filter",
-    "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
-    "price": 22.77
-  },
-  {
-    "make": "Hyundai",
-    "model": "Elantra",
-    "year": 2019,
-    "category": "Battery",
-    "product_name": "Exide Marathon Max AGM Battery - Group 47",
-    "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
-    "price": 153.09
-  },
-  {
-    "make": "Hyundai",
-    "model": "Sonata",
-    "year": 2024,
-    "category": "Brake Pads",
-    "product_name": "Brembo Premium Ceramic Disc Brake Pads - Front",
-    "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
-    "price": 74.15
-  },
-  {
-    "make": "Hyundai",
-    "model": "Sonata",
-    "year": 2024,
-    "category": "Battery",
-    "product_name": "Delphi MaxStart AGM Automotive Battery - Group 94R",
-    "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
-    "price": 153.51
-  },
-  {
-    "make": "Hyundai",
-    "model": "Elantra",
-    "year": 2019,
-    "category": "Radiator",
-    "product_name": "OSC Cooling Products Ultra-Premium Radiator",
-    "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
-    "price": 243.14
-  },
-  {
-    "make": "Subaru",
-    "model": "Forester",
-    "year": 2024,
-    "category": "Oil Filter",
-    "product_name": "Royal Purple Extended Life Oil Filter",
-    "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
-    "price": 16.83
-  },
-  {
-    "make": "Chevrolet",
-    "model": "Silverado 1500",
-    "year": 2021,
-    "category": "Air Filter",
-    "product_name": "MANN-FILTER OE Replacement Air Filter",
-    "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
-    "price": 40.78
-  },
-  {
-    "make": "Honda",
-    "model": "Civic",
-    "year": 2022,
-    "category": "Brake Pads",
-    "product_name": "ACDelco Gold Semi-Metallic Brake Pads - Front",
-    "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
-    "price": 52.76
-  },
-  {
-    "make": "Subaru",
-    "model": "Outback",
-    "year": 2023,
-    "category": "Brake Pads",
-    "product_name": "Wagner ThermoQuiet Ceramic Brake Pads - Rear",
-    "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
-    "price": 70.17
-  },
-  {
-    "make": "Kia",
-    "model": "Sportage",
-    "year": 2023,
-    "category": "Brake Pads",
-    "product_name": "TRW Ultra Ceramic Disc Brake Pad Set - Front",
-    "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
-    "price": 57.71
-  },
-  {
-    "make": "Subaru",
-    "model": "Outback",
-    "year": 2023,
-    "category": "Radiator",
-    "product_name": "Valeo Premium Engine Cooling Radiator",
-    "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
-    "price": 213.3
-  },
-  {
-    "make": "Ford",
-    "model": "F-150",
-    "year": 2022,
-    "category": "Radiator",
-    "product_name": "Nissens Heavy-Duty Cooling Radiator",
-    "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
-    "price": 234.43
-  },
-  {
-    "make": "Honda",
-    "model": "Accord",
-    "year": 2020,
-    "category": "Oil Filter",
-    "product_name": "ACDelco Professional Engine Oil Filter",
-    "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
-    "price": 3.6
-  },
-  {
-    "make": "Kia",
-    "model": "Soul",
-    "year": 2023,
-    "category": "Oil Filter",
-    "product_name": "Denso First Time Fit Oil Filter",
-    "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
-    "price": 10.68
-  },
-  {
-    "make": "Honda",
-    "model": "Civic",
-    "year": 2022,
-    "category": "Radiator",
-    "product_name": "Mishimoto Performance Aluminum Racing Radiator",
-    "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
-    "price": 222.66
-  },
-  {
-    "make": "Subaru",
-    "model": "Forester",
-    "year": 2024,
-    "category": "Radiator",
-    "product_name": "APDI Pro OEM-Grade Replacement Radiator",
-    "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
-    "price": 233.57
-  },
-  {
-    "make": "Kia",
-    "model": "Sportage",
-    "year": 2023,
-    "category": "Radiator",
-    "product_name": "Dayco All-Aluminum High-Flow Radiator",
-    "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
-    "price": 241.69
-  },
-  {
-    "make": "Toyota",
-    "model": "Corolla",
-    "year": 2024,
-    "category": "Radiator",
-    "product_name": "Spectra Premium Complete Radiator Assembly",
-    "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
-    "price": 217.65
-  },
-  {
-    "make": "Ford",
-    "model": "F-150",
-    "year": 2022,
-    "category": "Battery",
-    "product_name": "Duralast Platinum AGM Battery - Group H7 850 CCA",
-    "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
-    "price": 158.2
-  },
-  {
-    "make": "Nissan",
-    "model": "Altima",
-    "year": 2019,
-    "category": "Air Filter",
-    "product_name": "Mahle CareMetix Cabin & Engine Air Filter Combo",
-    "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
-    "price": 10.32
-  },
-  {
-    "make": "Subaru",
-    "model": "Outback",
-    "year": 2023,
-    "category": "Oil Filter",
-    "product_name": "PurolatorBOSS Engine Protection Oil Filter",
-    "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
-    "price": 10.5
-  },
-  {
-    "make": "Hyundai",
-    "model": "Sonata",
-    "year": 2024,
-    "category": "Radiator",
-    "product_name": "Motorcraft OEM Spec Radiator Assembly",
-    "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
-    "price": 223.07
-  },
-  {
-    "make": "Honda",
-    "model": "Civic",
-    "year": 2022,
-    "category": "Oil Filter",
-    "product_name": "FRAM Ultra Synthetic Spin-On Oil Filter",
-    "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
-    "price": 12.26
-  },
-  {
-    "make": "Kia",
-    "model": "Soul",
-    "year": 2023,
-    "category": "Brake Pads",
-    "product_name": "Brembo Premium Ceramic Disc Brake Pads - Rear",
-    "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
-    "price": 65.8
-  },
-  {
-    "make": "Toyota",
-    "model": "Camry",
-    "year": 2024,
-    "category": "Oil Filter",
-    "product_name": "Mobil 1 Extended Performance Oil Filter",
-    "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
-    "price": 27.95
-  },
-  {
-    "make": "Hyundai",
-    "model": "Sonata",
-    "year": 2024,
-    "category": "Air Filter",
-    "product_name": "STP Max Cabin & Engine Protection Air Filter",
-    "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
-    "price": 21.96
-  },
-  {
-    "make": "Nissan",
-    "model": "Altima",
-    "year": 2019,
-    "category": "Battery",
-    "product_name": "EverStart Maxx Lead-Acid Battery - Group 24F",
-    "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
-    "price": 161.96
-  },
-  {
-    "make": "BMW",
-    "model": "3 Series",
-    "year": 2023,
-    "category": "Brake Pads",
-    "product_name": "TRW Ultra Ceramic Disc Brake Pad Set - Rear",
-    "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
-    "price": 63.98
-  },
-  {
-    "make": "BMW",
-    "model": "3 Series",
-    "year": 2023,
-    "category": "Radiator",
-    "product_name": "UAC Complete Radiator with Integrated Oil Cooler",
-    "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
-    "price": 213.18
-  },
-  {
-    "make": "Honda",
-    "model": "Accord",
-    "year": 2020,
-    "category": "Battery",
-    "product_name": "Interstate MTX AGM Automotive Battery - Group 35",
-    "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
-    "price": 140.13
-  },
-  {
-    "make": "Ford",
-    "model": "F-150",
-    "year": 2022,
-    "category": "Oil Filter",
-    "product_name": "K&N Performance Gold Oil Filter",
-    "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
-    "price": 30.33
-  },
-  {
-    "make": "Hyundai",
-    "model": "Elantra",
-    "year": 2019,
-    "category": "Brake Pads",
-    "product_name": "Raybestos Element3 Enhanced Hybrid Brake Pads - Rear",
-    "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
-    "price": 84.23
-  },
-  {
-    "make": "Nissan",
-    "model": "Altima",
-    "year": 2019,
-    "category": "Radiator",
-    "product_name": "TYC OE Replacement Radiator with Transmission Cooler",
-    "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
-    "price": 229.85
-  },
-  {
-    "make": "Subaru",
-    "model": "Outback",
-    "year": 2023,
-    "category": "Battery",
-    "product_name": "Odyssey Extreme Series AGM Battery - Group 49",
-    "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
-    "price": 144.25
-  },
-  {
-    "make": "Honda",
-    "model": "Accord",
-    "year": 2020,
-    "category": "Air Filter",
-    "product_name": "Bosch Workshop Series Engine Air Filter",
-    "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
-    "price": 15.98
-  },
-  {
-    "make": "Nissan",
-    "model": "Altima",
-    "year": 2019,
-    "category": "Oil Filter",
-    "product_name": "Motorcraft OEM Replacement Oil Filter",
-    "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
-    "price": 16.04
-  },
-  {
-    "make": "Toyota",
-    "model": "Camry",
-    "year": 2024,
-    "category": "Battery",
-    "product_name": "DieHard Gold AGM Battery - Group H6 760 CCA",
-    "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
-    "price": 134.88
-  },
-  {
-    "make": "Kia",
-    "model": "Sportage",
-    "year": 2023,
-    "category": "Battery",
-    "product_name": "XCEL UltraStart Maintenance-Free Battery - Group 51R",
-    "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
-    "price": 138.01
-  },
-  {
-    "make": "Subaru",
-    "model": "Forester",
-    "year": 2024,
-    "category": "Battery",
-    "product_name": "Bosch S6 High-Performance AGM Battery - Group T5",
-    "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
-    "price": 155.52
-  },
-  {
-    "make": "Toyota",
-    "model": "Camry",
-    "year": 2024,
-    "category": "Air Filter",
-    "product_name": "K&N High-Flow Performance Engine Air Filter",
-    "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
-    "price": 16.57
-  },
-  {
-    "make": "Kia",
-    "model": "Sportage",
-    "year": 2023,
-    "category": "Air Filter",
-    "product_name": "EPAuto High-Density Panel Engine Air Filter",
-    "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
-    "price": 30.09
-  },
-  {
-    "make": "BMW",
-    "model": "3 Series",
-    "year": 2023,
-    "category": "Air Filter",
-    "product_name": "Beck/Arnley OE Quality Engine Air Filter",
-    "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
-    "price": 42.91
-  },
-  {
-    "make": "Toyota",
-    "model": "Camry",
-    "year": 2024,
-    "category": "Brake Pads",
-    "product_name": "Bosch QuietCast Ceramic Brake Pad Set - Front",
-    "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
-    "price": 53.9
-  },
-  {
-    "make": "Audi",
-    "model": "A4",
-    "year": 2024,
-    "category": "Radiator",
-    "product_name": "Carquest Premium High-Capacity Radiator",
-    "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
-    "price": 243.37
-  },
-  {
-    "make": "Chevrolet",
-    "model": "Silverado 1500",
-    "year": 2021,
-    "category": "Battery",
-    "product_name": "NAPA Legend Premium Battery - Group 65",
-    "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
-    "price": 152.68
-  },
-  {
-    "make": "Hyundai",
-    "model": "Sonata",
-    "year": 2024,
-    "category": "Oil Filter",
-    "product_name": "STP Extended Life High-Mileage Oil Filter",
-    "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
-    "price": 26.95
-  },
-  {
-    "make": "Hyundai",
-    "model": "Elantra",
-    "year": 2019,
-    "category": "Oil Filter",
-    "product_name": "Hastings Premium Spin-On Oil Filter",
-    "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
-    "price": 20.64
-  },
-  {
-    "make": "Ford",
-    "model": "F-150",
-    "year": 2022,
-    "category": "Brake Pads",
-    "product_name": "Power Stop Z23 Evolution Sport Brake Pads - Front",
-    "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
-    "price": 70.62
-  },
-  {
-    "make": "Audi",
-    "model": "A4",
-    "year": 2024,
-    "category": "Oil Filter",
-    "product_name": "Carquest Premium Synthetic Media Oil Filter",
-    "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
-    "price": 8.96
-  },
-  {
-    "make": "Honda",
-    "model": "Civic",
-    "year": 2022,
-    "category": "Air Filter",
-    "product_name": "ACDelco Professional Air Cleaner Element",
-    "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
-    "price": 30.0
-  },
-  {
-    "make": "Chevrolet",
-    "model": "Silverado 1500",
-    "year": 2021,
-    "category": "Oil Filter",
-    "product_name": "WIX XP High-Efficiency Oil Filter",
-    "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
-    "price": 11.34
-  },
-  {
-    "make": "Ford",
-    "model": "F-150",
-    "year": 2022,
-    "category": "Air Filter",
-    "product_name": "WIX Premium Panel Engine Air Filter",
-    "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
-    "price": 8.23
-  },
-  {
-    "make": "Honda",
-    "model": "Accord",
-    "year": 2020,
-    "category": "Brake Pads",
-    "product_name": "ACDelco Advantage Ceramic Brake Pads - Rear",
-    "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
-    "price": 74.66
-  },
-  {
-    "make": "Subaru",
-    "model": "Outback",
-    "year": 2023,
-    "category": "Air Filter",
-    "product_name": "Motorcraft OEM Panel Engine Air Filter",
-    "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
-    "price": 24.55
-  },
-  {
-    "make": "Audi",
-    "model": "A4",
-    "year": 2024,
-    "category": "Brake Pads",
-    "product_name": "Centric Posi-Quiet Ceramic Brake Pads - Front",
-    "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
-    "price": 67.77
-  },
-  {
-    "make": "Hyundai",
-    "model": "Elantra",
-    "year": 2019,
-    "category": "Air Filter",
-    "product_name": "Denso First Time Fit Panel Air Filter",
-    "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
-    "price": 12.4
-  },
-  {
-    "make": "Toyota",
-    "model": "Corolla",
-    "year": 2024,
-    "category": "Brake Pads",
-    "product_name": "Bosch QuietCast Ceramic Brake Pad Set - Rear",
-    "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
-    "price": 57.25
-  },
-  {
-    "make": "Audi",
-    "model": "A4",
-    "year": 2024,
-    "category": "Air Filter",
-    "product_name": "Premium Guard High-Capacity Air Filter",
-    "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
-    "price": 21.09
-  },
-  {
-    "make": "BMW",
-    "model": "3 Series",
-    "year": 2023,
-    "category": "Battery",
-    "product_name": "Valucraft Economy Automotive Battery - Group 26",
-    "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
-    "price": 147.83
-  },
-  {
-    "make": "Honda",
-    "model": "Civic",
-    "year": 2022,
-    "category": "Battery",
-    "product_name": "ACDelco Gold Professional Battery - Group 48 730 CCA",
-    "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
-    "price": 160.99
-  },
-  {
-    "make": "Nissan",
-    "model": "Altima",
-    "year": 2019,
-    "category": "Brake Pads",
-    "product_name": "Wagner ThermoQuiet Ceramic Brake Pads - Front",
-    "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
-    "price": 78.18
-  }
+    {
+        "make": "Toyota",
+        "model": "Camry",
+        "year": 2024,
+        "category": "Brake Pads",
+        "product_name": "Premium Ceramic Brake Pads for Toyota Camry",
+        "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
+        "price": 53.9
+    },
+    {
+        "make": "Toyota",
+        "model": "Corolla",
+        "year": 2024,
+        "category": "Battery",
+        "product_name": "Optima RedTop High-Performance AGM Battery - Group 34",
+        "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
+        "price": 131.04
+    },
+    {
+        "make": "Subaru",
+        "model": "Forester",
+        "year": 2024,
+        "category": "Air Filter",
+        "product_name": "PurolatorONE Advanced Engine Air Filter",
+        "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
+        "price": 24.35
+    },
+    {
+        "make": "Chevrolet",
+        "model": "Silverado 1500",
+        "year": 2021,
+        "category": "Radiator",
+        "product_name": "KoyoRad Hyper V-Series Aluminum Radiator",
+        "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
+        "price": 231.32
+    },
+    {
+        "make": "Subaru",
+        "model": "Forester",
+        "year": 2024,
+        "category": "Brake Pads",
+        "product_name": "Raybestos Element3 Enhanced Hybrid Brake Pads - Front",
+        "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
+        "price": 65.09
+    },
+    {
+        "make": "Kia",
+        "model": "Soul",
+        "year": 2023,
+        "category": "Radiator",
+        "product_name": "ACDelco Professional Engine Cooling Radiator",
+        "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
+        "price": 229.39
+    },
+    {
+        "make": "BMW",
+        "model": "3 Series",
+        "year": 2023,
+        "category": "Oil Filter",
+        "product_name": "Mahle Original OE Replacement Oil Filter",
+        "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
+        "price": 9.68
+    },
+    {
+        "make": "Kia",
+        "model": "Sportage",
+        "year": 2023,
+        "category": "Oil Filter",
+        "product_name": "MANN-FILTER High-Capacity Cartridge Oil Filter",
+        "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
+        "price": 4.48
+    },
+    {
+        "make": "Toyota",
+        "model": "Corolla",
+        "year": 2024,
+        "category": "Oil Filter",
+        "product_name": "Bosch Premium Filtech Oil Filter",
+        "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
+        "price": 5.04
+    },
+    {
+        "make": "Chevrolet",
+        "model": "Silverado 1500",
+        "year": 2021,
+        "category": "Brake Pads",
+        "product_name": "Power Stop Z23 Evolution Sport Brake Pads - Rear",
+        "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
+        "price": 57.33
+    },
+    {
+        "make": "Kia",
+        "model": "Soul",
+        "year": 2023,
+        "category": "Air Filter",
+        "product_name": "Carquest Premium Engine Air Filter",
+        "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
+        "price": 10.24
+    },
+    {
+        "make": "Audi",
+        "model": "A4",
+        "year": 2024,
+        "category": "Battery",
+        "product_name": "ACDelco Silver Series Starter Battery - Group 75",
+        "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
+        "price": 135.65
+    },
+    {
+        "make": "Kia",
+        "model": "Soul",
+        "year": 2023,
+        "category": "Battery",
+        "product_name": "Super Start Platinum AGM Battery - Group 34/78",
+        "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
+        "price": 130.74
+    },
+    {
+        "make": "Honda",
+        "model": "Accord",
+        "year": 2020,
+        "category": "Radiator",
+        "product_name": "CSF High-Efficiency All-Aluminum Radiator",
+        "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
+        "price": 212.79
+    },
+    {
+        "make": "Toyota",
+        "model": "Camry",
+        "year": 2024,
+        "category": "Radiator",
+        "product_name": "Denso OE-Style Aluminum Radiator with Plastic Tank",
+        "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
+        "price": 213.59
+    },
+    {
+        "make": "Toyota",
+        "model": "Corolla",
+        "year": 2024,
+        "category": "Air Filter",
+        "product_name": "FRAM Extra Guard Engine Air Filter",
+        "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
+        "price": 22.77
+    },
+    {
+        "make": "Hyundai",
+        "model": "Elantra",
+        "year": 2019,
+        "category": "Battery",
+        "product_name": "Exide Marathon Max AGM Battery - Group 47",
+        "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
+        "price": 153.09
+    },
+    {
+        "make": "Hyundai",
+        "model": "Sonata",
+        "year": 2024,
+        "category": "Brake Pads",
+        "product_name": "Brembo Premium Ceramic Disc Brake Pads - Front",
+        "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
+        "price": 74.15
+    },
+    {
+        "make": "Hyundai",
+        "model": "Sonata",
+        "year": 2024,
+        "category": "Battery",
+        "product_name": "Delphi MaxStart AGM Automotive Battery - Group 94R",
+        "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
+        "price": 153.51
+    },
+    {
+        "make": "Hyundai",
+        "model": "Elantra",
+        "year": 2019,
+        "category": "Radiator",
+        "product_name": "OSC Cooling Products Ultra-Premium Radiator",
+        "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
+        "price": 243.14
+    },
+    {
+        "make": "Subaru",
+        "model": "Forester",
+        "year": 2024,
+        "category": "Oil Filter",
+        "product_name": "Royal Purple Extended Life Oil Filter",
+        "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
+        "price": 16.83
+    },
+    {
+        "make": "Chevrolet",
+        "model": "Silverado 1500",
+        "year": 2021,
+        "category": "Air Filter",
+        "product_name": "MANN-FILTER OE Replacement Air Filter",
+        "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
+        "price": 40.78
+    },
+    {
+        "make": "Honda",
+        "model": "Civic",
+        "year": 2022,
+        "category": "Brake Pads",
+        "product_name": "ACDelco Gold Semi-Metallic Brake Pads - Front",
+        "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
+        "price": 52.76
+    },
+    {
+        "make": "Subaru",
+        "model": "Outback",
+        "year": 2023,
+        "category": "Brake Pads",
+        "product_name": "Wagner ThermoQuiet Ceramic Brake Pads - Rear",
+        "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
+        "price": 70.17
+    },
+    {
+        "make": "Kia",
+        "model": "Sportage",
+        "year": 2023,
+        "category": "Brake Pads",
+        "product_name": "TRW Ultra Ceramic Disc Brake Pad Set - Front",
+        "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
+        "price": 57.71
+    },
+    {
+        "make": "Subaru",
+        "model": "Outback",
+        "year": 2023,
+        "category": "Radiator",
+        "product_name": "Valeo Premium Engine Cooling Radiator",
+        "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
+        "price": 213.3
+    },
+    {
+        "make": "Ford",
+        "model": "F-150",
+        "year": 2022,
+        "category": "Radiator",
+        "product_name": "Nissens Heavy-Duty Cooling Radiator",
+        "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
+        "price": 234.43
+    },
+    {
+        "make": "Honda",
+        "model": "Accord",
+        "year": 2020,
+        "category": "Oil Filter",
+        "product_name": "ACDelco Professional Engine Oil Filter",
+        "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
+        "price": 3.6
+    },
+    {
+        "make": "Kia",
+        "model": "Soul",
+        "year": 2023,
+        "category": "Oil Filter",
+        "product_name": "Denso First Time Fit Oil Filter",
+        "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
+        "price": 10.68
+    },
+    {
+        "make": "Honda",
+        "model": "Civic",
+        "year": 2022,
+        "category": "Radiator",
+        "product_name": "Mishimoto Performance Aluminum Racing Radiator",
+        "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
+        "price": 222.66
+    },
+    {
+        "make": "Subaru",
+        "model": "Forester",
+        "year": 2024,
+        "category": "Radiator",
+        "product_name": "APDI Pro OEM-Grade Replacement Radiator",
+        "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
+        "price": 233.57
+    },
+    {
+        "make": "Kia",
+        "model": "Sportage",
+        "year": 2023,
+        "category": "Radiator",
+        "product_name": "Dayco All-Aluminum High-Flow Radiator",
+        "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
+        "price": 241.69
+    },
+    {
+        "make": "Toyota",
+        "model": "Corolla",
+        "year": 2024,
+        "category": "Radiator",
+        "product_name": "Spectra Premium Complete Radiator Assembly",
+        "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
+        "price": 217.65
+    },
+    {
+        "make": "Ford",
+        "model": "F-150",
+        "year": 2022,
+        "category": "Battery",
+        "product_name": "Duralast Platinum AGM Battery - Group H7 850 CCA",
+        "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
+        "price": 158.2
+    },
+    {
+        "make": "Nissan",
+        "model": "Altima",
+        "year": 2019,
+        "category": "Air Filter",
+        "product_name": "Mahle CareMetix Cabin & Engine Air Filter Combo",
+        "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
+        "price": 10.32
+    },
+    {
+        "make": "Subaru",
+        "model": "Outback",
+        "year": 2023,
+        "category": "Oil Filter",
+        "product_name": "PurolatorBOSS Engine Protection Oil Filter",
+        "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
+        "price": 10.5
+    },
+    {
+        "make": "Hyundai",
+        "model": "Sonata",
+        "year": 2024,
+        "category": "Radiator",
+        "product_name": "Motorcraft OEM Spec Radiator Assembly",
+        "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
+        "price": 223.07
+    },
+    {
+        "make": "Honda",
+        "model": "Civic",
+        "year": 2022,
+        "category": "Oil Filter",
+        "product_name": "FRAM Ultra Synthetic Spin-On Oil Filter",
+        "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
+        "price": 12.26
+    },
+    {
+        "make": "Kia",
+        "model": "Soul",
+        "year": 2023,
+        "category": "Brake Pads",
+        "product_name": "Brembo Premium Ceramic Disc Brake Pads - Rear",
+        "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
+        "price": 65.8
+    },
+    {
+        "make": "Toyota",
+        "model": "Camry",
+        "year": 2024,
+        "category": "Oil Filter",
+        "product_name": "Mobil 1 Extended Performance Oil Filter",
+        "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
+        "price": 27.95
+    },
+    {
+        "make": "Hyundai",
+        "model": "Sonata",
+        "year": 2024,
+        "category": "Air Filter",
+        "product_name": "STP Max Cabin & Engine Protection Air Filter",
+        "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
+        "price": 21.96
+    },
+    {
+        "make": "Nissan",
+        "model": "Altima",
+        "year": 2019,
+        "category": "Battery",
+        "product_name": "EverStart Maxx Lead-Acid Battery - Group 24F",
+        "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
+        "price": 161.96
+    },
+    {
+        "make": "BMW",
+        "model": "3 Series",
+        "year": 2023,
+        "category": "Brake Pads",
+        "product_name": "TRW Ultra Ceramic Disc Brake Pad Set - Rear",
+        "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
+        "price": 63.98
+    },
+    {
+        "make": "BMW",
+        "model": "3 Series",
+        "year": 2023,
+        "category": "Radiator",
+        "product_name": "UAC Complete Radiator with Integrated Oil Cooler",
+        "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
+        "price": 213.18
+    },
+    {
+        "make": "Honda",
+        "model": "Accord",
+        "year": 2020,
+        "category": "Battery",
+        "product_name": "Interstate MTX AGM Automotive Battery - Group 35",
+        "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
+        "price": 140.13
+    },
+    {
+        "make": "Ford",
+        "model": "F-150",
+        "year": 2022,
+        "category": "Oil Filter",
+        "product_name": "K&N Performance Gold Oil Filter",
+        "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
+        "price": 30.33
+    },
+    {
+        "make": "Hyundai",
+        "model": "Elantra",
+        "year": 2019,
+        "category": "Brake Pads",
+        "product_name": "Raybestos Element3 Enhanced Hybrid Brake Pads - Rear",
+        "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
+        "price": 84.23
+    },
+    {
+        "make": "Nissan",
+        "model": "Altima",
+        "year": 2019,
+        "category": "Radiator",
+        "product_name": "TYC OE Replacement Radiator with Transmission Cooler",
+        "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
+        "price": 229.85
+    },
+    {
+        "make": "Subaru",
+        "model": "Outback",
+        "year": 2023,
+        "category": "Battery",
+        "product_name": "Odyssey Extreme Series AGM Battery - Group 49",
+        "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
+        "price": 144.25
+    },
+    {
+        "make": "Honda",
+        "model": "Accord",
+        "year": 2020,
+        "category": "Air Filter",
+        "product_name": "Bosch Workshop Series Engine Air Filter",
+        "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
+        "price": 15.98
+    },
+    {
+        "make": "Nissan",
+        "model": "Altima",
+        "year": 2019,
+        "category": "Oil Filter",
+        "product_name": "Motorcraft OEM Replacement Oil Filter",
+        "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
+        "price": 16.04
+    },
+    {
+        "make": "Toyota",
+        "model": "Camry",
+        "year": 2024,
+        "category": "Battery",
+        "product_name": "DieHard Gold AGM Battery - Group H6 760 CCA",
+        "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
+        "price": 134.88
+    },
+    {
+        "make": "Kia",
+        "model": "Sportage",
+        "year": 2023,
+        "category": "Battery",
+        "product_name": "XCEL UltraStart Maintenance-Free Battery - Group 51R",
+        "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
+        "price": 138.01
+    },
+    {
+        "make": "Subaru",
+        "model": "Forester",
+        "year": 2024,
+        "category": "Battery",
+        "product_name": "Bosch S6 High-Performance AGM Battery - Group T5",
+        "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
+        "price": 155.52
+    },
+    {
+        "make": "Toyota",
+        "model": "Camry",
+        "year": 2024,
+        "category": "Air Filter",
+        "product_name": "K&N High-Flow Performance Engine Air Filter",
+        "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
+        "price": 16.57
+    },
+    {
+        "make": "Kia",
+        "model": "Sportage",
+        "year": 2023,
+        "category": "Air Filter",
+        "product_name": "EPAuto High-Density Panel Engine Air Filter",
+        "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
+        "price": 30.09
+    },
+    {
+        "make": "BMW",
+        "model": "3 Series",
+        "year": 2023,
+        "category": "Air Filter",
+        "product_name": "Beck/Arnley OE Quality Engine Air Filter",
+        "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
+        "price": 42.91
+    },
+    {
+        "make": "Toyota",
+        "model": "Camry",
+        "year": 2024,
+        "category": "Brake Pads",
+        "product_name": "Bosch QuietCast Ceramic Brake Pad Set - Front",
+        "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
+        "price": 53.9
+    },
+    {
+        "make": "Audi",
+        "model": "A4",
+        "year": 2024,
+        "category": "Radiator",
+        "product_name": "Carquest Premium High-Capacity Radiator",
+        "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
+        "price": 243.37
+    },
+    {
+        "make": "Chevrolet",
+        "model": "Silverado 1500",
+        "year": 2021,
+        "category": "Battery",
+        "product_name": "NAPA Legend Premium Battery - Group 65",
+        "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
+        "price": 152.68
+    },
+    {
+        "make": "Hyundai",
+        "model": "Sonata",
+        "year": 2024,
+        "category": "Oil Filter",
+        "product_name": "STP Extended Life High-Mileage Oil Filter",
+        "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
+        "price": 26.95
+    },
+    {
+        "make": "Hyundai",
+        "model": "Elantra",
+        "year": 2019,
+        "category": "Oil Filter",
+        "product_name": "Hastings Premium Spin-On Oil Filter",
+        "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
+        "price": 20.64
+    },
+    {
+        "make": "Ford",
+        "model": "F-150",
+        "year": 2022,
+        "category": "Brake Pads",
+        "product_name": "Power Stop Z23 Evolution Sport Brake Pads - Front",
+        "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
+        "price": 70.62
+    },
+    {
+        "make": "Audi",
+        "model": "A4",
+        "year": 2024,
+        "category": "Oil Filter",
+        "product_name": "Carquest Premium Synthetic Media Oil Filter",
+        "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
+        "price": 8.96
+    },
+    {
+        "make": "Honda",
+        "model": "Civic",
+        "year": 2022,
+        "category": "Air Filter",
+        "product_name": "ACDelco Professional Air Cleaner Element",
+        "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
+        "price": 30.0
+    },
+    {
+        "make": "Chevrolet",
+        "model": "Silverado 1500",
+        "year": 2021,
+        "category": "Oil Filter",
+        "product_name": "WIX XP High-Efficiency Oil Filter",
+        "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
+        "price": 11.34
+    },
+    {
+        "make": "Ford",
+        "model": "F-150",
+        "year": 2022,
+        "category": "Air Filter",
+        "product_name": "WIX Premium Panel Engine Air Filter",
+        "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
+        "price": 8.23
+    },
+    {
+        "make": "Honda",
+        "model": "Accord",
+        "year": 2020,
+        "category": "Brake Pads",
+        "product_name": "ACDelco Advantage Ceramic Brake Pads - Rear",
+        "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
+        "price": 74.66
+    },
+    {
+        "make": "Subaru",
+        "model": "Outback",
+        "year": 2023,
+        "category": "Air Filter",
+        "product_name": "Motorcraft OEM Panel Engine Air Filter",
+        "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
+        "price": 24.55
+    },
+    {
+        "make": "Audi",
+        "model": "A4",
+        "year": 2024,
+        "category": "Brake Pads",
+        "product_name": "Centric Posi-Quiet Ceramic Brake Pads - Front",
+        "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
+        "price": 67.77
+    },
+    {
+        "make": "Hyundai",
+        "model": "Elantra",
+        "year": 2019,
+        "category": "Air Filter",
+        "product_name": "Denso First Time Fit Panel Air Filter",
+        "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
+        "price": 12.4
+    },
+    {
+        "make": "Toyota",
+        "model": "Corolla",
+        "year": 2024,
+        "category": "Brake Pads",
+        "product_name": "Bosch QuietCast Ceramic Brake Pad Set - Rear",
+        "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
+        "price": 57.25
+    },
+    {
+        "make": "Audi",
+        "model": "A4",
+        "year": 2024,
+        "category": "Air Filter",
+        "product_name": "Premium Guard High-Capacity Air Filter",
+        "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
+        "price": 21.09
+    },
+    {
+        "make": "BMW",
+        "model": "3 Series",
+        "year": 2023,
+        "category": "Battery",
+        "product_name": "Valucraft Economy Automotive Battery - Group 26",
+        "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
+        "price": 147.83
+    },
+    {
+        "make": "Honda",
+        "model": "Civic",
+        "year": 2022,
+        "category": "Battery",
+        "product_name": "ACDelco Gold Professional Battery - Group 48 730 CCA",
+        "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
+        "price": 160.99
+    },
+    {
+        "make": "Nissan",
+        "model": "Altima",
+        "year": 2019,
+        "category": "Brake Pads",
+        "product_name": "Wagner ThermoQuiet Ceramic Brake Pads - Front",
+        "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
+        "price": 78.18
+    }
 ]

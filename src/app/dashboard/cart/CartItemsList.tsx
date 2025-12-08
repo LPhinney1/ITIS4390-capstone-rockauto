@@ -10,23 +10,27 @@ interface CartItemsListProps {
     freeShippingThreshold: number;
 }
 
-export default function CartItemsList({ 
-    items, 
-    subtotal, 
-    freeShippingThreshold
+export default function CartItemsList({
+    items,
+    subtotal,
+    freeShippingThreshold,
 }: CartItemsListProps) {
-    
     const handleRemove = (productId: number | string | undefined) => {
         if (!productId) return;
-        const id = typeof productId === 'string' ? parseInt(productId) : productId;
+        const id =
+            typeof productId === 'string' ? parseInt(productId) : productId;
         removeFromCart(id);
         window.location.reload();
     };
-    
-    const handleQuantityChange = (productId: number | string | undefined, newQuantity: number) => {
+
+    const handleQuantityChange = (
+        productId: number | string | undefined,
+        newQuantity: number,
+    ) => {
         if (!productId) return;
-        const id = typeof productId === 'string' ? parseInt(productId) : productId;
-        
+        const id =
+            typeof productId === 'string' ? parseInt(productId) : productId;
+
         if (newQuantity <= 0) {
             removeFromCart(id);
         } else {
@@ -43,7 +47,7 @@ export default function CartItemsList({
                     product={item.Product}
                     quantity={item.quantity}
                     onRemove={() => handleRemove(item.Product.id)}
-                    onQuantityChange={(newQuantity) => 
+                    onQuantityChange={(newQuantity) =>
                         handleQuantityChange(item.Product.id, newQuantity)
                     }
                 />
@@ -63,10 +67,9 @@ export default function CartItemsList({
                                 Add{' '}
                                 <span className="font-semibold">
                                     $
-                                    {(
-                                        freeShippingThreshold -
-                                        subtotal
-                                    ).toFixed(2)}
+                                    {(freeShippingThreshold - subtotal).toFixed(
+                                        2,
+                                    )}
                                 </span>{' '}
                                 more to your order to qualify for{' '}
                                 <span className="font-semibold">

@@ -20,6 +20,7 @@ npm i && npm run dev
 ```
 
 Or, a production build:
+
 ```bash
 npm i && npm run build && npm run start
 ```

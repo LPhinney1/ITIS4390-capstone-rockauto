@@ -25,13 +25,13 @@ export function QuantitySelect({
         e.preventDefault();
         onUpdateQuantity?.(productId, (quantity || 1) + 1);
     };
-    
+
     return (
         <div className={`flex items-center gap-3 ${className}`}>
             <span className="text-sm text-gray-600">Quantity:</span>
             <div className="flex items-center overflow-hidden rounded-lg border border-gray-300">
                 <button
-                type="button"
+                    type="button"
                     onClick={handleDecrement}
                     className="flex h-10 w-10 items-center justify-center text-gray-600 transition-colors hover:bg-gray-100"
                     disabled={(quantity || 1) <= 1}

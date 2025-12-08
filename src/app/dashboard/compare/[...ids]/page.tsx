@@ -22,7 +22,7 @@ export default async function ComparePage({
 
     // Limit to 3 products max
     const limitedIds = idList.slice(0, 3);
-    
+
     if (limitedIds.length === 0) {
         redirect('/dashboard/compare');
     }
@@ -31,7 +31,7 @@ export default async function ComparePage({
     const products = await Promise.all(limitedIds.map((id) => fetchPart(id)));
 
     return (
-        <ComparisonClientWrapper 
+        <ComparisonClientWrapper
             initialProducts={products}
             initialIds={limitedIds}
         />

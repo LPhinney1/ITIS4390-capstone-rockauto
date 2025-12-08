@@ -59,16 +59,12 @@ export default function VehicleCard() {
                             "{selectedVehicle.nickname}"
                         </p>
                     )}
-
-                    
                 </div>
             </div>
         </div>
     );
 }
 export function UserVehicleCard(selectedVehicle: Vehicle) {
-
-
     return (
         // {!selectedVehicle && vehicles.length > 0 && (
         <div className="mb-8 rounded-xl bg-gradient-to-r from-[#6366f1] to-[#4f46e5] p-6 shadow-lg">
@@ -102,8 +98,6 @@ export function UserVehicleCard(selectedVehicle: Vehicle) {
                             "{selectedVehicle.nickname}"
                         </p>
                     )}
-
-                    
                 </div>
             </div>
         </div>

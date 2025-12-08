@@ -53,7 +53,7 @@ export default async function ComparePage({
     return (
         <div className="flex-1">
             <div className="mx-auto max-w-[1400px] px-8 py-12">
-                <h1 className="mb-8 text-[32px] text-gray-900 text-center">
+                <h1 className="mb-8 text-center text-[32px] text-gray-900">
                     Compare Products
                 </h1>
 

@@ -13,17 +13,19 @@ export default function GaragePage() {
         function handleVehicleAdded(e: Event) {
             const ev = e as CustomEvent<Vehicle>;
             const newVehicle = ev.detail;
-            
-            setVehicles(prevVehicles => {
+
+            setVehicles((prevVehicles) => {
                 // If this is the first vehicle, make it default
                 const vehicleToAdd = {
                     ...newVehicle,
                     id: newVehicle.id || Date.now(),
-                    isDefault: prevVehicles.length === 0
+                    isDefault: prevVehicles.length === 0,
                 };
-                
+
                 // Check if we're updating an existing vehicle
-                const existingIndex = prevVehicles.findIndex(v => v.id === vehicleToAdd.id);
+                const existingIndex = prevVehicles.findIndex(
+                    (v) => v.id === vehicleToAdd.id,
+                );
                 if (existingIndex >= 0) {
                     // Update existing
                     const updated = [...prevVehicles];
@@ -36,37 +38,47 @@ export default function GaragePage() {
             });
         }
 
-        window.addEventListener('vehicle:added', handleVehicleAdded as EventListener);
-        
+        window.addEventListener(
+            'vehicle:added',
+            handleVehicleAdded as EventListener,
+        );
+
         return () => {
-            window.removeEventListener('vehicle:added', handleVehicleAdded as EventListener);
+            window.removeEventListener(
+                'vehicle:added',
+                handleVehicleAdded as EventListener,
+            );
         };
     }, []);
 
     // Set a vehicle as default
     const handleSetDefault = (vehicleId: number) => {
-        setVehicles(vehicles.map(v => ({
-            ...v,
-            isDefault: v.id === vehicleId
-        })));
+        setVehicles(
+            vehicles.map((v) => ({
+                ...v,
+                isDefault: v.id === vehicleId,
+            })),
+        );
     };
 
     // Delete a vehicle
     const handleDelete = (vehicleId: number) => {
-        const deletedVehicle = vehicles.find(v => v.id === vehicleId);
-        const filteredVehicles = vehicles.filter(v => v.id !== vehicleId);
-        
+        const deletedVehicle = vehicles.find((v) => v.id === vehicleId);
+        const filteredVehicles = vehicles.filter((v) => v.id !== vehicleId);
+
         if (deletedVehicle?.isDefault && filteredVehicles.length > 0) {
             filteredVehicles[0] = { ...filteredVehicles[0], isDefault: true };
         }
-        
+
         setVehicles(filteredVehicles);
     };
 
     // Start editing a vehicle
     const handleEdit = (vehicle: Vehicle) => {
         // Dispatch event to open form with vehicle data
-        window.dispatchEvent(new CustomEvent('vehicle:open-form', { detail: vehicle }));
+        window.dispatchEvent(
+            new CustomEvent('vehicle:open-form', { detail: vehicle }),
+        );
     };
 
     return (
@@ -79,8 +91,12 @@ export default function GaragePage() {
 
                 <div className="flex items-center justify-between">
                     <div>
-                        <h2 className="text-[32px] text-gray-900 mb-2">My Garage</h2>
-                        <p className="text-gray-600">Manage your vehicles to find the perfect parts</p>
+                        <h2 className="mb-2 text-[32px] text-gray-900">
+                            My Garage
+                        </h2>
+                        <p className="text-gray-600">
+                            Manage your vehicles to find the perfect parts
+                        </p>
                     </div>
                     <AddVehicleButton launchExternally />
                 </div>
@@ -98,7 +114,8 @@ export default function GaragePage() {
                             No vehicles in your garage
                         </h3>
                         <p className="mb-6 text-gray-600">
-                            Add your first vehicle to get personalized part recommendations
+                            Add your first vehicle to get personalized part
+                            recommendations
                         </p>
                         <div className="flex justify-center">
                             <AddVehicleButton launchExternally />
@@ -109,7 +126,9 @@ export default function GaragePage() {
                         <div
                             key={vehicle.id}
                             className={`rounded-lg border-2 bg-white p-6 transition-all hover:shadow-lg ${
-                                vehicle.isDefault ? 'border-primary' : 'border-gray-200'
+                                vehicle.isDefault
+                                    ? 'border-primary'
+                                    : 'border-gray-200'
                             }`}
                         >
                             <div className="flex items-start justify-between">
@@ -121,7 +140,8 @@ export default function GaragePage() {
                                     <div>
                                         <div className="mb-1 flex items-center gap-2">
                                             <h3 className="text-[20px] text-gray-900">
-                                                {vehicle.year} {vehicle.make} {vehicle.model}
+                                                {vehicle.year} {vehicle.make}{' '}
+                                                {vehicle.model}
                                             </h3>
                                             {vehicle.isDefault && (
                                                 <span className="rounded-full bg-primary px-3 py-1 text-sm text-white">
@@ -145,26 +165,28 @@ export default function GaragePage() {
                                 <div className="flex gap-2">
                                     {!vehicle.isDefault && (
                                         <button
-                                            onClick={() => handleSetDefault(vehicle.id)}
-                                            className="p-2 text-gray-600 hover:bg-gray-100 rounded-lg transition-colors"
+                                            onClick={() =>
+                                                handleSetDefault(vehicle.id)
+                                            }
+                                            className="rounded-lg p-2 text-gray-600 transition-colors hover:bg-gray-100"
                                             title="Set as default"
                                         >
-                                            <Check className="w-5 h-5" />
+                                            <Check className="h-5 w-5" />
                                         </button>
                                     )}
                                     <button
                                         onClick={() => handleEdit(vehicle)}
-                                        className="p-2 text-gray-600 hover:bg-gray-100 rounded-lg transition-colors"
+                                        className="rounded-lg p-2 text-gray-600 transition-colors hover:bg-gray-100"
                                         title="Edit vehicle"
                                     >
-                                        <Edit2 className="w-5 h-5" />
+                                        <Edit2 className="h-5 w-5" />
                                     </button>
                                     <button
                                         onClick={() => handleDelete(vehicle.id)}
-                                        className="p-2 text-red-600 hover:bg-red-50 rounded-lg transition-colors"
+                                        className="rounded-lg p-2 text-red-600 transition-colors hover:bg-red-50"
                                         title="Delete vehicle"
                                     >
-                                        <Trash2 className="w-5 h-5" />
+                                        <Trash2 className="h-5 w-5" />
                                     </button>
                                 </div>
                             </div>
@@ -172,7 +194,8 @@ export default function GaragePage() {
                             {vehicle.isDefault && (
                                 <div className="mt-4 rounded-lg bg-[#eef2ff] p-3">
                                     <p className="text-sm text-primary-700">
-                                        Parts in your cart are being filtered for this vehicle
+                                        Parts in your cart are being filtered
+                                        for this vehicle
                                     </p>
                                 </div>
                             )}
@@ -182,11 +205,12 @@ export default function GaragePage() {
             </div>
 
             {vehicles.length > 0 && (
-                <div className="mt-8 p-6 bg-[#f8f9fa] rounded-lg border border-gray-200">
-                    <h3 className="text-gray-900 mb-2">💡 Pro Tip</h3>
+                <div className="mt-8 rounded-lg border border-gray-200 bg-[#f8f9fa] p-6">
+                    <h3 className="mb-2 text-gray-900">💡 Pro Tip</h3>
                     <p className="text-gray-600">
-                        Your default vehicle is used to filter parts and ensure compatibility.
-                        You can switch between vehicles in your shopping cart.
+                        Your default vehicle is used to filter parts and ensure
+                        compatibility. You can switch between vehicles in your
+                        shopping cart.
                     </p>
                 </div>
             )}

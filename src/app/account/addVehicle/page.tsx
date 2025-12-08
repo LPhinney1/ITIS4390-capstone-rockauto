@@ -71,7 +71,10 @@ export default function AddVehiclePage() {
                             {/* VIN */}
                             <div className="mb-4">
                                 <label className="mb-1 block text-xs font-medium text-gray-700">
-                                    VIN <span className="text-gray-400">(optional)</span>
+                                    VIN{' '}
+                                    <span className="text-gray-400">
+                                        (optional)
+                                    </span>
                                 </label>
                                 <input
                                     type="text"
@@ -83,7 +86,10 @@ export default function AddVehiclePage() {
                             {/* Nickname */}
                             <div className="mb-4">
                                 <label className="mb-1 block text-xs font-medium text-gray-700">
-                                    Nickname <span className="text-gray-400">(optional)</span>
+                                    Nickname{' '}
+                                    <span className="text-gray-400">
+                                        (optional)
+                                    </span>
                                 </label>
                                 <input
                                     type="text"
@@ -121,7 +127,10 @@ export default function AddVehiclePage() {
 
                             {/* Back to login link (small text at bottom) */}
                             <p className="mt-2 text-center text-[11px] text-gray-500">
-                                <Link href="/account/login" className="hover:underline">
+                                <Link
+                                    href="/account/login"
+                                    className="hover:underline"
+                                >
                                     ← Back to login
                                 </Link>
                             </p>

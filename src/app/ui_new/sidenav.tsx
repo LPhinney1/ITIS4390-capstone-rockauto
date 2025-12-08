@@ -1,13 +1,6 @@
 'use client';
 import React from 'react';
-import {
-    Wrench,
-    Droplet,
-    Wind,
-    Zap,
-    Gauge,
-    Filter,
-} from 'lucide-react';
+import { Wrench, Droplet, Wind, Zap, Gauge, Filter } from 'lucide-react';
 
 interface CategorySidebarProps {
     categories: { id: number; name: string }[];
@@ -33,7 +26,7 @@ export default function CategorySidebar({
     onCategorySelect,
 }: CategorySidebarProps) {
     return (
-        <aside className="w-[72px] bg-white border-r border-gray-200 py-5 px-3.5 shadow-sm">
+        <aside className="w-[72px] border-r border-gray-200 bg-white px-3.5 py-5 shadow-sm">
             <div className="flex flex-col gap-y-5">
                 {categories.map((category) => {
                     const Icon = getIcon(category.id);

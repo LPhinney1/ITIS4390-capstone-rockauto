@@ -14,7 +14,7 @@ export async function GET(
         LEFT JOIN vehicles v ON v.id = p.vehicle_id
         WHERE p.id = $1
         `,
-        [params.id]
+        [params.id],
     );
 
     if (result.rows.length === 0) {
@@ -23,4 +23,3 @@ export async function GET(
 
     return Response.json(result.rows[0]);
 }
-
