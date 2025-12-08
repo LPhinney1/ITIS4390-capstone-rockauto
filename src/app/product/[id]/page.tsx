@@ -14,13 +14,6 @@ interface Part {
     product_image_url: string | null;
 }
 
-interface Vehicle {
-    id: number;
-    year: number;
-    make: string;
-    model: string;
-}
-
 interface PageProps {
     params: { id: string };
 }
@@ -33,16 +26,7 @@ async function fetchPart(id: string): Promise<Part> {
     }
     return res.json();
 }
-async function fetchVehicle(id: number): Promise<Vehicle | null> {
-    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
-    const res = await fetch(`${baseUrl}/api/vehicles/${id}`, { cache: "no-store" });
 
-    if (!res.ok) {
-        return null;
-    }
-
-    return res.json();
-}
 async function fetchAllParts(): Promise<Part[]> {
     const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
     const res = await fetch(`${baseUrl}/api/parts`, {
@@ -56,11 +40,8 @@ async function fetchAllParts(): Promise<Part[]> {
 
 export default async function ProductPage({ params }: PageProps) {
     const part = await fetchPart(params.id);
+    const allParts = await fetchAllParts();
 
-    const [allParts, vehicle] = await Promise.all([
-        fetchAllParts(),
-        fetchVehicle(part.vehicle_id),
-    ]);
     const similarParts = allParts
         .filter((p) => p.id !== part.id && p.category_id === part.category_id)
         .slice(0, 6);
@@ -87,18 +68,12 @@ export default async function ProductPage({ params }: PageProps) {
                         </div>
 
                         <div className="mt-4 space-y-1">
-                            <h1 className="text-lg font-semibold text-gray-900">
+                            <h1 className="text-lg font-semibold text-gray-900 mb-3">
                                 {part.product_name}
                             </h1>
                             <p className="text-base font-semibold text-indigo-600">
                                 {part.price !== null ? `$${part.price}` : "Pricing unavailable"}
                             </p>
-
-                            {vehicle && (
-                                <p className="text-sm text-gray-500">
-                                    {vehicle.year} {vehicle.make} {vehicle.model}
-                                </p>
-                            )}
                         </div>
                     </div>
 
@@ -115,26 +90,17 @@ export default async function ProductPage({ params }: PageProps) {
                                 <h3 className="mb-2 text-lg font-medium text-[#364153]">
                                     {part.product_name}
                                 </h3>
-
                                 <div className="mb-4 flex-1 text-sm leading-6 text-[#6B7280]">
-                                    {part.price !== undefined && (
-                                        <p>Price: ${part.price}</p>
-                                    )}
+                                    {part.price !== undefined && <p>Price: ${part.price}</p>}
 
-                                    {/* ignore for now */}
-                                    {/* {part.year && <p>Year: {part.year}</p>}
-                                    {part.make && <p>Make: {part.make}</p>}
-                                    {part.model && <p>Model: {part.model}</p>}
-                                    {part.category_name && (
-                                        <p>Category: {part.category_name}</p>
-                                    )} */}
-                                    {part.product_description && (
-                                        <p>{part.product_description}</p>
-                                    )}
+                                    {part.product_description && <p className="mt-2">{part.product_description}</p>}
+
+                                    <div className="mt-4 space-y-1 border-t pt-3">
+                                        {part.year && <p>Year: {part.year}</p>}
+                                        {part.make && <p>Make: {part.make}</p>}
+                                        {part.model && <p>Model: {part.model}</p>}
+                                    </div>
                                 </div>
-
-
-
                             </div>
                         </div>
 
