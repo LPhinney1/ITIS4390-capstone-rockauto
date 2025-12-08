@@ -1,2702 +1,686 @@
 [
-    {
-        "make": "Toyota",
-        "model": "Camry",
-        "year": 2024,
-        "category": "Brake Pads",
-        "product_name": "Premium Ceramic Brake Pads for Toyota Camry",
-        "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
-        "price": 53.9
-    },
-    {
-        "make": "Toyota",
-        "model": "Camry",
-        "year": 2024,
-        "category": "Oil Filter",
-        "product_name": "High-Flow Oil Filter for Toyota Camry",
-        "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
-        "price": 27.95
-    },
-    {
-        "make": "Toyota",
-        "model": "Camry",
-        "year": 2024,
-        "category": "Air Filter",
-        "product_name": "Engine Air Filter for Toyota Camry",
-        "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
-        "price": 16.57
-    },
-    {
-        "make": "Toyota",
-        "model": "Camry",
-        "year": 2024,
-        "category": "Battery",
-        "product_name": "12V Starting Battery for Toyota Camry",
-        "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
-        "price": 134.88
-    },
-    {
-        "make": "Toyota",
-        "model": "Camry",
-        "year": 2024,
-        "category": "Radiator",
-        "product_name": "Aluminum Radiator for Toyota Camry",
-        "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
-        "price": 213.59
-    },
-    {
-        "make": "Toyota",
-        "model": "Corolla",
-        "year": 2024,
-        "category": "Brake Pads",
-        "product_name": "Premium Ceramic Brake Pads for Toyota Corolla",
-        "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
-        "price": 81.23
-    },
-    {
-        "make": "Toyota",
-        "model": "Corolla",
-        "year": 2024,
-        "category": "Oil Filter",
-        "product_name": "High-Flow Oil Filter for Toyota Corolla",
-        "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
-        "price": 5.04
-    },
-    {
-        "make": "Toyota",
-        "model": "Corolla",
-        "year": 2024,
-        "category": "Air Filter",
-        "product_name": "Engine Air Filter for Toyota Corolla",
-        "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
-        "price": 22.77
-    },
-    {
-        "make": "Toyota",
-        "model": "Corolla",
-        "year": 2024,
-        "category": "Battery",
-        "product_name": "12V Starting Battery for Toyota Corolla",
-        "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
-        "price": 131.04
-    },
-    {
-        "make": "Toyota",
-        "model": "Corolla",
-        "year": 2024,
-        "category": "Radiator",
-        "product_name": "Aluminum Radiator for Toyota Corolla",
-        "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
-        "price": 217.65
-    },
-    {
-        "make": "Toyota",
-        "model": "RAV4",
-        "year": 2023,
-        "category": "Brake Pads",
-        "product_name": "Premium Ceramic Brake Pads for Toyota RAV4",
-        "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
-        "price": 71.07
-    },
-    {
-        "make": "Toyota",
-        "model": "RAV4",
-        "year": 2023,
-        "category": "Oil Filter",
-        "product_name": "High-Flow Oil Filter for Toyota RAV4",
-        "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
-        "price": 21.64
-    },
-    {
-        "make": "Toyota",
-        "model": "RAV4",
-        "year": 2023,
-        "category": "Air Filter",
-        "product_name": "Engine Air Filter for Toyota RAV4",
-        "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
-        "price": 33.06
-    },
-    {
-        "make": "Toyota",
-        "model": "RAV4",
-        "year": 2023,
-        "category": "Battery",
-        "product_name": "12V Starting Battery for Toyota RAV4",
-        "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
-        "price": 154.55
-    },
-    {
-        "make": "Toyota",
-        "model": "RAV4",
-        "year": 2023,
-        "category": "Radiator",
-        "product_name": "Aluminum Radiator for Toyota RAV4",
-        "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
-        "price": 224.68
-    },
-    {
-        "make": "Ford",
-        "model": "F-150",
-        "year": 2022,
-        "category": "Brake Pads",
-        "product_name": "Premium Ceramic Brake Pads for Ford F-150",
-        "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
-        "price": 70.62
-    },
-    {
-        "make": "Ford",
-        "model": "F-150",
-        "year": 2022,
-        "category": "Oil Filter",
-        "product_name": "High-Flow Oil Filter for Ford F-150",
-        "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
-        "price": 30.33
-    },
-    {
-        "make": "Ford",
-        "model": "F-150",
-        "year": 2022,
-        "category": "Air Filter",
-        "product_name": "Engine Air Filter for Ford F-150",
-        "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
-        "price": 8.23
-    },
-    {
-        "make": "Ford",
-        "model": "F-150",
-        "year": 2022,
-        "category": "Battery",
-        "product_name": "12V Starting Battery for Ford F-150",
-        "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
-        "price": 158.2
-    },
-    {
-        "make": "Ford",
-        "model": "F-150",
-        "year": 2022,
-        "category": "Radiator",
-        "product_name": "Aluminum Radiator for Ford F-150",
-        "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
-        "price": 234.43
-    },
-    {
-        "make": "Ford",
-        "model": "Escape",
-        "year": 2021,
-        "category": "Brake Pads",
-        "product_name": "Premium Ceramic Brake Pads for Ford Escape",
-        "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
-        "price": 59.73
-    },
-    {
-        "make": "Ford",
-        "model": "Escape",
-        "year": 2021,
-        "category": "Oil Filter",
-        "product_name": "High-Flow Oil Filter for Ford Escape",
-        "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
-        "price": 9.54
-    },
-    {
-        "make": "Ford",
-        "model": "Escape",
-        "year": 2021,
-        "category": "Air Filter",
-        "product_name": "Engine Air Filter for Ford Escape",
-        "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
-        "price": 34.72
-    },
-    {
-        "make": "Ford",
-        "model": "Escape",
-        "year": 2021,
-        "category": "Battery",
-        "product_name": "12V Starting Battery for Ford Escape",
-        "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
-        "price": 133.58
-    },
-    {
-        "make": "Ford",
-        "model": "Escape",
-        "year": 2021,
-        "category": "Radiator",
-        "product_name": "Aluminum Radiator for Ford Escape",
-        "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
-        "price": 223.3
-    },
-    {
-        "make": "Ford",
-        "model": "Explorer",
-        "year": 2021,
-        "category": "Brake Pads",
-        "product_name": "Premium Ceramic Brake Pads for Ford Explorer",
-        "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
-        "price": 79.66
-    },
-    {
-        "make": "Ford",
-        "model": "Explorer",
-        "year": 2021,
-        "category": "Oil Filter",
-        "product_name": "High-Flow Oil Filter for Ford Explorer",
-        "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
-        "price": 23.13
-    },
-    {
-        "make": "Ford",
-        "model": "Explorer",
-        "year": 2021,
-        "category": "Air Filter",
-        "product_name": "Engine Air Filter for Ford Explorer",
-        "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
-        "price": 36.25
-    },
-    {
-        "make": "Ford",
-        "model": "Explorer",
-        "year": 2021,
-        "category": "Battery",
-        "product_name": "12V Starting Battery for Ford Explorer",
-        "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
-        "price": 155.54
-    },
-    {
-        "make": "Ford",
-        "model": "Explorer",
-        "year": 2021,
-        "category": "Radiator",
-        "product_name": "Aluminum Radiator for Ford Explorer",
-        "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
-        "price": 228.77
-    },
-    {
-        "make": "Honda",
-        "model": "Civic",
-        "year": 2022,
-        "category": "Brake Pads",
-        "product_name": "Premium Ceramic Brake Pads for Honda Civic",
-        "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
-        "price": 52.76
-    },
-    {
-        "make": "Honda",
-        "model": "Civic",
-        "year": 2022,
-        "category": "Oil Filter",
-        "product_name": "High-Flow Oil Filter for Honda Civic",
-        "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
-        "price": 12.26
-    },
-    {
-        "make": "Honda",
-        "model": "Civic",
-        "year": 2022,
-        "category": "Air Filter",
-        "product_name": "Engine Air Filter for Honda Civic",
-        "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
-        "price": 30.0
-    },
-    {
-        "make": "Honda",
-        "model": "Civic",
-        "year": 2022,
-        "category": "Battery",
-        "product_name": "12V Starting Battery for Honda Civic",
-        "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
-        "price": 160.99
-    },
-    {
-        "make": "Honda",
-        "model": "Civic",
-        "year": 2022,
-        "category": "Radiator",
-        "product_name": "Aluminum Radiator for Honda Civic",
-        "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
-        "price": 222.66
-    },
-    {
-        "make": "Honda",
-        "model": "Accord",
-        "year": 2020,
-        "category": "Brake Pads",
-        "product_name": "Premium Ceramic Brake Pads for Honda Accord",
-        "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
-        "price": 74.66
-    },
-    {
-        "make": "Honda",
-        "model": "Accord",
-        "year": 2020,
-        "category": "Oil Filter",
-        "product_name": "High-Flow Oil Filter for Honda Accord",
-        "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
-        "price": 3.6
-    },
-    {
-        "make": "Honda",
-        "model": "Accord",
-        "year": 2020,
-        "category": "Air Filter",
-        "product_name": "Engine Air Filter for Honda Accord",
-        "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
-        "price": 15.98
-    },
-    {
-        "make": "Honda",
-        "model": "Accord",
-        "year": 2020,
-        "category": "Battery",
-        "product_name": "12V Starting Battery for Honda Accord",
-        "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
-        "price": 140.13
-    },
-    {
-        "make": "Honda",
-        "model": "Accord",
-        "year": 2020,
-        "category": "Radiator",
-        "product_name": "Aluminum Radiator for Honda Accord",
-        "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
-        "price": 212.79
-    },
-    {
-        "make": "Honda",
-        "model": "CR-V",
-        "year": 2020,
-        "category": "Brake Pads",
-        "product_name": "Premium Ceramic Brake Pads for Honda CR-V",
-        "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
-        "price": 80.33
-    },
-    {
-        "make": "Honda",
-        "model": "CR-V",
-        "year": 2020,
-        "category": "Oil Filter",
-        "product_name": "High-Flow Oil Filter for Honda CR-V",
-        "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
-        "price": 15.3
-    },
-    {
-        "make": "Honda",
-        "model": "CR-V",
-        "year": 2020,
-        "category": "Air Filter",
-        "product_name": "Engine Air Filter for Honda CR-V",
-        "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
-        "price": 23.87
-    },
-    {
-        "make": "Honda",
-        "model": "CR-V",
-        "year": 2020,
-        "category": "Battery",
-        "product_name": "12V Starting Battery for Honda CR-V",
-        "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
-        "price": 159.19
-    },
-    {
-        "make": "Honda",
-        "model": "CR-V",
-        "year": 2020,
-        "category": "Radiator",
-        "product_name": "Aluminum Radiator for Honda CR-V",
-        "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
-        "price": 215.69
-    },
-    {
-        "make": "Chevrolet",
-        "model": "Silverado 1500",
-        "year": 2021,
-        "category": "Brake Pads",
-        "product_name": "Premium Ceramic Brake Pads for Chevrolet Silverado 1500",
-        "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
-        "price": 57.33
-    },
-    {
-        "make": "Chevrolet",
-        "model": "Silverado 1500",
-        "year": 2021,
-        "category": "Oil Filter",
-        "product_name": "High-Flow Oil Filter for Chevrolet Silverado 1500",
-        "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
-        "price": 11.34
-    },
-    {
-        "make": "Chevrolet",
-        "model": "Silverado 1500",
-        "year": 2021,
-        "category": "Air Filter",
-        "product_name": "Engine Air Filter for Chevrolet Silverado 1500",
-        "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
-        "price": 40.78
-    },
-    {
-        "make": "Chevrolet",
-        "model": "Silverado 1500",
-        "year": 2021,
-        "category": "Battery",
-        "product_name": "12V Starting Battery for Chevrolet Silverado 1500",
-        "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
-        "price": 152.68
-    },
-    {
-        "make": "Chevrolet",
-        "model": "Silverado 1500",
-        "year": 2021,
-        "category": "Radiator",
-        "product_name": "Aluminum Radiator for Chevrolet Silverado 1500",
-        "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
-        "price": 231.32
-    },
-    {
-        "make": "Chevrolet",
-        "model": "Equinox",
-        "year": 2020,
-        "category": "Brake Pads",
-        "product_name": "Premium Ceramic Brake Pads for Chevrolet Equinox",
-        "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
-        "price": 68.69
-    },
-    {
-        "make": "Chevrolet",
-        "model": "Equinox",
-        "year": 2020,
-        "category": "Oil Filter",
-        "product_name": "High-Flow Oil Filter for Chevrolet Equinox",
-        "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
-        "price": 10.57
-    },
-    {
-        "make": "Chevrolet",
-        "model": "Equinox",
-        "year": 2020,
-        "category": "Air Filter",
-        "product_name": "Engine Air Filter for Chevrolet Equinox",
-        "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
-        "price": 24.18
-    },
-    {
-        "make": "Chevrolet",
-        "model": "Equinox",
-        "year": 2020,
-        "category": "Battery",
-        "product_name": "12V Starting Battery for Chevrolet Equinox",
-        "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
-        "price": 139.45
-    },
-    {
-        "make": "Chevrolet",
-        "model": "Equinox",
-        "year": 2020,
-        "category": "Radiator",
-        "product_name": "Aluminum Radiator for Chevrolet Equinox",
-        "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
-        "price": 242.39
-    },
-    {
-        "make": "Chevrolet",
-        "model": "Malibu",
-        "year": 2024,
-        "category": "Brake Pads",
-        "product_name": "Premium Ceramic Brake Pads for Chevrolet Malibu",
-        "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
-        "price": 69.49
-    },
-    {
-        "make": "Chevrolet",
-        "model": "Malibu",
-        "year": 2024,
-        "category": "Oil Filter",
-        "product_name": "High-Flow Oil Filter for Chevrolet Malibu",
-        "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
-        "price": 25.96
-    },
-    {
-        "make": "Chevrolet",
-        "model": "Malibu",
-        "year": 2024,
-        "category": "Air Filter",
-        "product_name": "Engine Air Filter for Chevrolet Malibu",
-        "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
-        "price": 37.5
-    },
-    {
-        "make": "Chevrolet",
-        "model": "Malibu",
-        "year": 2024,
-        "category": "Battery",
-        "product_name": "12V Starting Battery for Chevrolet Malibu",
-        "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
-        "price": 157.16
-    },
-    {
-        "make": "Chevrolet",
-        "model": "Malibu",
-        "year": 2024,
-        "category": "Radiator",
-        "product_name": "Aluminum Radiator for Chevrolet Malibu",
-        "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
-        "price": 218.02
-    },
-    {
-        "make": "Nissan",
-        "model": "Altima",
-        "year": 2019,
-        "category": "Brake Pads",
-        "product_name": "Premium Ceramic Brake Pads for Nissan Altima",
-        "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
-        "price": 78.18
-    },
-    {
-        "make": "Nissan",
-        "model": "Altima",
-        "year": 2019,
-        "category": "Oil Filter",
-        "product_name": "High-Flow Oil Filter for Nissan Altima",
-        "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
-        "price": 16.04
-    },
-    {
-        "make": "Nissan",
-        "model": "Altima",
-        "year": 2019,
-        "category": "Air Filter",
-        "product_name": "Engine Air Filter for Nissan Altima",
-        "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
-        "price": 10.32
-    },
-    {
-        "make": "Nissan",
-        "model": "Altima",
-        "year": 2019,
-        "category": "Battery",
-        "product_name": "12V Starting Battery for Nissan Altima",
-        "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
-        "price": 161.96
-    },
-    {
-        "make": "Nissan",
-        "model": "Altima",
-        "year": 2019,
-        "category": "Radiator",
-        "product_name": "Aluminum Radiator for Nissan Altima",
-        "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
-        "price": 229.85
-    },
-    {
-        "make": "Nissan",
-        "model": "Rogue",
-        "year": 2024,
-        "category": "Brake Pads",
-        "product_name": "Premium Ceramic Brake Pads for Nissan Rogue",
-        "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
-        "price": 61.01
-    },
-    {
-        "make": "Nissan",
-        "model": "Rogue",
-        "year": 2024,
-        "category": "Oil Filter",
-        "product_name": "High-Flow Oil Filter for Nissan Rogue",
-        "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
-        "price": 24.94
-    },
-    {
-        "make": "Nissan",
-        "model": "Rogue",
-        "year": 2024,
-        "category": "Air Filter",
-        "product_name": "Engine Air Filter for Nissan Rogue",
-        "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
-        "price": 21.85
-    },
-    {
-        "make": "Nissan",
-        "model": "Rogue",
-        "year": 2024,
-        "category": "Battery",
-        "product_name": "12V Starting Battery for Nissan Rogue",
-        "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
-        "price": 162.01
-    },
-    {
-        "make": "Nissan",
-        "model": "Rogue",
-        "year": 2024,
-        "category": "Radiator",
-        "product_name": "Aluminum Radiator for Nissan Rogue",
-        "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
-        "price": 226.06
-    },
-    {
-        "make": "Nissan",
-        "model": "Sentra",
-        "year": 2021,
-        "category": "Brake Pads",
-        "product_name": "Premium Ceramic Brake Pads for Nissan Sentra",
-        "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
-        "price": 54.89
-    },
-    {
-        "make": "Nissan",
-        "model": "Sentra",
-        "year": 2021,
-        "category": "Oil Filter",
-        "product_name": "High-Flow Oil Filter for Nissan Sentra",
-        "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
-        "price": 28.07
-    },
-    {
-        "make": "Nissan",
-        "model": "Sentra",
-        "year": 2021,
-        "category": "Air Filter",
-        "product_name": "Engine Air Filter for Nissan Sentra",
-        "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
-        "price": 26.86
-    },
-    {
-        "make": "Nissan",
-        "model": "Sentra",
-        "year": 2021,
-        "category": "Battery",
-        "product_name": "12V Starting Battery for Nissan Sentra",
-        "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
-        "price": 156.15
-    },
-    {
-        "make": "Nissan",
-        "model": "Sentra",
-        "year": 2021,
-        "category": "Radiator",
-        "product_name": "Aluminum Radiator for Nissan Sentra",
-        "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
-        "price": 225.0
-    },
-    {
-        "make": "BMW",
-        "model": "3 Series",
-        "year": 2023,
-        "category": "Brake Pads",
-        "product_name": "Premium Ceramic Brake Pads for BMW 3 Series",
-        "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
-        "price": 63.98
-    },
-    {
-        "make": "BMW",
-        "model": "3 Series",
-        "year": 2023,
-        "category": "Oil Filter",
-        "product_name": "High-Flow Oil Filter for BMW 3 Series",
-        "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
-        "price": 9.68
-    },
-    {
-        "make": "BMW",
-        "model": "3 Series",
-        "year": 2023,
-        "category": "Air Filter",
-        "product_name": "Engine Air Filter for BMW 3 Series",
-        "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
-        "price": 42.91
-    },
-    {
-        "make": "BMW",
-        "model": "3 Series",
-        "year": 2023,
-        "category": "Battery",
-        "product_name": "12V Starting Battery for BMW 3 Series",
-        "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
-        "price": 147.83
-    },
-    {
-        "make": "BMW",
-        "model": "3 Series",
-        "year": 2023,
-        "category": "Radiator",
-        "product_name": "Aluminum Radiator for BMW 3 Series",
-        "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
-        "price": 213.18
-    },
-    {
-        "make": "BMW",
-        "model": "5 Series",
-        "year": 2019,
-        "category": "Brake Pads",
-        "product_name": "Premium Ceramic Brake Pads for BMW 5 Series",
-        "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
-        "price": 80.14
-    },
-    {
-        "make": "BMW",
-        "model": "5 Series",
-        "year": 2019,
-        "category": "Oil Filter",
-        "product_name": "High-Flow Oil Filter for BMW 5 Series",
-        "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
-        "price": 7.35
-    },
-    {
-        "make": "BMW",
-        "model": "5 Series",
-        "year": 2019,
-        "category": "Air Filter",
-        "product_name": "Engine Air Filter for BMW 5 Series",
-        "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
-        "price": 13.6
-    },
-    {
-        "make": "BMW",
-        "model": "5 Series",
-        "year": 2019,
-        "category": "Battery",
-        "product_name": "12V Starting Battery for BMW 5 Series",
-        "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
-        "price": 153.82
-    },
-    {
-        "make": "BMW",
-        "model": "5 Series",
-        "year": 2019,
-        "category": "Radiator",
-        "product_name": "Aluminum Radiator for BMW 5 Series",
-        "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
-        "price": 230.87
-    },
-    {
-        "make": "BMW",
-        "model": "X3",
-        "year": 2022,
-        "category": "Brake Pads",
-        "product_name": "Premium Ceramic Brake Pads for BMW X3",
-        "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
-        "price": 63.36
-    },
-    {
-        "make": "BMW",
-        "model": "X3",
-        "year": 2022,
-        "category": "Oil Filter",
-        "product_name": "High-Flow Oil Filter for BMW X3",
-        "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
-        "price": 36.86
-    },
-    {
-        "make": "BMW",
-        "model": "X3",
-        "year": 2022,
-        "category": "Air Filter",
-        "product_name": "Engine Air Filter for BMW X3",
-        "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
-        "price": 26.52
-    },
-    {
-        "make": "BMW",
-        "model": "X3",
-        "year": 2022,
-        "category": "Battery",
-        "product_name": "12V Starting Battery for BMW X3",
-        "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
-        "price": 163.99
-    },
-    {
-        "make": "BMW",
-        "model": "X3",
-        "year": 2022,
-        "category": "Radiator",
-        "product_name": "Aluminum Radiator for BMW X3",
-        "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
-        "price": 240.13
-    },
-    {
-        "make": "Mercedes-Benz",
-        "model": "C-Class",
-        "year": 2019,
-        "category": "Brake Pads",
-        "product_name": "Premium Ceramic Brake Pads for Mercedes-Benz C-Class",
-        "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
-        "price": 73.81
-    },
-    {
-        "make": "Mercedes-Benz",
-        "model": "C-Class",
-        "year": 2019,
-        "category": "Oil Filter",
-        "product_name": "High-Flow Oil Filter for Mercedes-Benz C-Class",
-        "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
-        "price": 6.01
-    },
-    {
-        "make": "Mercedes-Benz",
-        "model": "C-Class",
-        "year": 2019,
-        "category": "Air Filter",
-        "product_name": "Engine Air Filter for Mercedes-Benz C-Class",
-        "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
-        "price": 38.97
-    },
-    {
-        "make": "Mercedes-Benz",
-        "model": "C-Class",
-        "year": 2019,
-        "category": "Battery",
-        "product_name": "12V Starting Battery for Mercedes-Benz C-Class",
-        "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
-        "price": 156.28
-    },
-    {
-        "make": "Mercedes-Benz",
-        "model": "C-Class",
-        "year": 2019,
-        "category": "Radiator",
-        "product_name": "Aluminum Radiator for Mercedes-Benz C-Class",
-        "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
-        "price": 236.9
-    },
-    {
-        "make": "Mercedes-Benz",
-        "model": "E-Class",
-        "year": 2021,
-        "category": "Brake Pads",
-        "product_name": "Premium Ceramic Brake Pads for Mercedes-Benz E-Class",
-        "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
-        "price": 53.9
-    },
-    {
-        "make": "Mercedes-Benz",
-        "model": "E-Class",
-        "year": 2021,
-        "category": "Oil Filter",
-        "product_name": "High-Flow Oil Filter for Mercedes-Benz E-Class",
-        "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
-        "price": 17.22
-    },
-    {
-        "make": "Mercedes-Benz",
-        "model": "E-Class",
-        "year": 2021,
-        "category": "Air Filter",
-        "product_name": "Engine Air Filter for Mercedes-Benz E-Class",
-        "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
-        "price": 23.88
-    },
-    {
-        "make": "Mercedes-Benz",
-        "model": "E-Class",
-        "year": 2021,
-        "category": "Battery",
-        "product_name": "12V Starting Battery for Mercedes-Benz E-Class",
-        "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
-        "price": 163.38
-    },
-    {
-        "make": "Mercedes-Benz",
-        "model": "E-Class",
-        "year": 2021,
-        "category": "Radiator",
-        "product_name": "Aluminum Radiator for Mercedes-Benz E-Class",
-        "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
-        "price": 240.65
-    },
-    {
-        "make": "Mercedes-Benz",
-        "model": "GLC",
-        "year": 2021,
-        "category": "Brake Pads",
-        "product_name": "Premium Ceramic Brake Pads for Mercedes-Benz GLC",
-        "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
-        "price": 84.02
-    },
-    {
-        "make": "Mercedes-Benz",
-        "model": "GLC",
-        "year": 2021,
-        "category": "Oil Filter",
-        "product_name": "High-Flow Oil Filter for Mercedes-Benz GLC",
-        "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
-        "price": 28.67
-    },
-    {
-        "make": "Mercedes-Benz",
-        "model": "GLC",
-        "year": 2021,
-        "category": "Air Filter",
-        "product_name": "Engine Air Filter for Mercedes-Benz GLC",
-        "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
-        "price": 25.77
-    },
-    {
-        "make": "Mercedes-Benz",
-        "model": "GLC",
-        "year": 2021,
-        "category": "Battery",
-        "product_name": "12V Starting Battery for Mercedes-Benz GLC",
-        "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
-        "price": 133.72
-    },
-    {
-        "make": "Mercedes-Benz",
-        "model": "GLC",
-        "year": 2021,
-        "category": "Radiator",
-        "product_name": "Aluminum Radiator for Mercedes-Benz GLC",
-        "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
-        "price": 231.89
-    },
-    {
-        "make": "Audi",
-        "model": "A4",
-        "year": 2024,
-        "category": "Brake Pads",
-        "product_name": "Premium Ceramic Brake Pads for Audi A4",
-        "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
-        "price": 67.77
-    },
-    {
-        "make": "Audi",
-        "model": "A4",
-        "year": 2024,
-        "category": "Oil Filter",
-        "product_name": "High-Flow Oil Filter for Audi A4",
-        "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
-        "price": 8.96
-    },
-    {
-        "make": "Audi",
-        "model": "A4",
-        "year": 2024,
-        "category": "Air Filter",
-        "product_name": "Engine Air Filter for Audi A4",
-        "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
-        "price": 21.09
-    },
-    {
-        "make": "Audi",
-        "model": "A4",
-        "year": 2024,
-        "category": "Battery",
-        "product_name": "12V Starting Battery for Audi A4",
-        "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
-        "price": 135.65
-    },
-    {
-        "make": "Audi",
-        "model": "A4",
-        "year": 2024,
-        "category": "Radiator",
-        "product_name": "Aluminum Radiator for Audi A4",
-        "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
-        "price": 243.37
-    },
-    {
-        "make": "Audi",
-        "model": "Q5",
-        "year": 2023,
-        "category": "Brake Pads",
-        "product_name": "Premium Ceramic Brake Pads for Audi Q5",
-        "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
-        "price": 82.15
-    },
-    {
-        "make": "Audi",
-        "model": "Q5",
-        "year": 2023,
-        "category": "Oil Filter",
-        "product_name": "High-Flow Oil Filter for Audi Q5",
-        "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
-        "price": 22.96
-    },
-    {
-        "make": "Audi",
-        "model": "Q5",
-        "year": 2023,
-        "category": "Air Filter",
-        "product_name": "Engine Air Filter for Audi Q5",
-        "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
-        "price": 25.1
-    },
-    {
-        "make": "Audi",
-        "model": "Q5",
-        "year": 2023,
-        "category": "Battery",
-        "product_name": "12V Starting Battery for Audi Q5",
-        "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
-        "price": 133.92
-    },
-    {
-        "make": "Audi",
-        "model": "Q5",
-        "year": 2023,
-        "category": "Radiator",
-        "product_name": "Aluminum Radiator for Audi Q5",
-        "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
-        "price": 222.7
-    },
-    {
-        "make": "Audi",
-        "model": "A3",
-        "year": 2021,
-        "category": "Brake Pads",
-        "product_name": "Premium Ceramic Brake Pads for Audi A3",
-        "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
-        "price": 58.38
-    },
-    {
-        "make": "Audi",
-        "model": "A3",
-        "year": 2021,
-        "category": "Oil Filter",
-        "product_name": "High-Flow Oil Filter for Audi A3",
-        "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
-        "price": 10.43
-    },
-    {
-        "make": "Audi",
-        "model": "A3",
-        "year": 2021,
-        "category": "Air Filter",
-        "product_name": "Engine Air Filter for Audi A3",
-        "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
-        "price": 27.86
-    },
-    {
-        "make": "Audi",
-        "model": "A3",
-        "year": 2021,
-        "category": "Battery",
-        "product_name": "12V Starting Battery for Audi A3",
-        "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
-        "price": 132.76
-    },
-    {
-        "make": "Audi",
-        "model": "A3",
-        "year": 2021,
-        "category": "Radiator",
-        "product_name": "Aluminum Radiator for Audi A3",
-        "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
-        "price": 235.62
-    },
-    {
-        "make": "Hyundai",
-        "model": "Elantra",
-        "year": 2019,
-        "category": "Brake Pads",
-        "product_name": "Premium Ceramic Brake Pads for Hyundai Elantra",
-        "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
-        "price": 84.23
-    },
-    {
-        "make": "Hyundai",
-        "model": "Elantra",
-        "year": 2019,
-        "category": "Oil Filter",
-        "product_name": "High-Flow Oil Filter for Hyundai Elantra",
-        "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
-        "price": 20.64
-    },
-    {
-        "make": "Hyundai",
-        "model": "Elantra",
-        "year": 2019,
-        "category": "Air Filter",
-        "product_name": "Engine Air Filter for Hyundai Elantra",
-        "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
-        "price": 12.4
-    },
-    {
-        "make": "Hyundai",
-        "model": "Elantra",
-        "year": 2019,
-        "category": "Battery",
-        "product_name": "12V Starting Battery for Hyundai Elantra",
-        "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
-        "price": 153.09
-    },
-    {
-        "make": "Hyundai",
-        "model": "Elantra",
-        "year": 2019,
-        "category": "Radiator",
-        "product_name": "Aluminum Radiator for Hyundai Elantra",
-        "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
-        "price": 243.14
-    },
-    {
-        "make": "Hyundai",
-        "model": "Tucson",
-        "year": 2020,
-        "category": "Brake Pads",
-        "product_name": "Premium Ceramic Brake Pads for Hyundai Tucson",
-        "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
-        "price": 59.28
-    },
-    {
-        "make": "Hyundai",
-        "model": "Tucson",
-        "year": 2020,
-        "category": "Oil Filter",
-        "product_name": "High-Flow Oil Filter for Hyundai Tucson",
-        "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
-        "price": 32.54
-    },
-    {
-        "make": "Hyundai",
-        "model": "Tucson",
-        "year": 2020,
-        "category": "Air Filter",
-        "product_name": "Engine Air Filter for Hyundai Tucson",
-        "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
-        "price": 22.81
-    },
-    {
-        "make": "Hyundai",
-        "model": "Tucson",
-        "year": 2020,
-        "category": "Battery",
-        "product_name": "12V Starting Battery for Hyundai Tucson",
-        "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
-        "price": 137.41
-    },
-    {
-        "make": "Hyundai",
-        "model": "Tucson",
-        "year": 2020,
-        "category": "Radiator",
-        "product_name": "Aluminum Radiator for Hyundai Tucson",
-        "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
-        "price": 228.88
-    },
-    {
-        "make": "Hyundai",
-        "model": "Sonata",
-        "year": 2024,
-        "category": "Brake Pads",
-        "product_name": "Premium Ceramic Brake Pads for Hyundai Sonata",
-        "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
-        "price": 74.15
-    },
-    {
-        "make": "Hyundai",
-        "model": "Sonata",
-        "year": 2024,
-        "category": "Oil Filter",
-        "product_name": "High-Flow Oil Filter for Hyundai Sonata",
-        "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
-        "price": 26.95
-    },
-    {
-        "make": "Hyundai",
-        "model": "Sonata",
-        "year": 2024,
-        "category": "Air Filter",
-        "product_name": "Engine Air Filter for Hyundai Sonata",
-        "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
-        "price": 21.96
-    },
-    {
-        "make": "Hyundai",
-        "model": "Sonata",
-        "year": 2024,
-        "category": "Battery",
-        "product_name": "12V Starting Battery for Hyundai Sonata",
-        "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
-        "price": 153.51
-    },
-    {
-        "make": "Hyundai",
-        "model": "Sonata",
-        "year": 2024,
-        "category": "Radiator",
-        "product_name": "Aluminum Radiator for Hyundai Sonata",
-        "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
-        "price": 223.07
-    },
-    {
-        "make": "Kia",
-        "model": "Soul",
-        "year": 2023,
-        "category": "Brake Pads",
-        "product_name": "Premium Ceramic Brake Pads for Kia Soul",
-        "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
-        "price": 65.8
-    },
-    {
-        "make": "Kia",
-        "model": "Soul",
-        "year": 2023,
-        "category": "Oil Filter",
-        "product_name": "High-Flow Oil Filter for Kia Soul",
-        "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
-        "price": 10.68
-    },
-    {
-        "make": "Kia",
-        "model": "Soul",
-        "year": 2023,
-        "category": "Air Filter",
-        "product_name": "Engine Air Filter for Kia Soul",
-        "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
-        "price": 10.24
-    },
-    {
-        "make": "Kia",
-        "model": "Soul",
-        "year": 2023,
-        "category": "Battery",
-        "product_name": "12V Starting Battery for Kia Soul",
-        "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
-        "price": 130.74
-    },
-    {
-        "make": "Kia",
-        "model": "Soul",
-        "year": 2023,
-        "category": "Radiator",
-        "product_name": "Aluminum Radiator for Kia Soul",
-        "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
-        "price": 229.39
-    },
-    {
-        "make": "Kia",
-        "model": "Sportage",
-        "year": 2023,
-        "category": "Brake Pads",
-        "product_name": "Premium Ceramic Brake Pads for Kia Sportage",
-        "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
-        "price": 57.71
-    },
-    {
-        "make": "Kia",
-        "model": "Sportage",
-        "year": 2023,
-        "category": "Oil Filter",
-        "product_name": "High-Flow Oil Filter for Kia Sportage",
-        "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
-        "price": 4.48
-    },
-    {
-        "make": "Kia",
-        "model": "Sportage",
-        "year": 2023,
-        "category": "Air Filter",
-        "product_name": "Engine Air Filter for Kia Sportage",
-        "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
-        "price": 30.09
-    },
-    {
-        "make": "Kia",
-        "model": "Sportage",
-        "year": 2023,
-        "category": "Battery",
-        "product_name": "12V Starting Battery for Kia Sportage",
-        "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
-        "price": 138.01
-    },
-    {
-        "make": "Kia",
-        "model": "Sportage",
-        "year": 2023,
-        "category": "Radiator",
-        "product_name": "Aluminum Radiator for Kia Sportage",
-        "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
-        "price": 241.69
-    },
-    {
-        "make": "Kia",
-        "model": "Forte",
-        "year": 2021,
-        "category": "Brake Pads",
-        "product_name": "Premium Ceramic Brake Pads for Kia Forte",
-        "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
-        "price": 52.48
-    },
-    {
-        "make": "Kia",
-        "model": "Forte",
-        "year": 2021,
-        "category": "Oil Filter",
-        "product_name": "High-Flow Oil Filter for Kia Forte",
-        "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
-        "price": 10.33
-    },
-    {
-        "make": "Kia",
-        "model": "Forte",
-        "year": 2021,
-        "category": "Air Filter",
-        "product_name": "Engine Air Filter for Kia Forte",
-        "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
-        "price": 31.41
-    },
-    {
-        "make": "Kia",
-        "model": "Forte",
-        "year": 2021,
-        "category": "Battery",
-        "product_name": "12V Starting Battery for Kia Forte",
-        "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
-        "price": 137.5
-    },
-    {
-        "make": "Kia",
-        "model": "Forte",
-        "year": 2021,
-        "category": "Radiator",
-        "product_name": "Aluminum Radiator for Kia Forte",
-        "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
-        "price": 214.63
-    },
-    {
-        "make": "Subaru",
-        "model": "Outback",
-        "year": 2023,
-        "category": "Brake Pads",
-        "product_name": "Premium Ceramic Brake Pads for Subaru Outback",
-        "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
-        "price": 70.17
-    },
-    {
-        "make": "Subaru",
-        "model": "Outback",
-        "year": 2023,
-        "category": "Oil Filter",
-        "product_name": "High-Flow Oil Filter for Subaru Outback",
-        "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
-        "price": 10.5
-    },
-    {
-        "make": "Subaru",
-        "model": "Outback",
-        "year": 2023,
-        "category": "Air Filter",
-        "product_name": "Engine Air Filter for Subaru Outback",
-        "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
-        "price": 24.55
-    },
-    {
-        "make": "Subaru",
-        "model": "Outback",
-        "year": 2023,
-        "category": "Battery",
-        "product_name": "12V Starting Battery for Subaru Outback",
-        "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
-        "price": 144.25
-    },
-    {
-        "make": "Subaru",
-        "model": "Outback",
-        "year": 2023,
-        "category": "Radiator",
-        "product_name": "Aluminum Radiator for Subaru Outback",
-        "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
-        "price": 213.3
-    },
-    {
-        "make": "Subaru",
-        "model": "Forester",
-        "year": 2024,
-        "category": "Brake Pads",
-        "product_name": "Premium Ceramic Brake Pads for Subaru Forester",
-        "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
-        "price": 65.09
-    },
-    {
-        "make": "Subaru",
-        "model": "Forester",
-        "year": 2024,
-        "category": "Oil Filter",
-        "product_name": "High-Flow Oil Filter for Subaru Forester",
-        "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
-        "price": 16.83
-    },
-    {
-        "make": "Subaru",
-        "model": "Forester",
-        "year": 2024,
-        "category": "Air Filter",
-        "product_name": "Engine Air Filter for Subaru Forester",
-        "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
-        "price": 24.35
-    },
-    {
-        "make": "Subaru",
-        "model": "Forester",
-        "year": 2024,
-        "category": "Battery",
-        "product_name": "12V Starting Battery for Subaru Forester",
-        "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
-        "price": 155.52
-    },
-    {
-        "make": "Subaru",
-        "model": "Forester",
-        "year": 2024,
-        "category": "Radiator",
-        "product_name": "Aluminum Radiator for Subaru Forester",
-        "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
-        "price": 233.57
-    },
-    {
-        "make": "Subaru",
-        "model": "WRX",
-        "year": 2024,
-        "category": "Brake Pads",
-        "product_name": "Premium Ceramic Brake Pads for Subaru WRX",
-        "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
-        "price": 53.44
-    },
-    {
-        "make": "Subaru",
-        "model": "WRX",
-        "year": 2024,
-        "category": "Oil Filter",
-        "product_name": "High-Flow Oil Filter for Subaru WRX",
-        "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
-        "price": 16.09
-    },
-    {
-        "make": "Subaru",
-        "model": "WRX",
-        "year": 2024,
-        "category": "Air Filter",
-        "product_name": "Engine Air Filter for Subaru WRX",
-        "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
-        "price": 19.88
-    },
-    {
-        "make": "Subaru",
-        "model": "WRX",
-        "year": 2024,
-        "category": "Battery",
-        "product_name": "12V Starting Battery for Subaru WRX",
-        "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
-        "price": 160.16
-    },
-    {
-        "make": "Subaru",
-        "model": "WRX",
-        "year": 2024,
-        "category": "Radiator",
-        "product_name": "Aluminum Radiator for Subaru WRX",
-        "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
-        "price": 218.7
-    },
-    {
-        "make": "Volkswagen",
-        "model": "Jetta",
-        "year": 2020,
-        "category": "Brake Pads",
-        "product_name": "Premium Ceramic Brake Pads for Volkswagen Jetta",
-        "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
-        "price": 68.77
-    },
-    {
-        "make": "Volkswagen",
-        "model": "Jetta",
-        "year": 2020,
-        "category": "Oil Filter",
-        "product_name": "High-Flow Oil Filter for Volkswagen Jetta",
-        "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
-        "price": 6.91
-    },
-    {
-        "make": "Volkswagen",
-        "model": "Jetta",
-        "year": 2020,
-        "category": "Air Filter",
-        "product_name": "Engine Air Filter for Volkswagen Jetta",
-        "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
-        "price": 14.42
-    },
-    {
-        "make": "Volkswagen",
-        "model": "Jetta",
-        "year": 2020,
-        "category": "Battery",
-        "product_name": "12V Starting Battery for Volkswagen Jetta",
-        "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
-        "price": 146.19
-    },
-    {
-        "make": "Volkswagen",
-        "model": "Jetta",
-        "year": 2020,
-        "category": "Radiator",
-        "product_name": "Aluminum Radiator for Volkswagen Jetta",
-        "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
-        "price": 240.61
-    },
-    {
-        "make": "Volkswagen",
-        "model": "Golf",
-        "year": 2019,
-        "category": "Brake Pads",
-        "product_name": "Premium Ceramic Brake Pads for Volkswagen Golf",
-        "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
-        "price": 65.51
-    },
-    {
-        "make": "Volkswagen",
-        "model": "Golf",
-        "year": 2019,
-        "category": "Oil Filter",
-        "product_name": "High-Flow Oil Filter for Volkswagen Golf",
-        "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
-        "price": 32.15
-    },
-    {
-        "make": "Volkswagen",
-        "model": "Golf",
-        "year": 2019,
-        "category": "Air Filter",
-        "product_name": "Engine Air Filter for Volkswagen Golf",
-        "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
-        "price": 27.26
-    },
-    {
-        "make": "Volkswagen",
-        "model": "Golf",
-        "year": 2019,
-        "category": "Battery",
-        "product_name": "12V Starting Battery for Volkswagen Golf",
-        "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
-        "price": 131.77
-    },
-    {
-        "make": "Volkswagen",
-        "model": "Golf",
-        "year": 2019,
-        "category": "Radiator",
-        "product_name": "Aluminum Radiator for Volkswagen Golf",
-        "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
-        "price": 244.97
-    },
-    {
-        "make": "Volkswagen",
-        "model": "Tiguan",
-        "year": 2019,
-        "category": "Brake Pads",
-        "product_name": "Premium Ceramic Brake Pads for Volkswagen Tiguan",
-        "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
-        "price": 83.91
-    },
-    {
-        "make": "Volkswagen",
-        "model": "Tiguan",
-        "year": 2019,
-        "category": "Oil Filter",
-        "product_name": "High-Flow Oil Filter for Volkswagen Tiguan",
-        "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
-        "price": 34.42
-    },
-    {
-        "make": "Volkswagen",
-        "model": "Tiguan",
-        "year": 2019,
-        "category": "Air Filter",
-        "product_name": "Engine Air Filter for Volkswagen Tiguan",
-        "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
-        "price": 37.7
-    },
-    {
-        "make": "Volkswagen",
-        "model": "Tiguan",
-        "year": 2019,
-        "category": "Battery",
-        "product_name": "12V Starting Battery for Volkswagen Tiguan",
-        "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
-        "price": 135.82
-    },
-    {
-        "make": "Volkswagen",
-        "model": "Tiguan",
-        "year": 2019,
-        "category": "Radiator",
-        "product_name": "Aluminum Radiator for Volkswagen Tiguan",
-        "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
-        "price": 227.0
-    },
-    {
-        "make": "Lexus",
-        "model": "RX 350",
-        "year": 2020,
-        "category": "Brake Pads",
-        "product_name": "Premium Ceramic Brake Pads for Lexus RX 350",
-        "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
-        "price": 80.26
-    },
-    {
-        "make": "Lexus",
-        "model": "RX 350",
-        "year": 2020,
-        "category": "Oil Filter",
-        "product_name": "High-Flow Oil Filter for Lexus RX 350",
-        "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
-        "price": 33.59
-    },
-    {
-        "make": "Lexus",
-        "model": "RX 350",
-        "year": 2020,
-        "category": "Air Filter",
-        "product_name": "Engine Air Filter for Lexus RX 350",
-        "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
-        "price": 13.76
-    },
-    {
-        "make": "Lexus",
-        "model": "RX 350",
-        "year": 2020,
-        "category": "Battery",
-        "product_name": "12V Starting Battery for Lexus RX 350",
-        "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
-        "price": 130.08
-    },
-    {
-        "make": "Lexus",
-        "model": "RX 350",
-        "year": 2020,
-        "category": "Radiator",
-        "product_name": "Aluminum Radiator for Lexus RX 350",
-        "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
-        "price": 223.66
-    },
-    {
-        "make": "Lexus",
-        "model": "ES 350",
-        "year": 2022,
-        "category": "Brake Pads",
-        "product_name": "Premium Ceramic Brake Pads for Lexus ES 350",
-        "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
-        "price": 59.98
-    },
-    {
-        "make": "Lexus",
-        "model": "ES 350",
-        "year": 2022,
-        "category": "Oil Filter",
-        "product_name": "High-Flow Oil Filter for Lexus ES 350",
-        "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
-        "price": 26.38
-    },
-    {
-        "make": "Lexus",
-        "model": "ES 350",
-        "year": 2022,
-        "category": "Air Filter",
-        "product_name": "Engine Air Filter for Lexus ES 350",
-        "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
-        "price": 33.57
-    },
-    {
-        "make": "Lexus",
-        "model": "ES 350",
-        "year": 2022,
-        "category": "Battery",
-        "product_name": "12V Starting Battery for Lexus ES 350",
-        "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
-        "price": 157.42
-    },
-    {
-        "make": "Lexus",
-        "model": "ES 350",
-        "year": 2022,
-        "category": "Radiator",
-        "product_name": "Aluminum Radiator for Lexus ES 350",
-        "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
-        "price": 233.17
-    },
-    {
-        "make": "Lexus",
-        "model": "NX 300",
-        "year": 2022,
-        "category": "Brake Pads",
-        "product_name": "Premium Ceramic Brake Pads for Lexus NX 300",
-        "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
-        "price": 55.42
-    },
-    {
-        "make": "Lexus",
-        "model": "NX 300",
-        "year": 2022,
-        "category": "Oil Filter",
-        "product_name": "High-Flow Oil Filter for Lexus NX 300",
-        "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
-        "price": 12.38
-    },
-    {
-        "make": "Lexus",
-        "model": "NX 300",
-        "year": 2022,
-        "category": "Air Filter",
-        "product_name": "Engine Air Filter for Lexus NX 300",
-        "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
-        "price": 41.9
-    },
-    {
-        "make": "Lexus",
-        "model": "NX 300",
-        "year": 2022,
-        "category": "Battery",
-        "product_name": "12V Starting Battery for Lexus NX 300",
-        "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
-        "price": 150.27
-    },
-    {
-        "make": "Lexus",
-        "model": "NX 300",
-        "year": 2022,
-        "category": "Radiator",
-        "product_name": "Aluminum Radiator for Lexus NX 300",
-        "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
-        "price": 228.98
-    },
-    {
-        "make": "Ram",
-        "model": "1500",
-        "year": 2024,
-        "category": "Brake Pads",
-        "product_name": "Premium Ceramic Brake Pads for Ram 1500",
-        "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
-        "price": 60.98
-    },
-    {
-        "make": "Ram",
-        "model": "1500",
-        "year": 2024,
-        "category": "Oil Filter",
-        "product_name": "High-Flow Oil Filter for Ram 1500",
-        "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
-        "price": 3.75
-    },
-    {
-        "make": "Ram",
-        "model": "1500",
-        "year": 2024,
-        "category": "Air Filter",
-        "product_name": "Engine Air Filter for Ram 1500",
-        "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
-        "price": 24.69
-    },
-    {
-        "make": "Ram",
-        "model": "1500",
-        "year": 2024,
-        "category": "Battery",
-        "product_name": "12V Starting Battery for Ram 1500",
-        "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
-        "price": 162.18
-    },
-    {
-        "make": "Ram",
-        "model": "1500",
-        "year": 2024,
-        "category": "Radiator",
-        "product_name": "Aluminum Radiator for Ram 1500",
-        "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
-        "price": 228.59
-    },
-    {
-        "make": "Ram",
-        "model": "2500",
-        "year": 2019,
-        "category": "Brake Pads",
-        "product_name": "Premium Ceramic Brake Pads for Ram 2500",
-        "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
-        "price": 83.63
-    },
-    {
-        "make": "Ram",
-        "model": "2500",
-        "year": 2019,
-        "category": "Oil Filter",
-        "product_name": "High-Flow Oil Filter for Ram 2500",
-        "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
-        "price": 4.8
-    },
-    {
-        "make": "Ram",
-        "model": "2500",
-        "year": 2019,
-        "category": "Air Filter",
-        "product_name": "Engine Air Filter for Ram 2500",
-        "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
-        "price": 14.5
-    },
-    {
-        "make": "Ram",
-        "model": "2500",
-        "year": 2019,
-        "category": "Battery",
-        "product_name": "12V Starting Battery for Ram 2500",
-        "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
-        "price": 150.83
-    },
-    {
-        "make": "Ram",
-        "model": "2500",
-        "year": 2019,
-        "category": "Radiator",
-        "product_name": "Aluminum Radiator for Ram 2500",
-        "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
-        "price": 233.63
-    },
-    {
-        "make": "Ram",
-        "model": "ProMaster",
-        "year": 2020,
-        "category": "Brake Pads",
-        "product_name": "Premium Ceramic Brake Pads for Ram ProMaster",
-        "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
-        "price": 64.13
-    },
-    {
-        "make": "Ram",
-        "model": "ProMaster",
-        "year": 2020,
-        "category": "Oil Filter",
-        "product_name": "High-Flow Oil Filter for Ram ProMaster",
-        "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
-        "price": 34.96
-    },
-    {
-        "make": "Ram",
-        "model": "ProMaster",
-        "year": 2020,
-        "category": "Air Filter",
-        "product_name": "Engine Air Filter for Ram ProMaster",
-        "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
-        "price": 27.94
-    },
-    {
-        "make": "Ram",
-        "model": "ProMaster",
-        "year": 2020,
-        "category": "Battery",
-        "product_name": "12V Starting Battery for Ram ProMaster",
-        "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
-        "price": 150.26
-    },
-    {
-        "make": "Ram",
-        "model": "ProMaster",
-        "year": 2020,
-        "category": "Radiator",
-        "product_name": "Aluminum Radiator for Ram ProMaster",
-        "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
-        "price": 211.39
-    },
-    {
-        "make": "Jeep",
-        "model": "Wrangler",
-        "year": 2019,
-        "category": "Brake Pads",
-        "product_name": "Premium Ceramic Brake Pads for Jeep Wrangler",
-        "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
-        "price": 64.67
-    },
-    {
-        "make": "Jeep",
-        "model": "Wrangler",
-        "year": 2019,
-        "category": "Oil Filter",
-        "product_name": "High-Flow Oil Filter for Jeep Wrangler",
-        "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
-        "price": 22.43
-    },
-    {
-        "make": "Jeep",
-        "model": "Wrangler",
-        "year": 2019,
-        "category": "Air Filter",
-        "product_name": "Engine Air Filter for Jeep Wrangler",
-        "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
-        "price": 26.3
-    },
-    {
-        "make": "Jeep",
-        "model": "Wrangler",
-        "year": 2019,
-        "category": "Battery",
-        "product_name": "12V Starting Battery for Jeep Wrangler",
-        "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
-        "price": 162.71
-    },
-    {
-        "make": "Jeep",
-        "model": "Wrangler",
-        "year": 2019,
-        "category": "Radiator",
-        "product_name": "Aluminum Radiator for Jeep Wrangler",
-        "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
-        "price": 217.15
-    },
-    {
-        "make": "Jeep",
-        "model": "Grand Cherokee",
-        "year": 2024,
-        "category": "Brake Pads",
-        "product_name": "Premium Ceramic Brake Pads for Jeep Grand Cherokee",
-        "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
-        "price": 61.0
-    },
-    {
-        "make": "Jeep",
-        "model": "Grand Cherokee",
-        "year": 2024,
-        "category": "Oil Filter",
-        "product_name": "High-Flow Oil Filter for Jeep Grand Cherokee",
-        "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
-        "price": 11.3
-    },
-    {
-        "make": "Jeep",
-        "model": "Grand Cherokee",
-        "year": 2024,
-        "category": "Air Filter",
-        "product_name": "Engine Air Filter for Jeep Grand Cherokee",
-        "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
-        "price": 12.58
-    },
-    {
-        "make": "Jeep",
-        "model": "Grand Cherokee",
-        "year": 2024,
-        "category": "Battery",
-        "product_name": "12V Starting Battery for Jeep Grand Cherokee",
-        "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
-        "price": 152.59
-    },
-    {
-        "make": "Jeep",
-        "model": "Grand Cherokee",
-        "year": 2024,
-        "category": "Radiator",
-        "product_name": "Aluminum Radiator for Jeep Grand Cherokee",
-        "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
-        "price": 226.0
-    },
-    {
-        "make": "Jeep",
-        "model": "Compass",
-        "year": 2019,
-        "category": "Brake Pads",
-        "product_name": "Premium Ceramic Brake Pads for Jeep Compass",
-        "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
-        "price": 50.33
-    },
-    {
-        "make": "Jeep",
-        "model": "Compass",
-        "year": 2019,
-        "category": "Oil Filter",
-        "product_name": "High-Flow Oil Filter for Jeep Compass",
-        "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
-        "price": 23.74
-    },
-    {
-        "make": "Jeep",
-        "model": "Compass",
-        "year": 2019,
-        "category": "Air Filter",
-        "product_name": "Engine Air Filter for Jeep Compass",
-        "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
-        "price": 27.7
-    },
-    {
-        "make": "Jeep",
-        "model": "Compass",
-        "year": 2019,
-        "category": "Battery",
-        "product_name": "12V Starting Battery for Jeep Compass",
-        "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
-        "price": 133.5
-    },
-    {
-        "make": "Jeep",
-        "model": "Compass",
-        "year": 2019,
-        "category": "Radiator",
-        "product_name": "Aluminum Radiator for Jeep Compass",
-        "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
-        "price": 228.82
-    },
-    {
-        "make": "GMC",
-        "model": "Sierra 1500",
-        "year": 2023,
-        "category": "Brake Pads",
-        "product_name": "Premium Ceramic Brake Pads for GMC Sierra 1500",
-        "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
-        "price": 59.28
-    },
-    {
-        "make": "GMC",
-        "model": "Sierra 1500",
-        "year": 2023,
-        "category": "Oil Filter",
-        "product_name": "High-Flow Oil Filter for GMC Sierra 1500",
-        "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
-        "price": 34.66
-    },
-    {
-        "make": "GMC",
-        "model": "Sierra 1500",
-        "year": 2023,
-        "category": "Air Filter",
-        "product_name": "Engine Air Filter for GMC Sierra 1500",
-        "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
-        "price": 38.83
-    },
-    {
-        "make": "GMC",
-        "model": "Sierra 1500",
-        "year": 2023,
-        "category": "Battery",
-        "product_name": "12V Starting Battery for GMC Sierra 1500",
-        "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
-        "price": 160.77
-    },
-    {
-        "make": "GMC",
-        "model": "Sierra 1500",
-        "year": 2023,
-        "category": "Radiator",
-        "product_name": "Aluminum Radiator for GMC Sierra 1500",
-        "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
-        "price": 222.93
-    },
-    {
-        "make": "GMC",
-        "model": "Terrain",
-        "year": 2020,
-        "category": "Brake Pads",
-        "product_name": "Premium Ceramic Brake Pads for GMC Terrain",
-        "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
-        "price": 65.34
-    },
-    {
-        "make": "GMC",
-        "model": "Terrain",
-        "year": 2020,
-        "category": "Oil Filter",
-        "product_name": "High-Flow Oil Filter for GMC Terrain",
-        "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
-        "price": 21.01
-    },
-    {
-        "make": "GMC",
-        "model": "Terrain",
-        "year": 2020,
-        "category": "Air Filter",
-        "product_name": "Engine Air Filter for GMC Terrain",
-        "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
-        "price": 18.59
-    },
-    {
-        "make": "GMC",
-        "model": "Terrain",
-        "year": 2020,
-        "category": "Battery",
-        "product_name": "12V Starting Battery for GMC Terrain",
-        "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
-        "price": 164.43
-    },
-    {
-        "make": "GMC",
-        "model": "Terrain",
-        "year": 2020,
-        "category": "Radiator",
-        "product_name": "Aluminum Radiator for GMC Terrain",
-        "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
-        "price": 238.25
-    },
-    {
-        "make": "GMC",
-        "model": "Acadia",
-        "year": 2023,
-        "category": "Brake Pads",
-        "product_name": "Premium Ceramic Brake Pads for GMC Acadia",
-        "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
-        "price": 50.27
-    },
-    {
-        "make": "GMC",
-        "model": "Acadia",
-        "year": 2023,
-        "category": "Oil Filter",
-        "product_name": "High-Flow Oil Filter for GMC Acadia",
-        "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
-        "price": 30.6
-    },
-    {
-        "make": "GMC",
-        "model": "Acadia",
-        "year": 2023,
-        "category": "Air Filter",
-        "product_name": "Engine Air Filter for GMC Acadia",
-        "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
-        "price": 18.48
-    },
-    {
-        "make": "GMC",
-        "model": "Acadia",
-        "year": 2023,
-        "category": "Battery",
-        "product_name": "12V Starting Battery for GMC Acadia",
-        "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
-        "price": 153.22
-    },
-    {
-        "make": "GMC",
-        "model": "Acadia",
-        "year": 2023,
-        "category": "Radiator",
-        "product_name": "Aluminum Radiator for GMC Acadia",
-        "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
-        "price": 242.86
-    },
-    {
-        "make": "Mazda",
-        "model": "Mazda3",
-        "year": 2020,
-        "category": "Brake Pads",
-        "product_name": "Premium Ceramic Brake Pads for Mazda Mazda3",
-        "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
-        "price": 59.26
-    },
-    {
-        "make": "Mazda",
-        "model": "Mazda3",
-        "year": 2020,
-        "category": "Oil Filter",
-        "product_name": "High-Flow Oil Filter for Mazda Mazda3",
-        "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
-        "price": 33.14
-    },
-    {
-        "make": "Mazda",
-        "model": "Mazda3",
-        "year": 2020,
-        "category": "Air Filter",
-        "product_name": "Engine Air Filter for Mazda Mazda3",
-        "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
-        "price": 33.98
-    },
-    {
-        "make": "Mazda",
-        "model": "Mazda3",
-        "year": 2020,
-        "category": "Battery",
-        "product_name": "12V Starting Battery for Mazda Mazda3",
-        "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
-        "price": 135.44
-    },
-    {
-        "make": "Mazda",
-        "model": "Mazda3",
-        "year": 2020,
-        "category": "Radiator",
-        "product_name": "Aluminum Radiator for Mazda Mazda3",
-        "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
-        "price": 219.86
-    },
-    {
-        "make": "Mazda",
-        "model": "CX-5",
-        "year": 2020,
-        "category": "Brake Pads",
-        "product_name": "Premium Ceramic Brake Pads for Mazda CX-5",
-        "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
-        "price": 75.12
-    },
-    {
-        "make": "Mazda",
-        "model": "CX-5",
-        "year": 2020,
-        "category": "Oil Filter",
-        "product_name": "High-Flow Oil Filter for Mazda CX-5",
-        "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
-        "price": 9.13
-    },
-    {
-        "make": "Mazda",
-        "model": "CX-5",
-        "year": 2020,
-        "category": "Air Filter",
-        "product_name": "Engine Air Filter for Mazda CX-5",
-        "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
-        "price": 30.2
-    },
-    {
-        "make": "Mazda",
-        "model": "CX-5",
-        "year": 2020,
-        "category": "Battery",
-        "product_name": "12V Starting Battery for Mazda CX-5",
-        "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
-        "price": 139.24
-    },
-    {
-        "make": "Mazda",
-        "model": "CX-5",
-        "year": 2020,
-        "category": "Radiator",
-        "product_name": "Aluminum Radiator for Mazda CX-5",
-        "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
-        "price": 227.1
-    },
-    {
-        "make": "Mazda",
-        "model": "CX-30",
-        "year": 2019,
-        "category": "Brake Pads",
-        "product_name": "Premium Ceramic Brake Pads for Mazda CX-30",
-        "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
-        "price": 53.23
-    },
-    {
-        "make": "Mazda",
-        "model": "CX-30",
-        "year": 2019,
-        "category": "Oil Filter",
-        "product_name": "High-Flow Oil Filter for Mazda CX-30",
-        "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
-        "price": 16.83
-    },
-    {
-        "make": "Mazda",
-        "model": "CX-30",
-        "year": 2019,
-        "category": "Air Filter",
-        "product_name": "Engine Air Filter for Mazda CX-30",
-        "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
-        "price": 17.68
-    },
-    {
-        "make": "Mazda",
-        "model": "CX-30",
-        "year": 2019,
-        "category": "Battery",
-        "product_name": "12V Starting Battery for Mazda CX-30",
-        "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
-        "price": 130.12
-    },
-    {
-        "make": "Mazda",
-        "model": "CX-30",
-        "year": 2019,
-        "category": "Radiator",
-        "product_name": "Aluminum Radiator for Mazda CX-30",
-        "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
-        "price": 236.99
-    },
-    {
-        "make": "Dodge",
-        "model": "Charger",
-        "year": 2024,
-        "category": "Brake Pads",
-        "product_name": "Premium Ceramic Brake Pads for Dodge Charger",
-        "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
-        "price": 84.29
-    },
-    {
-        "make": "Dodge",
-        "model": "Charger",
-        "year": 2024,
-        "category": "Oil Filter",
-        "product_name": "High-Flow Oil Filter for Dodge Charger",
-        "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
-        "price": 7.66
-    },
-    {
-        "make": "Dodge",
-        "model": "Charger",
-        "year": 2024,
-        "category": "Air Filter",
-        "product_name": "Engine Air Filter for Dodge Charger",
-        "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
-        "price": 23.46
-    },
-    {
-        "make": "Dodge",
-        "model": "Charger",
-        "year": 2024,
-        "category": "Battery",
-        "product_name": "12V Starting Battery for Dodge Charger",
-        "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
-        "price": 154.7
-    },
-    {
-        "make": "Dodge",
-        "model": "Charger",
-        "year": 2024,
-        "category": "Radiator",
-        "product_name": "Aluminum Radiator for Dodge Charger",
-        "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
-        "price": 229.63
-    },
-    {
-        "make": "Dodge",
-        "model": "Durango",
-        "year": 2019,
-        "category": "Brake Pads",
-        "product_name": "Premium Ceramic Brake Pads for Dodge Durango",
-        "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
-        "price": 52.63
-    },
-    {
-        "make": "Dodge",
-        "model": "Durango",
-        "year": 2019,
-        "category": "Oil Filter",
-        "product_name": "High-Flow Oil Filter for Dodge Durango",
-        "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
-        "price": 32.91
-    },
-    {
-        "make": "Dodge",
-        "model": "Durango",
-        "year": 2019,
-        "category": "Air Filter",
-        "product_name": "Engine Air Filter for Dodge Durango",
-        "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
-        "price": 39.64
-    },
-    {
-        "make": "Dodge",
-        "model": "Durango",
-        "year": 2019,
-        "category": "Battery",
-        "product_name": "12V Starting Battery for Dodge Durango",
-        "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
-        "price": 149.1
-    },
-    {
-        "make": "Dodge",
-        "model": "Durango",
-        "year": 2019,
-        "category": "Radiator",
-        "product_name": "Aluminum Radiator for Dodge Durango",
-        "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
-        "price": 239.21
-    },
-    {
-        "make": "Dodge",
-        "model": "Challenger",
-        "year": 2023,
-        "category": "Brake Pads",
-        "product_name": "Premium Ceramic Brake Pads for Dodge Challenger",
-        "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
-        "price": 69.34
-    },
-    {
-        "make": "Dodge",
-        "model": "Challenger",
-        "year": 2023,
-        "category": "Oil Filter",
-        "product_name": "High-Flow Oil Filter for Dodge Challenger",
-        "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
-        "price": 17.04
-    },
-    {
-        "make": "Dodge",
-        "model": "Challenger",
-        "year": 2023,
-        "category": "Air Filter",
-        "product_name": "Engine Air Filter for Dodge Challenger",
-        "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
-        "price": 9.46
-    },
-    {
-        "make": "Dodge",
-        "model": "Challenger",
-        "year": 2023,
-        "category": "Battery",
-        "product_name": "12V Starting Battery for Dodge Challenger",
-        "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
-        "price": 142.76
-    },
-    {
-        "make": "Dodge",
-        "model": "Challenger",
-        "year": 2023,
-        "category": "Radiator",
-        "product_name": "Aluminum Radiator for Dodge Challenger",
-        "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
-        "price": 242.66
-    },
-    {
-        "make": "Volvo",
-        "model": "XC60",
-        "year": 2019,
-        "category": "Brake Pads",
-        "product_name": "Premium Ceramic Brake Pads for Volvo XC60",
-        "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
-        "price": 81.46
-    },
-    {
-        "make": "Volvo",
-        "model": "XC60",
-        "year": 2019,
-        "category": "Oil Filter",
-        "product_name": "High-Flow Oil Filter for Volvo XC60",
-        "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
-        "price": 9.35
-    },
-    {
-        "make": "Volvo",
-        "model": "XC60",
-        "year": 2019,
-        "category": "Air Filter",
-        "product_name": "Engine Air Filter for Volvo XC60",
-        "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
-        "price": 16.73
-    },
-    {
-        "make": "Volvo",
-        "model": "XC60",
-        "year": 2019,
-        "category": "Battery",
-        "product_name": "12V Starting Battery for Volvo XC60",
-        "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
-        "price": 133.6
-    },
-    {
-        "make": "Volvo",
-        "model": "XC60",
-        "year": 2019,
-        "category": "Radiator",
-        "product_name": "Aluminum Radiator for Volvo XC60",
-        "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
-        "price": 237.3
-    },
-    {
-        "make": "Volvo",
-        "model": "S60",
-        "year": 2022,
-        "category": "Brake Pads",
-        "product_name": "Premium Ceramic Brake Pads for Volvo S60",
-        "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
-        "price": 84.08
-    },
-    {
-        "make": "Volvo",
-        "model": "S60",
-        "year": 2022,
-        "category": "Oil Filter",
-        "product_name": "High-Flow Oil Filter for Volvo S60",
-        "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
-        "price": 28.23
-    },
-    {
-        "make": "Volvo",
-        "model": "S60",
-        "year": 2022,
-        "category": "Air Filter",
-        "product_name": "Engine Air Filter for Volvo S60",
-        "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
-        "price": 40.4
-    },
-    {
-        "make": "Volvo",
-        "model": "S60",
-        "year": 2022,
-        "category": "Battery",
-        "product_name": "12V Starting Battery for Volvo S60",
-        "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
-        "price": 138.29
-    },
-    {
-        "make": "Volvo",
-        "model": "S60",
-        "year": 2022,
-        "category": "Radiator",
-        "product_name": "Aluminum Radiator for Volvo S60",
-        "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
-        "price": 215.69
-    },
-    {
-        "make": "Volvo",
-        "model": "XC90",
-        "year": 2020,
-        "category": "Brake Pads",
-        "product_name": "Premium Ceramic Brake Pads for Volvo XC90",
-        "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
-        "price": 80.85
-    },
-    {
-        "make": "Volvo",
-        "model": "XC90",
-        "year": 2020,
-        "category": "Oil Filter",
-        "product_name": "High-Flow Oil Filter for Volvo XC90",
-        "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
-        "price": 2.87
-    },
-    {
-        "make": "Volvo",
-        "model": "XC90",
-        "year": 2020,
-        "category": "Air Filter",
-        "product_name": "Engine Air Filter for Volvo XC90",
-        "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
-        "price": 33.78
-    },
-    {
-        "make": "Volvo",
-        "model": "XC90",
-        "year": 2020,
-        "category": "Battery",
-        "product_name": "12V Starting Battery for Volvo XC90",
-        "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
-        "price": 141.63
-    },
-    {
-        "make": "Volvo",
-        "model": "XC90",
-        "year": 2020,
-        "category": "Radiator",
-        "product_name": "Aluminum Radiator for Volvo XC90",
-        "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
-        "price": 242.58
-    },
-    {
-        "make": "Tesla",
-        "model": "Model 3",
-        "year": 2024,
-        "category": "Brake Pads",
-        "product_name": "Premium Ceramic Brake Pads for Tesla Model 3",
-        "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
-        "price": 80.24
-    },
-    {
-        "make": "Tesla",
-        "model": "Model 3",
-        "year": 2024,
-        "category": "Oil Filter",
-        "product_name": "High-Flow Oil Filter for Tesla Model 3",
-        "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
-        "price": 30.38
-    },
-    {
-        "make": "Tesla",
-        "model": "Model 3",
-        "year": 2024,
-        "category": "Air Filter",
-        "product_name": "Engine Air Filter for Tesla Model 3",
-        "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
-        "price": 17.34
-    },
-    {
-        "make": "Tesla",
-        "model": "Model 3",
-        "year": 2024,
-        "category": "Battery",
-        "product_name": "12V Starting Battery for Tesla Model 3",
-        "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
-        "price": 157.56
-    },
-    {
-        "make": "Tesla",
-        "model": "Model 3",
-        "year": 2024,
-        "category": "Radiator",
-        "product_name": "Aluminum Radiator for Tesla Model 3",
-        "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
-        "price": 213.78
-    },
-    {
-        "make": "Tesla",
-        "model": "Model Y",
-        "year": 2019,
-        "category": "Brake Pads",
-        "product_name": "Premium Ceramic Brake Pads for Tesla Model Y",
-        "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
-        "price": 80.05
-    },
-    {
-        "make": "Tesla",
-        "model": "Model Y",
-        "year": 2019,
-        "category": "Oil Filter",
-        "product_name": "High-Flow Oil Filter for Tesla Model Y",
-        "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
-        "price": 9.79
-    },
-    {
-        "make": "Tesla",
-        "model": "Model Y",
-        "year": 2019,
-        "category": "Air Filter",
-        "product_name": "Engine Air Filter for Tesla Model Y",
-        "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
-        "price": 36.58
-    },
-    {
-        "make": "Tesla",
-        "model": "Model Y",
-        "year": 2019,
-        "category": "Battery",
-        "product_name": "12V Starting Battery for Tesla Model Y",
-        "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
-        "price": 146.11
-    },
-    {
-        "make": "Tesla",
-        "model": "Model Y",
-        "year": 2019,
-        "category": "Radiator",
-        "product_name": "Aluminum Radiator for Tesla Model Y",
-        "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
-        "price": 220.68
-    },
-    {
-        "make": "Tesla",
-        "model": "Model S",
-        "year": 2020,
-        "category": "Brake Pads",
-        "product_name": "Premium Ceramic Brake Pads for Tesla Model S",
-        "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
-        "price": 57.8
-    },
-    {
-        "make": "Tesla",
-        "model": "Model S",
-        "year": 2020,
-        "category": "Oil Filter",
-        "product_name": "High-Flow Oil Filter for Tesla Model S",
-        "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
-        "price": 25.1
-    },
-    {
-        "make": "Tesla",
-        "model": "Model S",
-        "year": 2020,
-        "category": "Air Filter",
-        "product_name": "Engine Air Filter for Tesla Model S",
-        "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
-        "price": 21.95
-    },
-    {
-        "make": "Tesla",
-        "model": "Model S",
-        "year": 2020,
-        "category": "Battery",
-        "product_name": "12V Starting Battery for Tesla Model S",
-        "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
-        "price": 139.75
-    },
-    {
-        "make": "Tesla",
-        "model": "Model S",
-        "year": 2020,
-        "category": "Radiator",
-        "product_name": "Aluminum Radiator for Tesla Model S",
-        "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
-        "price": 212.43
-    }
+  {
+    "make": "Toyota",
+    "model": "Camry",
+    "year": 2024,
+    "category": "Brake Pads",
+    "product_name": "Premium Ceramic Brake Pads for Toyota Camry",
+    "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
+    "price": 53.9
+  },
+  {
+    "make": "Toyota",
+    "model": "Corolla",
+    "year": 2024,
+    "category": "Battery",
+    "product_name": "Optima RedTop High-Performance AGM Battery - Group 34",
+    "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
+    "price": 131.04
+  },
+  {
+    "make": "Subaru",
+    "model": "Forester",
+    "year": 2024,
+    "category": "Air Filter",
+    "product_name": "PurolatorONE Advanced Engine Air Filter",
+    "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
+    "price": 24.35
+  },
+  {
+    "make": "Chevrolet",
+    "model": "Silverado 1500",
+    "year": 2021,
+    "category": "Radiator",
+    "product_name": "KoyoRad Hyper V-Series Aluminum Radiator",
+    "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
+    "price": 231.32
+  },
+  {
+    "make": "Subaru",
+    "model": "Forester",
+    "year": 2024,
+    "category": "Brake Pads",
+    "product_name": "Raybestos Element3 Enhanced Hybrid Brake Pads - Front",
+    "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
+    "price": 65.09
+  },
+  {
+    "make": "Kia",
+    "model": "Soul",
+    "year": 2023,
+    "category": "Radiator",
+    "product_name": "ACDelco Professional Engine Cooling Radiator",
+    "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
+    "price": 229.39
+  },
+  {
+    "make": "BMW",
+    "model": "3 Series",
+    "year": 2023,
+    "category": "Oil Filter",
+    "product_name": "Mahle Original OE Replacement Oil Filter",
+    "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
+    "price": 9.68
+  },
+  {
+    "make": "Kia",
+    "model": "Sportage",
+    "year": 2023,
+    "category": "Oil Filter",
+    "product_name": "MANN-FILTER High-Capacity Cartridge Oil Filter",
+    "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
+    "price": 4.48
+  },
+  {
+    "make": "Toyota",
+    "model": "Corolla",
+    "year": 2024,
+    "category": "Oil Filter",
+    "product_name": "Bosch Premium Filtech Oil Filter",
+    "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
+    "price": 5.04
+  },
+  {
+    "make": "Chevrolet",
+    "model": "Silverado 1500",
+    "year": 2021,
+    "category": "Brake Pads",
+    "product_name": "Power Stop Z23 Evolution Sport Brake Pads - Rear",
+    "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
+    "price": 57.33
+  },
+  {
+    "make": "Kia",
+    "model": "Soul",
+    "year": 2023,
+    "category": "Air Filter",
+    "product_name": "Carquest Premium Engine Air Filter",
+    "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
+    "price": 10.24
+  },
+  {
+    "make": "Audi",
+    "model": "A4",
+    "year": 2024,
+    "category": "Battery",
+    "product_name": "ACDelco Silver Series Starter Battery - Group 75",
+    "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
+    "price": 135.65
+  },
+  {
+    "make": "Kia",
+    "model": "Soul",
+    "year": 2023,
+    "category": "Battery",
+    "product_name": "Super Start Platinum AGM Battery - Group 34/78",
+    "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
+    "price": 130.74
+  },
+  {
+    "make": "Honda",
+    "model": "Accord",
+    "year": 2020,
+    "category": "Radiator",
+    "product_name": "CSF High-Efficiency All-Aluminum Radiator",
+    "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
+    "price": 212.79
+  },
+  {
+    "make": "Toyota",
+    "model": "Camry",
+    "year": 2024,
+    "category": "Radiator",
+    "product_name": "Denso OE-Style Aluminum Radiator with Plastic Tank",
+    "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
+    "price": 213.59
+  },
+  {
+    "make": "Toyota",
+    "model": "Corolla",
+    "year": 2024,
+    "category": "Air Filter",
+    "product_name": "FRAM Extra Guard Engine Air Filter",
+    "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
+    "price": 22.77
+  },
+  {
+    "make": "Hyundai",
+    "model": "Elantra",
+    "year": 2019,
+    "category": "Battery",
+    "product_name": "Exide Marathon Max AGM Battery - Group 47",
+    "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
+    "price": 153.09
+  },
+  {
+    "make": "Hyundai",
+    "model": "Sonata",
+    "year": 2024,
+    "category": "Brake Pads",
+    "product_name": "Brembo Premium Ceramic Disc Brake Pads - Front",
+    "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
+    "price": 74.15
+  },
+  {
+    "make": "Hyundai",
+    "model": "Sonata",
+    "year": 2024,
+    "category": "Battery",
+    "product_name": "Delphi MaxStart AGM Automotive Battery - Group 94R",
+    "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
+    "price": 153.51
+  },
+  {
+    "make": "Hyundai",
+    "model": "Elantra",
+    "year": 2019,
+    "category": "Radiator",
+    "product_name": "OSC Cooling Products Ultra-Premium Radiator",
+    "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
+    "price": 243.14
+  },
+  {
+    "make": "Subaru",
+    "model": "Forester",
+    "year": 2024,
+    "category": "Oil Filter",
+    "product_name": "Royal Purple Extended Life Oil Filter",
+    "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
+    "price": 16.83
+  },
+  {
+    "make": "Chevrolet",
+    "model": "Silverado 1500",
+    "year": 2021,
+    "category": "Air Filter",
+    "product_name": "MANN-FILTER OE Replacement Air Filter",
+    "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
+    "price": 40.78
+  },
+  {
+    "make": "Honda",
+    "model": "Civic",
+    "year": 2022,
+    "category": "Brake Pads",
+    "product_name": "ACDelco Gold Semi-Metallic Brake Pads - Front",
+    "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
+    "price": 52.76
+  },
+  {
+    "make": "Subaru",
+    "model": "Outback",
+    "year": 2023,
+    "category": "Brake Pads",
+    "product_name": "Wagner ThermoQuiet Ceramic Brake Pads - Rear",
+    "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
+    "price": 70.17
+  },
+  {
+    "make": "Kia",
+    "model": "Sportage",
+    "year": 2023,
+    "category": "Brake Pads",
+    "product_name": "TRW Ultra Ceramic Disc Brake Pad Set - Front",
+    "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
+    "price": 57.71
+  },
+  {
+    "make": "Subaru",
+    "model": "Outback",
+    "year": 2023,
+    "category": "Radiator",
+    "product_name": "Valeo Premium Engine Cooling Radiator",
+    "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
+    "price": 213.3
+  },
+  {
+    "make": "Ford",
+    "model": "F-150",
+    "year": 2022,
+    "category": "Radiator",
+    "product_name": "Nissens Heavy-Duty Cooling Radiator",
+    "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
+    "price": 234.43
+  },
+  {
+    "make": "Honda",
+    "model": "Accord",
+    "year": 2020,
+    "category": "Oil Filter",
+    "product_name": "ACDelco Professional Engine Oil Filter",
+    "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
+    "price": 3.6
+  },
+  {
+    "make": "Kia",
+    "model": "Soul",
+    "year": 2023,
+    "category": "Oil Filter",
+    "product_name": "Denso First Time Fit Oil Filter",
+    "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
+    "price": 10.68
+  },
+  {
+    "make": "Honda",
+    "model": "Civic",
+    "year": 2022,
+    "category": "Radiator",
+    "product_name": "Mishimoto Performance Aluminum Racing Radiator",
+    "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
+    "price": 222.66
+  },
+  {
+    "make": "Subaru",
+    "model": "Forester",
+    "year": 2024,
+    "category": "Radiator",
+    "product_name": "APDI Pro OEM-Grade Replacement Radiator",
+    "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
+    "price": 233.57
+  },
+  {
+    "make": "Kia",
+    "model": "Sportage",
+    "year": 2023,
+    "category": "Radiator",
+    "product_name": "Dayco All-Aluminum High-Flow Radiator",
+    "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
+    "price": 241.69
+  },
+  {
+    "make": "Toyota",
+    "model": "Corolla",
+    "year": 2024,
+    "category": "Radiator",
+    "product_name": "Spectra Premium Complete Radiator Assembly",
+    "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
+    "price": 217.65
+  },
+  {
+    "make": "Ford",
+    "model": "F-150",
+    "year": 2022,
+    "category": "Battery",
+    "product_name": "Duralast Platinum AGM Battery - Group H7 850 CCA",
+    "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
+    "price": 158.2
+  },
+  {
+    "make": "Nissan",
+    "model": "Altima",
+    "year": 2019,
+    "category": "Air Filter",
+    "product_name": "Mahle CareMetix Cabin & Engine Air Filter Combo",
+    "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
+    "price": 10.32
+  },
+  {
+    "make": "Subaru",
+    "model": "Outback",
+    "year": 2023,
+    "category": "Oil Filter",
+    "product_name": "PurolatorBOSS Engine Protection Oil Filter",
+    "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
+    "price": 10.5
+  },
+  {
+    "make": "Hyundai",
+    "model": "Sonata",
+    "year": 2024,
+    "category": "Radiator",
+    "product_name": "Motorcraft OEM Spec Radiator Assembly",
+    "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
+    "price": 223.07
+  },
+  {
+    "make": "Honda",
+    "model": "Civic",
+    "year": 2022,
+    "category": "Oil Filter",
+    "product_name": "FRAM Ultra Synthetic Spin-On Oil Filter",
+    "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
+    "price": 12.26
+  },
+  {
+    "make": "Kia",
+    "model": "Soul",
+    "year": 2023,
+    "category": "Brake Pads",
+    "product_name": "Brembo Premium Ceramic Disc Brake Pads - Rear",
+    "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
+    "price": 65.8
+  },
+  {
+    "make": "Toyota",
+    "model": "Camry",
+    "year": 2024,
+    "category": "Oil Filter",
+    "product_name": "Mobil 1 Extended Performance Oil Filter",
+    "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
+    "price": 27.95
+  },
+  {
+    "make": "Hyundai",
+    "model": "Sonata",
+    "year": 2024,
+    "category": "Air Filter",
+    "product_name": "STP Max Cabin & Engine Protection Air Filter",
+    "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
+    "price": 21.96
+  },
+  {
+    "make": "Nissan",
+    "model": "Altima",
+    "year": 2019,
+    "category": "Battery",
+    "product_name": "EverStart Maxx Lead-Acid Battery - Group 24F",
+    "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
+    "price": 161.96
+  },
+  {
+    "make": "BMW",
+    "model": "3 Series",
+    "year": 2023,
+    "category": "Brake Pads",
+    "product_name": "TRW Ultra Ceramic Disc Brake Pad Set - Rear",
+    "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
+    "price": 63.98
+  },
+  {
+    "make": "BMW",
+    "model": "3 Series",
+    "year": 2023,
+    "category": "Radiator",
+    "product_name": "UAC Complete Radiator with Integrated Oil Cooler",
+    "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
+    "price": 213.18
+  },
+  {
+    "make": "Honda",
+    "model": "Accord",
+    "year": 2020,
+    "category": "Battery",
+    "product_name": "Interstate MTX AGM Automotive Battery - Group 35",
+    "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
+    "price": 140.13
+  },
+  {
+    "make": "Ford",
+    "model": "F-150",
+    "year": 2022,
+    "category": "Oil Filter",
+    "product_name": "K&N Performance Gold Oil Filter",
+    "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
+    "price": 30.33
+  },
+  {
+    "make": "Hyundai",
+    "model": "Elantra",
+    "year": 2019,
+    "category": "Brake Pads",
+    "product_name": "Raybestos Element3 Enhanced Hybrid Brake Pads - Rear",
+    "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
+    "price": 84.23
+  },
+  {
+    "make": "Nissan",
+    "model": "Altima",
+    "year": 2019,
+    "category": "Radiator",
+    "product_name": "TYC OE Replacement Radiator with Transmission Cooler",
+    "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
+    "price": 229.85
+  },
+  {
+    "make": "Subaru",
+    "model": "Outback",
+    "year": 2023,
+    "category": "Battery",
+    "product_name": "Odyssey Extreme Series AGM Battery - Group 49",
+    "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
+    "price": 144.25
+  },
+  {
+    "make": "Honda",
+    "model": "Accord",
+    "year": 2020,
+    "category": "Air Filter",
+    "product_name": "Bosch Workshop Series Engine Air Filter",
+    "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
+    "price": 15.98
+  },
+  {
+    "make": "Nissan",
+    "model": "Altima",
+    "year": 2019,
+    "category": "Oil Filter",
+    "product_name": "Motorcraft OEM Replacement Oil Filter",
+    "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
+    "price": 16.04
+  },
+  {
+    "make": "Toyota",
+    "model": "Camry",
+    "year": 2024,
+    "category": "Battery",
+    "product_name": "DieHard Gold AGM Battery - Group H6 760 CCA",
+    "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
+    "price": 134.88
+  },
+  {
+    "make": "Kia",
+    "model": "Sportage",
+    "year": 2023,
+    "category": "Battery",
+    "product_name": "XCEL UltraStart Maintenance-Free Battery - Group 51R",
+    "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
+    "price": 138.01
+  },
+  {
+    "make": "Subaru",
+    "model": "Forester",
+    "year": 2024,
+    "category": "Battery",
+    "product_name": "Bosch S6 High-Performance AGM Battery - Group T5",
+    "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
+    "price": 155.52
+  },
+  {
+    "make": "Toyota",
+    "model": "Camry",
+    "year": 2024,
+    "category": "Air Filter",
+    "product_name": "K&N High-Flow Performance Engine Air Filter",
+    "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
+    "price": 16.57
+  },
+  {
+    "make": "Kia",
+    "model": "Sportage",
+    "year": 2023,
+    "category": "Air Filter",
+    "product_name": "EPAuto High-Density Panel Engine Air Filter",
+    "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
+    "price": 30.09
+  },
+  {
+    "make": "BMW",
+    "model": "3 Series",
+    "year": 2023,
+    "category": "Air Filter",
+    "product_name": "Beck/Arnley OE Quality Engine Air Filter",
+    "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
+    "price": 42.91
+  },
+  {
+    "make": "Toyota",
+    "model": "Camry",
+    "year": 2024,
+    "category": "Brake Pads",
+    "product_name": "Bosch QuietCast Ceramic Brake Pad Set - Front",
+    "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
+    "price": 53.9
+  },
+  {
+    "make": "Audi",
+    "model": "A4",
+    "year": 2024,
+    "category": "Radiator",
+    "product_name": "Carquest Premium High-Capacity Radiator",
+    "product_description": "Lightweight aluminum radiator that improves cooling efficiency.",
+    "price": 243.37
+  },
+  {
+    "make": "Chevrolet",
+    "model": "Silverado 1500",
+    "year": 2021,
+    "category": "Battery",
+    "product_name": "NAPA Legend Premium Battery - Group 65",
+    "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
+    "price": 152.68
+  },
+  {
+    "make": "Hyundai",
+    "model": "Sonata",
+    "year": 2024,
+    "category": "Oil Filter",
+    "product_name": "STP Extended Life High-Mileage Oil Filter",
+    "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
+    "price": 26.95
+  },
+  {
+    "make": "Hyundai",
+    "model": "Elantra",
+    "year": 2019,
+    "category": "Oil Filter",
+    "product_name": "Hastings Premium Spin-On Oil Filter",
+    "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
+    "price": 20.64
+  },
+  {
+    "make": "Ford",
+    "model": "F-150",
+    "year": 2022,
+    "category": "Brake Pads",
+    "product_name": "Power Stop Z23 Evolution Sport Brake Pads - Front",
+    "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
+    "price": 70.62
+  },
+  {
+    "make": "Audi",
+    "model": "A4",
+    "year": 2024,
+    "category": "Oil Filter",
+    "product_name": "Carquest Premium Synthetic Media Oil Filter",
+    "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
+    "price": 8.96
+  },
+  {
+    "make": "Honda",
+    "model": "Civic",
+    "year": 2022,
+    "category": "Air Filter",
+    "product_name": "ACDelco Professional Air Cleaner Element",
+    "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
+    "price": 30.0
+  },
+  {
+    "make": "Chevrolet",
+    "model": "Silverado 1500",
+    "year": 2021,
+    "category": "Oil Filter",
+    "product_name": "WIX XP High-Efficiency Oil Filter",
+    "product_description": "Engineered to capture contaminants and protect engine components during extended oil change intervals.",
+    "price": 11.34
+  },
+  {
+    "make": "Ford",
+    "model": "F-150",
+    "year": 2022,
+    "category": "Air Filter",
+    "product_name": "WIX Premium Panel Engine Air Filter",
+    "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
+    "price": 8.23
+  },
+  {
+    "make": "Honda",
+    "model": "Accord",
+    "year": 2020,
+    "category": "Brake Pads",
+    "product_name": "ACDelco Advantage Ceramic Brake Pads - Rear",
+    "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
+    "price": 74.66
+  },
+  {
+    "make": "Subaru",
+    "model": "Outback",
+    "year": 2023,
+    "category": "Air Filter",
+    "product_name": "Motorcraft OEM Panel Engine Air Filter",
+    "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
+    "price": 24.55
+  },
+  {
+    "make": "Audi",
+    "model": "A4",
+    "year": 2024,
+    "category": "Brake Pads",
+    "product_name": "Centric Posi-Quiet Ceramic Brake Pads - Front",
+    "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
+    "price": 67.77
+  },
+  {
+    "make": "Hyundai",
+    "model": "Elantra",
+    "year": 2019,
+    "category": "Air Filter",
+    "product_name": "Denso First Time Fit Panel Air Filter",
+    "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
+    "price": 12.4
+  },
+  {
+    "make": "Toyota",
+    "model": "Corolla",
+    "year": 2024,
+    "category": "Brake Pads",
+    "product_name": "Bosch QuietCast Ceramic Brake Pad Set - Rear",
+    "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
+    "price": 57.25
+  },
+  {
+    "make": "Audi",
+    "model": "A4",
+    "year": 2024,
+    "category": "Air Filter",
+    "product_name": "Premium Guard High-Capacity Air Filter",
+    "product_description": "Multi-layer filter media that improves airflow while trapping dust, pollen, and road debris.",
+    "price": 21.09
+  },
+  {
+    "make": "BMW",
+    "model": "3 Series",
+    "year": 2023,
+    "category": "Battery",
+    "product_name": "Valucraft Economy Automotive Battery - Group 26",
+    "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
+    "price": 147.83
+  },
+  {
+    "make": "Honda",
+    "model": "Civic",
+    "year": 2022,
+    "category": "Battery",
+    "product_name": "ACDelco Gold Professional Battery - Group 48 730 CCA",
+    "product_description": "Maintenance-free battery built for reliable cold starts and stable electrical performance.",
+    "price": 160.99
+  },
+  {
+    "make": "Nissan",
+    "model": "Altima",
+    "year": 2019,
+    "category": "Brake Pads",
+    "product_name": "Wagner ThermoQuiet Ceramic Brake Pads - Front",
+    "product_description": "High-performance ceramic pads designed for quiet, low-dust braking and consistent stopping power.",
+    "price": 78.18
+  }
 ]

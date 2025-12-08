@@ -6,9 +6,16 @@ export async function GET(
     { params }: { params: { id: string } },
 ) {
     const client = await db();
-    const result = await client.query(`SELECT * FROM parts WHERE id = $1`, [
-        params.id,
-    ]);
+
+    const result = await client.query(
+        `
+        SELECT p.*, v.make, v.model, v.year
+        FROM parts p
+        LEFT JOIN vehicles v ON v.id = p.vehicle_id
+        WHERE p.id = $1
+        `,
+        [params.id]
+    );
 
     if (result.rows.length === 0) {
         return new Response('Not found', { status: 404 });
@@ -16,3 +23,4 @@ export async function GET(
 
     return Response.json(result.rows[0]);
 }
+
