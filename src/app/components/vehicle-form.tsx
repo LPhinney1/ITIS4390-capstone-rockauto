@@ -1,6 +1,5 @@
 "use client";
 import React, { useState } from "react";
-import { MyCars } from "../dashboard/garage/page";
 
 export type Vehicle = {
   id?: number;
@@ -41,19 +40,6 @@ const makes = [
   "Volkswagen",
   "Volvo",
 ];
-//HERE: works but doesn't render anything
-function addVehicleToGarage(vehicle: Vehicle) {
-  const newVehicle = {
-    id: MyCars.length + 1,
-    year: vehicle.year,
-    make: vehicle.make,
-    model: vehicle.model,
-    engine: vehicle.engine,
-    nickname: vehicle.nickname,
-  };
-  MyCars.push(newVehicle);
-  console.log("Vehicle added to garage:", newVehicle);
-}
 
 const engines = [
   "1.5L 4-Cylinder",
@@ -79,12 +65,14 @@ interface Props {
 
 export default function VehicleForm({ onSubmit, onCancel, initial, modelOptions }: Props) {
   const [formData, setFormData] = useState<Vehicle>({
+    id: initial?.id,
     year: initial?.year ?? "",
     make: initial?.make ?? "",
     model: initial?.model ?? "",
     engine: initial?.engine ?? "",
     nickname: initial?.nickname ?? "",
-  } as Vehicle);
+    isDefault: initial?.isDefault ?? false,
+  });
 
   function handleChange<K extends keyof Vehicle>(key: K, value: Vehicle[K]) {
     setFormData((s) => ({ ...s, [key]: value }));
@@ -93,13 +81,17 @@ export default function VehicleForm({ onSubmit, onCancel, initial, modelOptions 
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     if (!formData.year || !formData.make || !formData.model || !formData.engine) {
-      // minimal client-side validation
       alert("Please fill in year, make, model and engine");
       return;
     }
-    addVehicleToGarage(formData);
-    // reset form after submit
-    setFormData({ year: "", make: "", model: "", engine: "", nickname: "" });
+    
+    // Call the onSubmit prop - the parent component will handle adding to the list
+    onSubmit(formData);
+    
+    // Reset form after submit (only if not editing)
+    if (!initial?.id) {
+      setFormData({ year: "", make: "", model: "", engine: "", nickname: "", isDefault: false });
+    }
   }
 
   return (
@@ -188,12 +180,12 @@ export default function VehicleForm({ onSubmit, onCancel, initial, modelOptions 
           </div>
         </div>
 
-          <div className="mb-4">
+        <div className="mb-4">
           <label className="block text-sm font-medium text-gray-700">Nickname (optional)</label>
           <input
             value={formData.nickname}
             onChange={(e) => handleChange("nickname", e.target.value)}
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#6366f1]"
+            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#6366f1]"
             placeholder="e.g., My Daily Driver"
           />
         </div>
@@ -207,12 +199,10 @@ export default function VehicleForm({ onSubmit, onCancel, initial, modelOptions 
                   year: '2020',
                   make: 'Honda',
                   model: 'Civic',
-                  engine: '2.0L I4',
+                  engine: '2.0L 4-Cylinder',
                   nickname: 'My Civic',
                 };
                 setFormData(test);
-                // small delay so the autofill is visible before submit
-                // HERE: change to submit button later
               }}
               className="px-4 py-2 border border-gray-300 rounded-lg bg-gray-50 hover:bg-gray-100 transition-colors text-sm"
             >
@@ -228,8 +218,8 @@ export default function VehicleForm({ onSubmit, onCancel, initial, modelOptions 
             >
               Cancel
             </button>
-            <button type="submit" className="px-6 py-2 bg-primary text-white rounded-lg hover:bg-[#4f46e5] transition-colors">
-              Add Vehicle
+            <button type="submit" className="px-6 py-2 bg-[#5b5fc7] text-white rounded-lg hover:bg-[#4f46e5] transition-colors">
+              {initial?.id ? 'Update Vehicle' : 'Add Vehicle'}
             </button>
           </div>
         </div>

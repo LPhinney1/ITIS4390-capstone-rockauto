@@ -47,7 +47,7 @@ export default function Page() {
                 {/* Card */}
                 <div className="bg-white rounded-2xl shadow-lg border border-gray-200 overflow-hidden">
                     {/* Header */}
-                    <div className="bg-primary px-8 py-8 text-center">
+                    <div className="bg-[#5b5fc7] px-8 py-8 text-center">
                         <h1 className="text-[32px] text-white mb-2">Welcome Back</h1>
                         {/* <p className="text-[16px] text-white/90">Sign in to your RockAuto account</p> */}
                         <p className='text-base text-white/90'>Go to sign up page for test data</p>
@@ -134,7 +134,7 @@ export default function Page() {
                             <button
                                 type="submit"
                                 onClick={handleSignIn}
-                                className="w-full h-[48px] bg-primary hover:bg-[#4f46e5] text-white rounded-lg transition-colors mt-6 grid place-items-center"
+                                className="w-full h-[48px] bg-[#5b5fc7] hover:bg-[#4f46e5] text-white rounded-lg transition-colors mt-6 grid place-items-center"
                             >
                                 <span className="text-[16px]">Sign In</span>
                             </button>

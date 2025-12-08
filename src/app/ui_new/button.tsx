@@ -9,17 +9,7 @@ interface AddToCartButtonProps {
     buttonStyle?: string;
 }
 
-export function ContinueShoppingButton() {
-    return (
-        <button
-            type="button"
-            onClick={() => (window.location.href = '/home')}
-            className="mb-6 flex items-center gap-2 text-gray-600 transition-colors hover:text-gray-900"
-        >
-            <span>← Back to Shopping</span>
-        </button>
-    );
-}
+
 
 export default function AddToCartButton({ onClick, disabled, productName, buttonStyle }: AddToCartButtonProps) {
     const [added, setAdded] = useState(false);
@@ -68,14 +58,13 @@ export default function AddToCartButton({ onClick, disabled, productName, button
             aria-label={
             disabled ? 'Out of stock' : added ? 'added' : 'add to cart'
             }
-            className={clsx(
-            'flex justify-center text-white transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 items-center',
+            className={clsx( 'relative bg-[#5b5fc7] flex items-center justify-center hover:bg-[#4a4db5] transition-colors flex justify-center text-white transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 items-center',
             sizeClass,
             disabled
                 ? 'cursor-not-allowed bg-gray-400'
                 : added
-                  ? 'bg-primary-600 text-lg'
-                  : 'bg-primary hover:bg-primary-600 focus-visible:ring-primary active:bg-primary-700',
+                  ? 'bg-[#5b5fc7]-600 text-lg'
+                  : 'focus-visible:ring-primary active:bg-[#5b5fc7]-700',
             )}
         >
             {added ? '✓' : buttonStyle === 'large rectangular' ? 'Add to cart' : '+'}
