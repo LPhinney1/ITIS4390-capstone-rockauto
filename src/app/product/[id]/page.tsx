@@ -12,6 +12,9 @@ interface Part {
     product_description: string | null;
     price: number | string | null;
     product_image_url: string | null;
+    year?: string | number;
+    make?: string;
+    model?: string;
 }
 
 interface PageProps {
