@@ -1,7 +1,6 @@
 //this is what keeps track of what the customer has in their cart
 
 import { Product } from '@/app/components/product-card';
-import { MyCars } from '@/app/dashboard/garage/page';
 import { Vehicle } from '@/app/components/vehicle-card';
 import { productsList } from '@/app/placeholder-data';
 
@@ -32,10 +31,22 @@ function saveCartToStorage(cart: CartItem[]): void {
     }
 }
 
+// Load vehicles from localStorage
+function loadVehiclesFromStorage(): Vehicle[] {
+    if (typeof window === 'undefined') return [];
+    try {
+        const stored = localStorage.getItem('vehicles');
+        return stored ? JSON.parse(stored) : [];
+    } catch {
+        return [];
+    }
+}
+
 export const cartList: CartItem[] = loadCartFromStorage();
 
 export function addToCart(product: Product, quantity: number = 1) {
-    const defaultVehicle: Vehicle = {
+    const vehicles = loadVehiclesFromStorage();
+    const defaultVehicle = vehicles.find(v => v.isDefault) || vehicles[0] || {
         id: 0,
         year: '',
         make: '',
@@ -62,6 +73,7 @@ export function addToCart(product: Product, quantity: number = 1) {
 
 // Add all placeholder productsList into the cart list (used for testing/demo)
 export function addCategoriesToCart() {
+    const vehicles = loadVehiclesFromStorage();
     const defaultVehicle: Vehicle = {
         id: 0,
         year: '',
@@ -70,7 +82,7 @@ export function addCategoriesToCart() {
         engine: '',
     };
 
-    const targetCar = MyCars[0] ?? defaultVehicle;
+    const targetCar = vehicles[0] ?? defaultVehicle;
 
     productsList.forEach((c) => {
         // push a shallow copy so callers can mutate quantity independently
@@ -123,11 +135,13 @@ export function updateQuantity(productId: number, newQuantity: number): void {
 }
 
 export default function CartItems() {
+    const vehicles = loadVehiclesFromStorage();
+    
     return (
         <div>
             <p>Cart Items Component</p>
-            <p>Number of Cars in Garage: {MyCars.length}</p>
-            <p>First Car in Garage: {MyCars[0]?.name}</p>
+            <p>Number of Cars in Garage: {vehicles.length}</p>
+            <p>First Car in Garage: {vehicles[0]?.make} {vehicles[0]?.model}</p>
         </div>
     );
 }
