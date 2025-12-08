@@ -97,7 +97,9 @@ function CartContent() {
                         <p className="mb-8 max-w-md text-center text-gray-600">
                             Looks like you haven't added any parts to your cart yet. Start shopping to find the perfect parts for your vehicle.
                         </p>
-                        <a href="/" className="rounded-lg bg-[primary] px-8 py-4 text-white transition-colors hover:bg-[#4f46e5]">
+                        <a href="/"
+                            className="rounded-lg bg-[#6366f1] px-8 py-4 text-white transition-colors hover:bg-[#4f46e5]"
+                        >
                             Browse Products
                         </a>
 
@@ -137,7 +139,7 @@ function CartContent() {
                     </p>
                 </div>
 
-                
+
                 <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
                     {/* Left side */}
                     <div className="space-y-4 lg:col-span-2">
@@ -202,7 +204,7 @@ function CartContent() {
 
                                 <button
                                     onClick={() => router.push('/dashboard/cart/checkout')}
-                                    className="mb-4 flex w-full items-center justify-center gap-2 rounded-lg bg-[primary] py-4 text-white transition-all hover:bg-[#4f46e5] hover:shadow-lg"
+                                    className="mb-4 flex w-full items-center justify-center gap-2 rounded-lg bg-[primary] py-4 text-white transition-all bg-[#6366f1] hover:bg-[#4f46e5] hover:shadow-lg"
                                 >
                                     <Lock className="h-5 w-5" />
                                     <span>Proceed to Checkout</span>
