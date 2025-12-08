@@ -14,6 +14,13 @@ interface Part {
     product_image_url: string | null;
 }
 
+interface Vehicle {
+    id: number;
+    year: number;
+    make: string;
+    model: string;
+}
+
 interface PageProps {
     params: { id: string };
 }
@@ -26,7 +33,16 @@ async function fetchPart(id: string): Promise<Part> {
     }
     return res.json();
 }
+async function fetchVehicle(id: number): Promise<Vehicle | null> {
+    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
+    const res = await fetch(`${baseUrl}/api/vehicles/${id}`, { cache: "no-store" });
 
+    if (!res.ok) {
+        return null;
+    }
+
+    return res.json();
+}
 async function fetchAllParts(): Promise<Part[]> {
     const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
     const res = await fetch(`${baseUrl}/api/parts`, {
@@ -40,8 +56,11 @@ async function fetchAllParts(): Promise<Part[]> {
 
 export default async function ProductPage({ params }: PageProps) {
     const part = await fetchPart(params.id);
-    const allParts = await fetchAllParts();
 
+    const [allParts, vehicle] = await Promise.all([
+        fetchAllParts(),
+        fetchVehicle(part.vehicle_id),
+    ]);
     const similarParts = allParts
         .filter((p) => p.id !== part.id && p.category_id === part.category_id)
         .slice(0, 6);
@@ -74,6 +93,12 @@ export default async function ProductPage({ params }: PageProps) {
                             <p className="text-base font-semibold text-indigo-600">
                                 {part.price !== null ? `$${part.price}` : "Pricing unavailable"}
                             </p>
+
+                            {vehicle && (
+                                <p className="text-sm text-gray-500">
+                                    {vehicle.year} {vehicle.make} {vehicle.model}
+                                </p>
+                            )}
                         </div>
                     </div>
 
@@ -108,8 +133,8 @@ export default async function ProductPage({ params }: PageProps) {
                                     )}
                                 </div>
 
-                                
-                                
+
+
                             </div>
                         </div>
 
