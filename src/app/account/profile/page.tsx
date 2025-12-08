@@ -62,7 +62,7 @@ export default function ProfilePage() {
                         </p>
                         <Link
                             href='/dashboard/garage'
-                            className="bg-primary hover:bg-[#4f46e5] text-white px-8 py-4 rounded-[6px] transition-colors"
+                            className="bg-[#5b5fc7] hover:bg-[#4f46e5] text-white px-8 py-4 rounded-[6px] transition-colors"
                         >
                             {vehicles.length === 0 ? 'Add Your First Vehicle' : 'Go to Garage'}
                         </Link>

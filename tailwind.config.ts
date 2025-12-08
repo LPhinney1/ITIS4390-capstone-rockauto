@@ -13,7 +13,7 @@ const config: Config = {
                     DEFAULT: '#5b5fc7',
                     600: '#4d51b3',
                     700: '#3f428f',
-                    hover: '#5256b5',
+                    hover: '#4a4db5',
                 },
             },
         },

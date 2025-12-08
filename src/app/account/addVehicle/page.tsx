@@ -121,7 +121,7 @@ export default function AddVehiclePage() {
 
                             {/* Back to login link (small text at bottom) */}
                             <p className="mt-2 text-center text-[11px] text-gray-500">
-                                <Link href="/dashboard/login" className="hover:underline">
+                                <Link href="/account/login" className="hover:underline">
                                     ← Back to login
                                 </Link>
                             </p>
