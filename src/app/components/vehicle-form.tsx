@@ -1,6 +1,8 @@
 "use client";
 import React, { useState } from "react";
 import { MyCars } from "../dashboard/garage/page";
+import { useAuth } from "../account/auth-provider";
+import { useRouter } from "next/navigation";
 
 export type Vehicle = {
   id?: number;
@@ -41,19 +43,6 @@ const makes = [
   "Volkswagen",
   "Volvo",
 ];
-//HERE: works but doesn't render anything
-function addVehicleToGarage(vehicle: Vehicle) {
-  const newVehicle = {
-    id: MyCars.length + 1,
-    year: vehicle.year,
-    make: vehicle.make,
-    model: vehicle.model,
-    engine: vehicle.engine,
-    nickname: vehicle.nickname,
-  };
-  MyCars.push(newVehicle);
-  console.log("Vehicle added to garage:", newVehicle);
-}
 
 const engines = [
   "1.5L 4-Cylinder",
@@ -77,7 +66,33 @@ interface Props {
   modelOptions?: string[];
 }
 
+
 export default function VehicleForm({ onSubmit, onCancel, initial, modelOptions }: Props) {
+  
+  
+  const auth = useAuth();
+
+  function addVehicleToGarage(vehicle: Vehicle) {
+    const newVehicle = {
+      id: MyCars.length + 1,
+      year: vehicle.year,
+      make: vehicle.make,
+      model: vehicle.model,
+      engine: vehicle.engine,
+      nickname: vehicle.nickname,
+    };
+    
+    MyCars.push(newVehicle);
+    alert('vehicle added, check console. garage should have access to it too. ');
+    console.log('vehicle is:', newVehicle);
+
+    if (auth.user == undefined){
+      useRouter().push('account/login');
+    } else {
+      auth.user?.MyCars
+    }
+  }
+
   const [formData, setFormData] = useState<Vehicle>({
     year: initial?.year ?? "",
     make: initial?.make ?? "",
@@ -228,7 +243,7 @@ export default function VehicleForm({ onSubmit, onCancel, initial, modelOptions 
             >
               Cancel
             </button>
-            <button type="submit" className="px-6 py-2 bg-primary text-white rounded-lg hover:bg-[#4f46e5] transition-colors">
+            <button type="submit" className="px-6 py-2 bg-[#5b5fc7] text-white rounded-lg hover:bg-[#4f46e5] transition-colors">
               Add Vehicle
             </button>
           </div>

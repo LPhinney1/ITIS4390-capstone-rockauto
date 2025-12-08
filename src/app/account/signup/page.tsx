@@ -57,7 +57,8 @@ export default function Page() {
         } catch (e) {
             // ignore if provider not present
         }
-        router.push('/account/profile');
+        // router.push('/account/profile');
+        router.push('/account/addVehicle');
 
     }
 
@@ -84,7 +85,7 @@ export default function Page() {
                 {/* Card */}
                 <div className="bg-white rounded-2xl shadow-lg border border-gray-200 overflow-hidden">
                     {/* Header */}
-                    <div className="bg-primary px-8 py-8 text-center">
+                    <div className="bg-[#5b5fc7] px-8 py-8 text-center">
                         <h1 className="text-[32px] text-white mb-2">Create an account</h1>
                         <p className="text-[16px] text-white/90">Click Google for test data</p>
                     </div>
@@ -178,7 +179,7 @@ export default function Page() {
                             {/* Submit Button */}
                             <button
                                 type="submit"
-                                className="w-full h-[48px] bg-primary hover:bg-[#4f46e5] text-white rounded-lg transition-colors mt-6 grid place-items-center"
+                                className="w-full h-[48px] bg-[#5b5fc7] hover:bg-[#4f46e5] text-white rounded-lg transition-colors mt-6 grid place-items-center"
                             >
                                 <span className="text-[16px]">Create account</span>
                             </button>

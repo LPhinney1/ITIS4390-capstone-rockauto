@@ -1,73 +1,34 @@
 import { Vehicle } from '@/app/components/vehicle-card';
-import { ContinueShoppingButton } from '@/app/ui_new/button';
 import { Plus, Car, Check, Edit2, Trash2 } from 'lucide-react';
+import AddVehicleButton from '@/app/ui_new/add-vehicle-button';
+import VehicleFormSlot from '@/app/components/vehicle-form-slot';
 export const MyCars: Vehicle[] = [];
 
-//function to make vehicle to add to garage
-export function addVehicleToGarage(vehicle: Vehicle) {
-    //check if there is a default car
-    //   if (MyCars.length === 0) {
-    //     vehicle.isDefault = true;
-    //   } else {
-    //  HERE
-    //  prompt user. if they say yes, change id to and increment all other id by 1. if no, just add to end of list
 
-    //   }
-    MyCars.push(vehicle);
-}
 
-export function addRandomVehicleToGarage() {
-    const myCar: Vehicle = {
-        id: MyCars.length + 1,
-        year: '2020',
-        make: 'Honda',
-        model: 'Civic',
-        engine: '2.0L I4',
-        nickname: 'My Civic',
-        // isDefault: true,
-        // name: "2020 Honda Civic",
-    };
-    MyCars.push(myCar);
-}
 
-export default function Page() {
+export default function GaragePage() {
     return (
         <main className="flex-1">
             {/* Header */}
-            <div className="mb-8">
+            <div className="mb-8 min-h-max">
                 <div className="mb-4 flex items-center justify-between">
                     <div className="flex items-center gap-4"></div>
                 </div>
 
-                <div
-                    className="mb-6 h-[3px] rounded-full bg-[#6366f1]"
-                    style={{ width: '120px' }}
-                />
 
-                <div className="flex items-center justify-between">
-                    <div>
-                        <h2 className="mb-2 text-[32px] text-gray-900">
-                            My Garage
-                        </h2>
-                        <p className="text-gray-600">
-                            {' '}
-                            Manage your vehicles to find the perfect parts
-                        </p>
-                    </div>
-
-                    {/* {!showForm && ( */}
-                    <button
-                        // onClick={() => setShowForm(true)}
-                        className="flex items-center gap-2 rounded-lg bg-[#6366f1] px-6 py-3 text-white transition-colors hover:bg-[#4f46e5]"
-                    >
-                        <Plus className="h-5 w-5" />
-                        Add Vehicle
-                    </button>
-                    {/* )} */}
+        <div className="flex items-center justify-between">
+          <div>
+            <h2 className="text-[32px] text-gray-900 mb-2">My Garage</h2>
+            <p className="text-gray-600"> Manage your vehicles to find the perfect parts</p>
+          </div>
+                    <AddVehicleButton launchExternally />
                 </div>
             </div>
 
-            {/* Add/Edit Vehicle Form */}
+            {/* Add/Edit Vehicle Form (rendered in slot below header) */}
+            <VehicleFormSlot />
+
 
             {/* Vehicle List */}
             <div className="grid grid-cols-1 gap-6">
@@ -81,28 +42,24 @@ export default function Page() {
                             Add your first vehicle to get personalized part
                             recommendations
                         </p>
-                        <button
-                            // onClick={() => setShowForm(true)}
-                            className="inline-flex items-center gap-2 rounded-lg bg-[#6366f1] px-6 py-3 text-white transition-colors hover:bg-[#4f46e5]"
-                        >
-                            <Plus className="h-5 w-5" />
-                            Add Your First Vehicle
-                        </button>
+                        <div className="flex justify-center">
+                            <AddVehicleButton launchExternally />
+                        </div>
                     </div>
                 ) : (
                     MyCars.map((vehicle) => (
                         <div
                             key={vehicle.id}
-                            className={`rounded-lg border-2 bg-white p-6 transition-all hover:shadow-lg ${
+                                className={`rounded-lg border-2 bg-white p-6 transition-all hover:shadow-lg ${
                                 vehicle.isDefault
-                                    ? 'border-[#6366f1]'
+                                    ? 'border-primary'
                                     : 'border-gray-200'
                             }`}
                         >
                             <div className="flex items-start justify-between">
                                 <div className="flex gap-4">
                                     <div className="flex h-16 w-16 items-center justify-center rounded-lg bg-[#eef2ff]">
-                                        <Car className="h-8 w-8 text-[#6366f1]" />
+                                        <Car className="h-8 w-8 text-primary" />
                                     </div>
 
                                     <div>
@@ -111,8 +68,8 @@ export default function Page() {
                                                 {vehicle.year} {vehicle.make}{' '}
                                                 {vehicle.model}
                                             </h3>
-                                            {vehicle.isDefault && (
-                                                <span className="rounded-full bg-[#6366f1] px-3 py-1 text-sm text-white">
+                                                {vehicle.isDefault && (
+                                                <span className="rounded-full bg-primary px-3 py-1 text-sm text-white">
                                                     Default
                                                 </span>
                                             )}
@@ -130,36 +87,36 @@ export default function Page() {
                                     </div>
                                 </div>
 
-                                <div className="flex gap-2">
-                                    {!vehicle.isDefault && (
-                                        <button
-                                            // onClick={() => onSetDefault(vehicle.id)}
-                                            className="rounded-lg p-2 text-gray-600 transition-colors hover:bg-gray-100"
-                                            title="Set as default"
-                                        >
-                                            <Check className="h-5 w-5" />
-                                        </button>
-                                    )}
-                                    <button
-                                        // onClick={() => handleEdit(vehicle)}
-                                        className="rounded-lg p-2 text-gray-600 transition-colors hover:bg-gray-100"
-                                        title="Edit vehicle"
-                                    >
-                                        <Edit2 className="h-5 w-5" />
-                                    </button>
-                                    <button
-                                        // onClick={() => handleDelete(vehicle.id)}
-                                        className="rounded-lg p-2 text-red-600 transition-colors hover:bg-red-50"
-                                        title="Delete vehicle"
-                                    >
-                                        <Trash2 className="h-5 w-5" />
-                                    </button>
-                                </div>
-                            </div>
+                <div className="flex gap-2">
+                  {!vehicle.isDefault && (
+                    <button
+                      // onClick={() => onSetDefault(vehicle.id)}
+                      className="p-2 text-gray-600 hover:bg-gray-100 rounded-lg transition-colors"
+                      title="Set as default"
+                    >
+                      <Check className="w-5 h-5" />
+                    </button>
+                  )}
+                  <button
+                    // onClick={() => handleEdit(vehicle)}
+                    className="p-2 text-gray-600 hover:bg-gray-100 rounded-lg transition-colors"
+                    title="Edit vehicle"
+                  >
+                    <Edit2 className="w-5 h-5" />
+                  </button>
+                  <button
+                    // onClick={() => handleDelete(vehicle.id)}
+                    className="p-2 text-red-600 hover:bg-red-50 rounded-lg transition-colors"
+                    title="Delete vehicle"
+                  >
+                    <Trash2 className="w-5 h-5" />
+                  </button>
+                </div>
+              </div>
 
                             {vehicle.isDefault && (
                                 <div className="mt-4 rounded-lg bg-[#eef2ff] p-3">
-                                    <p className="text-sm text-[#4338ca]">
+                                    <p className="text-sm text-primary-700">
                                         Parts in your cart are being filtered
                                         for this vehicle
                                     </p>
@@ -170,16 +127,15 @@ export default function Page() {
                 )}
             </div>
 
-            {MyCars.length > 0 && (
-                <div className="mt-8 rounded-lg border border-gray-200 bg-[#f8f9fa] p-6">
-                    <h3 className="mb-2 text-gray-900">💡 Pro Tip</h3>
-                    <p className="text-gray-600">
-                        Your default vehicle is used to filter parts and ensure
-                        compatibility. You can switch between vehicles in your
-                        shopping cart.
-                    </p>
-                </div>
-            )}
-        </main>
-    );
+      {MyCars.length > 0 && (
+        <div className="mt-8 p-6 bg-[#f8f9fa] rounded-lg border border-gray-200">
+          <h3 className="text-gray-900 mb-2">💡 Pro Tip</h3>
+          <p className="text-gray-600">
+            Your default vehicle is used to filter parts and ensure compatibility.
+            You can switch between vehicles in your shopping cart.
+          </p>
+        </div>
+      )}
+    </main>
+  );
 }
