@@ -16,6 +16,12 @@ Next, run the development server:
 
 ```bash
 npm i && npm run dev
+
+```
+
+Or, a production build:
+```bash
+npm i && npm run build && npm run start
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to view webpage.

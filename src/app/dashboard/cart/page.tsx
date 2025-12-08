@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect, useRef, Suspense } from 'react';
-import { useSearchParams } from 'next/navigation';
+import { useSearchParams, useRouter } from 'next/navigation';
 import VehicleCard from '@/app/components/vehicle-card';
 import { Lock, Car, ShoppingBag, Truck, Shield, Tag } from 'lucide-react';
 import { Product } from '@/app/components/product-card';
@@ -28,6 +28,7 @@ async function fetchPart(id: string): Promise<Part> {
 
 function CartContent() {
     const searchParams = useSearchParams();
+    const router = useRouter();
     const [cartItems, setCartItems] = useState<CartItem[]>([]);
     const [mounted, setMounted] = useState(false);
     const hasAddedProduct = useRef(false);
@@ -74,8 +75,7 @@ function CartContent() {
     const promoApplied = false;
     const subtotal = cartItems.reduce((sum, item) => {
         const price = (item.Product as any).price;
-        const numericPrice =
-            typeof price === 'string' ? parseFloat(price) : price ?? 0;
+        const numericPrice = typeof price === 'string' ? parseFloat(price) : price ?? 0;
         return sum + numericPrice * item.quantity;
     }, 0);
 
@@ -83,10 +83,11 @@ function CartContent() {
     const shipping = subtotal >= freeShippingThreshold ? 0 : 9.99;
     const promoDiscount = promoApplied ? subtotal * 0.1 : 0;
     const estimatedTax = (subtotal - promoDiscount) * 0.08;
+    const total = subtotal - promoDiscount + shipping + estimatedTax;
 
     if (cartItems.length === 0) {
         return (
-            <div className="flex-1">
+            <div className="flex-1 -mt-8">
                 <div className="mx-auto max-w-[1400px] px-8 py-12">
                     <div className="flex flex-col items-center justify-center py-20">
                         <div className="mb-6 flex h-24 w-24 items-center justify-center rounded-full bg-gray-100">
@@ -96,7 +97,9 @@ function CartContent() {
                         <p className="mb-8 max-w-md text-center text-gray-600">
                             Looks like you haven't added any parts to your cart yet. Start shopping to find the perfect parts for your vehicle.
                         </p>
-                        <a href="/" className="rounded-lg bg-[#6366f1] px-8 py-4 text-white transition-colors hover:bg-[#4f46e5]">
+                        <a href="/"
+                            className="rounded-lg bg-[#6366f1] px-8 py-4 text-white transition-colors hover:bg-[#4f46e5]"
+                        >
                             Browse Products
                         </a>
 
@@ -136,15 +139,19 @@ function CartContent() {
                     </p>
                 </div>
 
-                <VehicleCard />
 
                 <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
-                    <CartItemsList
-                        items={cartItems}
-                        subtotal={subtotal}
-                        freeShippingThreshold={freeShippingThreshold}
-                    />
+                    {/* Left side */}
+                    <div className="space-y-4 lg:col-span-2">
+                        <VehicleCard />
+                        <CartItemsList
+                            items={cartItems}
+                            subtotal={subtotal}
+                            freeShippingThreshold={freeShippingThreshold}
+                        />
+                    </div>
 
+                    {/* Right side */}
                     <div className="lg:col-span-1">
                         <div className="sticky top-8 space-y-6">
                             <div className="rounded-xl border border-gray-200 bg-white p-6 shadow-sm">
@@ -188,7 +195,17 @@ function CartContent() {
                                     </div>
                                 </div>
 
-                                <button className="mb-4 flex w-full items-center justify-center gap-2 rounded-lg bg-[#6366f1] py-4 text-white transition-all hover:bg-[#4f46e5] hover:shadow-lg">
+                                <div className="border-t border-gray-200 pt-4 mb-6">
+                                    <div className="flex justify-between items-center">
+                                        <span className="text-[20px] font-semibold text-gray-900">Total</span>
+                                        <span className="text-[28px] font-bold text-[#6366f1]">${total.toFixed(2)}</span>
+                                    </div>
+                                </div>
+
+                                <button
+                                    onClick={() => router.push('/dashboard/cart/checkout')}
+                                    className="mb-4 flex w-full items-center justify-center gap-2 rounded-lg bg-[primary] py-4 text-white transition-all bg-[#6366f1] hover:bg-[#4f46e5] hover:shadow-lg"
+                                >
                                     <Lock className="h-5 w-5" />
                                     <span>Proceed to Checkout</span>
                                 </button>
@@ -202,20 +219,21 @@ function CartContent() {
                                         </div>
                                     </div>
                                 </div>
+
+                                <div className="grid grid-cols-2 mt-3 gap-4">
+                                    <div className="rounded-lg border border-gray-200 bg-white p-4 text-center">
+                                        <Truck className="mx-auto mb-2 h-6 w-6 text-green-600" />
+                                        <p className="text-xs text-gray-700">Free Shipping</p>
+                                        <p className="text-xs text-gray-500">Orders over $50</p>
+                                    </div>
+                                    <div className="rounded-lg border border-gray-200 bg-white p-4 text-center">
+                                        <Shield className="mx-auto mb-2 h-6 w-6 text-blue-600" />
+                                        <p className="text-xs text-gray-700">Secure Payment</p>
+                                        <p className="text-xs text-gray-500">SSL Encrypted</p>
+                                    </div>
+                                </div>
                             </div>
 
-                            <div className="grid grid-cols-2 gap-4">
-                                <div className="rounded-lg border border-gray-200 bg-white p-4 text-center">
-                                    <Truck className="mx-auto mb-2 h-6 w-6 text-green-600" />
-                                    <p className="text-xs text-gray-700">Free Shipping</p>
-                                    <p className="text-xs text-gray-500">Orders over $50</p>
-                                </div>
-                                <div className="rounded-lg border border-gray-200 bg-white p-4 text-center">
-                                    <Shield className="mx-auto mb-2 h-6 w-6 text-blue-600" />
-                                    <p className="text-xs text-gray-700">Secure Payment</p>
-                                    <p className="text-xs text-gray-500">SSL Encrypted</p>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>

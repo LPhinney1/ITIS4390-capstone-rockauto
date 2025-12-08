@@ -21,63 +21,64 @@ export function ContinueShoppingButton() {
     );
 }
 
-export default function AddToCartButton({
-    onClick,
-    disabled,
-    productName,
-    buttonStyle,
-}: AddToCartButtonProps) {
+export default function AddToCartButton({ onClick, disabled, productName, buttonStyle }: AddToCartButtonProps) {
     const [added, setAdded] = useState(false);
 
     function handleClick() {
-        if (disabled) return;
-        try {
-            onClick?.();
-        } catch (e) {
-            // swallow run-time errors from parent handlers
-        }
-        setAdded(true);
-        console.log('Product added:', productName);
-        // show a toast so the user gets feedback immediately
-        // showToast(
-        //   <div className="flex items-center gap-2">
-        //     <span className="font-medium">{productName ? `${productName} added to cart` : 'Added to cart'}</span>
-        //   </div>,
-        //   2200,
-        // );
-        // revert visual state after a short delay
-        // setTimeout(() => setAdded(false), 1200);
+      if (disabled) return;
+      try {
+        onClick?.();
+
+      } catch (e) {
+        // swallow run-time errors from parent handlers
+      }
+      setAdded(true);
+      console.log('Product added:', productName);
+      // show a toast so the user gets feedback immediately
+      // showToast(
+      //   <div className="flex items-center gap-2">
+      //     <span className="font-medium">{productName ? `${productName} added to cart` : 'Added to cart'}</span>
+      //   </div>,
+      //   2200,
+      // );
+      // revert visual state after a short delay
+      // setTimeout(() => setAdded(false), 1200);
     }
 
-    //three basic button styles: default, small round, large rectangular
+
+
+    // three basic button styles: default, small round, large rectangular
     const sizeClass =
         buttonStyle === 'small round'
-            ? 'w-7 h-7'
+            ? 'w-6 h-6 rounded-full'
             : buttonStyle === 'large rectangular'
-              ? 'px-5 py-3'
-              : 'px-4 py-2';
-    //  console.log('sizeClass:', sizeClass);
+              ? 'w-full px-4 py-3 rounded-[6px] text-sm'
+              : 'px-4 py-2 rounded-full';
 
     return (
         <button
             type="button"
-            onClick={handleClick}
+            onClick={() => {
+            if (disabled) return;
+            handleClick();
+            setTimeout(() => setAdded(false), 1200);
+            }}
             disabled={disabled}
             aria-pressed={added}
             aria-label={
-                disabled ? 'Out of stock' : added ? 'Added' : 'Add to cart'
+            disabled ? 'Out of stock' : added ? 'added' : 'add to cart'
             }
             className={clsx(
-                'flex justify-center rounded-full text-white transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2',
-                sizeClass,
-                disabled
-                    ? 'cursor-not-allowed bg-gray-400'
-                    : added
-                      ? 'bg-blue-600 text-lg'
-                      : 'bg-blue-600 hover:bg-blue-500 focus-visible:ring-blue-400 active:bg-blue-700',
+            'flex justify-center text-white transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 items-center',
+            sizeClass,
+            disabled
+                ? 'cursor-not-allowed bg-gray-400'
+                : added
+                  ? 'bg-primary-600 text-lg'
+                  : 'bg-primary hover:bg-primary-600 focus-visible:ring-primary active:bg-primary-700',
             )}
         >
-            {added ? '✓' : '+'}
+            {added ? '✓' : buttonStyle === 'large rectangular' ? 'Add to cart' : '+'}
         </button>
     );
-}
+  }

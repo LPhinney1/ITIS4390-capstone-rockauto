@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import BackButton from "@/app/components/back-button";
 import { ShoppingCart } from "lucide-react";
+import AddToCompareButton from "./AddToCompareButton";
 
 interface Part {
     id: number;
@@ -76,22 +77,44 @@ export default async function ProductPage({ params }: PageProps) {
                         </div>
                     </div>
 
-                    {/* Product Description + Buttons */}
                     <div className="flex flex-col justify-between">
                         <div>
                             <h2 className="text-xl font-semibold text-gray-900">
                                 Description
                             </h2>
 
-                            <p className="mt-4 text-sm leading-relaxed text-gray-700">
-                                {description}
-                            </p>
+                            <div
+                                key={part.id}
+                                className="relative flex h-full flex-col rounded-lg border border-[#D1D5DC] bg-white p-4 shadow-sm"
+                            >
+                                <h3 className="mb-2 text-lg font-medium text-[#364153]">
+                                    {part.product_name}
+                                </h3>
+
+                                <div className="mb-4 flex-1 text-sm leading-6 text-[#6B7280]">
+                                    {part.price !== undefined && (
+                                        <p>Price: ${part.price}</p>
+                                    )}
+
+                                    {/* ignore for now */}
+                                    {/* {part.year && <p>Year: {part.year}</p>}
+                                    {part.make && <p>Make: {part.make}</p>}
+                                    {part.model && <p>Model: {part.model}</p>}
+                                    {part.category_name && (
+                                        <p>Category: {part.category_name}</p>
+                                    )} */}
+                                    {part.product_description && (
+                                        <p>{part.product_description}</p>
+                                    )}
+                                </div>
+
+                                
+                                
+                            </div>
                         </div>
 
                         <div className="mt-8 flex flex-wrap gap-4">
-                            <button className="h-12 rounded-full bg-gray-900 px-10 text-sm font-semibold tracking-wide text-white shadow hover:bg-black">
-                                COMPARE
-                            </button>
+                            <AddToCompareButton productId={part.id} />
                             <Link
                                 href={`/dashboard/cart?productId=${part.id}`}
                                 className="flex h-12 items-center gap-2 rounded-full bg-indigo-500 px-10 text-sm font-semibold tracking-wide text-white shadow hover:bg-indigo-600"
@@ -136,9 +159,7 @@ export default async function ProductPage({ params }: PageProps) {
                                         </div>
                                     </Link>
 
-                                    <button className="mt-4 w-full rounded-full bg-gray-900 px-3 py-2 text-[11px] font-semibold text-white">
-                                        COMPARE
-                                    </button>
+                                    <AddToCompareButton productId={similar.id} className="mt-4 w-full" />
                                 </div>
                             ))}
                         </div>
