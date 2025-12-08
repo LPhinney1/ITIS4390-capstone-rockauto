@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import BackButton from "@/app/components/back-button";
 import { ShoppingCart } from "lucide-react";
 import AddToCompareButton from "./AddToCompareButton";
 
@@ -11,6 +12,9 @@ interface Part {
     product_description: string | null;
     price: number | string | null;
     product_image_url: string | null;
+    year?: string | number;
+    make?: string;
+    model?: string;
 }
 
 interface PageProps {
@@ -52,7 +56,7 @@ export default async function ProductPage({ params }: PageProps) {
     return (
         <div className="min-h-screen bg-[#f5f5fa] px-6 py-10">
             <div className="mx-auto max-w-6xl">
-
+                <BackButton />
 
                 {/* Top section: image card + info */}
                 <div className="grid gap-10 md:grid-cols-[minmax(0,340px)_minmax(0,1fr)]">
