@@ -68,7 +68,7 @@ export default async function ProductPage({ params }: PageProps) {
                         </div>
 
                         <div className="mt-4 space-y-1">
-                            <h1 className="text-lg font-semibold text-gray-900">
+                            <h1 className="text-lg font-semibold text-gray-900 mb-3">
                                 {part.product_name}
                             </h1>
                             <p className="text-base font-semibold text-indigo-600">
@@ -90,26 +90,17 @@ export default async function ProductPage({ params }: PageProps) {
                                 <h3 className="mb-2 text-lg font-medium text-[#364153]">
                                     {part.product_name}
                                 </h3>
-
                                 <div className="mb-4 flex-1 text-sm leading-6 text-[#6B7280]">
-                                    {part.price !== undefined && (
-                                        <p>Price: ${part.price}</p>
-                                    )}
+                                    {part.price !== undefined && <p>Price: ${part.price}</p>}
 
-                                    {/* ignore for now */}
-                                    {/* {part.year && <p>Year: {part.year}</p>}
-                                    {part.make && <p>Make: {part.make}</p>}
-                                    {part.model && <p>Model: {part.model}</p>}
-                                    {part.category_name && (
-                                        <p>Category: {part.category_name}</p>
-                                    )} */}
-                                    {part.product_description && (
-                                        <p>{part.product_description}</p>
-                                    )}
+                                    {part.product_description && <p className="mt-2">{part.product_description}</p>}
+
+                                    <div className="mt-4 space-y-1 border-t pt-3">
+                                        {part.year && <p>Year: {part.year}</p>}
+                                        {part.make && <p>Make: {part.make}</p>}
+                                        {part.model && <p>Model: {part.model}</p>}
+                                    </div>
                                 </div>
-
-                                
-                                
                             </div>
                         </div>
 
